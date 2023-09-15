@@ -8,11 +8,12 @@ using UnityEngine.InputSystem;
 public class Movement : MonoBehaviour
 {
     private PlayerInputActions input;
-    private Rigidbody rb;
+    public Rigidbody rb;
     public GameObject camHold;
-    public float speed, sens;
+    public float speed, sens, sprint, jumpHight;
 
     private Vector2 move, look;
+    private Vector3 jump;
 
     private InputAction movew, rotate;
     private float x, y;
@@ -63,4 +64,22 @@ public class Movement : MonoBehaviour
         transform.localRotation = Quaternion.Euler(0, x, 0 * sens * Time.deltaTime);
         camHold.transform.localRotation = Quaternion.Euler(y, 0, 0 * sens * Time.deltaTime);
     }
+
+    public void Jump(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            rb.AddForce(jump * jumpHight, ForceMode.Impulse);
+        }
+        
+    }
+
+    public void Sprint(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            speed = sprint;
+        }
+    }
+
 }
