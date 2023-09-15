@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4db574ccee5e3f345924076e8210184e
+guid: 965b4053d65b8bb409892b10a8c250c1
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,9 +9,9 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - FunSchool
+  - Thin Pencil Handwriting
   fallbackFontReferences:
-  - {fileID: 12800000, guid: 7036668d946018a44be3239f37c9797e, type: 3}
+  - {fileID: 12800000, guid: 641d8eeecc2abc54696b58b90a5e24e7, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
