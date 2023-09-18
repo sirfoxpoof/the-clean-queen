@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3170719379247620483}
   m_Layer: 0
-  m_Name: bezem.structuur
+  m_Name: Bezem.Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
