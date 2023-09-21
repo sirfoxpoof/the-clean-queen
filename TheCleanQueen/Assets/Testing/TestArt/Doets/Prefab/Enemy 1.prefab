@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9015951672521740484}
   m_Layer: 0
   m_Name: Enemy 1
-  m_TagString: Untagged
+  m_TagString: Enemy1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bf48e3927ce7fc74ca5058ce8af9d724, type: 2}
+  - {fileID: 2100000, guid: 9d91cbbb3682366418ce0b1b6a2c68d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -152,3 +152,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finish: {fileID: 8140826530344891378, guid: e41477a6ad152924994066c05eaf9f1d, type: 3}
+  points: []

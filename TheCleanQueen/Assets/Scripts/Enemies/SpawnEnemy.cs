@@ -8,12 +8,25 @@ public class SpawnEnemy : MonoBehaviour
 
     public Transform  start;
     public GameObject enemy1;
-    public Transform finnish;
+    //public Transform finnish;
 
-    public void OnPress()
+    public Transform[] pointss;
+
+    private void Start()
     {
-        GameObject newObject = (Instantiate(enemy1, start));
-        newObject.GetComponent<NavMesh>().finish = finnish;
+        StartCoroutine(EnemySpawn());
     }
 
+    private IEnumerator EnemySpawn()
+    {
+       
+        for (int i = 0; i < 10; i++)
+        {
+            yield return new WaitForSeconds(1f);
+            GameObject newObject = (Instantiate(enemy1, start));
+
+            //newObject.GetComponent<NavMesh>().finish = finnish;
+            newObject.GetComponent<NavMesh>().points = pointss;
+        }
+    }
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,7 +11,9 @@ public class Movement : MonoBehaviour
     private PlayerInputActions input;
     public Rigidbody rb;
     public GameObject camHold;
-    public float speed, sens, sprint, jumpHight;
+    public float speed, sprint, sens, jumpHight;
+  
+    private RaycastHit hit;
 
     private Vector2 move, look;
     private Vector3 jump;
@@ -22,6 +25,9 @@ public class Movement : MonoBehaviour
     {
         input = new PlayerInputActions();
         rb = GetComponent<Rigidbody>();
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void OnEnable()
@@ -43,6 +49,7 @@ public class Movement : MonoBehaviour
     {
         Move();
         Rotate();
+
     }
 
     private void Move()
@@ -65,21 +72,26 @@ public class Movement : MonoBehaviour
         camHold.transform.localRotation = Quaternion.Euler(y, 0, 0 * sens * Time.deltaTime);
     }
 
-    public void Jump(InputAction.CallbackContext context)
-    {
-        if(context.started)
-        {
-            rb.AddForce(jump * jumpHight, ForceMode.Impulse);
-        }
-        
-    }
-
     public void Sprint(InputAction.CallbackContext context)
     {
-        if(context.started)
+        if (context.started)
         {
-            speed = sprint;
+            speed += sprint;
+        }
+        if (context.canceled)
+        {
+            speed -= sprint;
         }
     }
 
+    public void Jump(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (Physics.Raycast(transform.position, -transform.up, out hit, 1.3f))
+            {
+                rb.AddForce(Vector3.up * jumpHight, ForceMode.Impulse);
+            }
+        }
+    }
 }
