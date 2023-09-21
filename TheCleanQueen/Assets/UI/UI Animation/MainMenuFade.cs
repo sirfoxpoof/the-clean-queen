@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuFade : MonoBehaviour
 {
     public Animator animator;
-    public GameObject animator2, levelSelect, mainMenu;
+    public GameObject animator2, levelSelect, mainMenu, fadeoutPNG;
 
     private void Start()
     {
@@ -19,6 +19,7 @@ public class MainMenuFade : MonoBehaviour
     {
         animator2.GetComponent<Animator>().enabled = true;
         animator.Play("Flashbang");
+        fadeoutPNG.SetActive(true);
         StartCoroutine(Wait());
         
 
@@ -26,6 +27,7 @@ public class MainMenuFade : MonoBehaviour
     public IEnumerator Wait()
     {
         yield return new WaitForSeconds(2f);
+        
         mainMenu.SetActive(false);
         levelSelect.SetActive(true);
 
