@@ -2707,7 +2707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &561141521
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3061,7 +3061,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278254847
-  m_fontColor: {r: 1, g: 0.98909193, b: 0, a: 1}
+  m_fontColor: {r: 0.7764706, g: 0.7647059, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4643,8 +4643,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99b65f0235c1cd46a0b772e77f91b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: {fileID: 0}
+  menu: {fileID: 0}
   loadingScreen: {fileID: 0}
+  settingsPanel: {fileID: 0}
+  settingsAan: 0
+  sceneName: 
 --- !u!114 &811191429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5727,8 +5730,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99b65f0235c1cd46a0b772e77f91b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: {fileID: 561141520}
+  menu: {fileID: 1442565113}
   loadingScreen: {fileID: 527757344}
+  settingsPanel: {fileID: 435767935}
+  settingsAan: 0
+  sceneName: 
 --- !u!1 &1036327902
 GameObject:
   m_ObjectHideFlags: 0
@@ -12763,7 +12769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1442565114
 RectTransform:
   m_ObjectHideFlags: 0

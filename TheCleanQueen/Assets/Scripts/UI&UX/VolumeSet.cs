@@ -15,7 +15,6 @@ public class VolumeSet : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("MasterVolume"))
         {
-            
             mixer.SetFloat("MasterVolume", PlayerPrefs.GetFloat("MasterVolume"));
             mixer.SetFloat("MusicVolume", PlayerPrefs.GetFloat("MusicVolume"));
             SetSliders();
@@ -25,7 +24,6 @@ public class VolumeSet : MonoBehaviour
         {
             SetSliders();
         }
-
     }
 
     void SetSliders()
