@@ -167,6 +167,24 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""TowerButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""d28663f3-e934-4aa9-a570-455da6cd825f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CloseTower"",
+                    ""type"": ""Button"",
+                    ""id"": ""9a0d7a25-174a-49e1-889c-5bd865e2c9a0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -178,6 +196,28 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Settings"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f0f55cdf-8791-4380-88e9-293cc1fb4df5"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TowerButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e4245a06-1d83-43ee-b81d-39ca62c1cce2"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CloseTower"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -195,6 +235,8 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Settings = m_UI.FindAction("Settings", throwIfNotFound: true);
+        m_UI_TowerButton = m_UI.FindAction("TowerButton", throwIfNotFound: true);
+        m_UI_CloseTower = m_UI.FindAction("CloseTower", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -327,11 +369,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_UI;
     private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
     private readonly InputAction m_UI_Settings;
+    private readonly InputAction m_UI_TowerButton;
+    private readonly InputAction m_UI_CloseTower;
     public struct UIActions
     {
         private @PlayerInputActions m_Wrapper;
         public UIActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Settings => m_Wrapper.m_UI_Settings;
+        public InputAction @TowerButton => m_Wrapper.m_UI_TowerButton;
+        public InputAction @CloseTower => m_Wrapper.m_UI_CloseTower;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -344,6 +390,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Settings.started += instance.OnSettings;
             @Settings.performed += instance.OnSettings;
             @Settings.canceled += instance.OnSettings;
+            @TowerButton.started += instance.OnTowerButton;
+            @TowerButton.performed += instance.OnTowerButton;
+            @TowerButton.canceled += instance.OnTowerButton;
+            @CloseTower.started += instance.OnCloseTower;
+            @CloseTower.performed += instance.OnCloseTower;
+            @CloseTower.canceled += instance.OnCloseTower;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -351,6 +403,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Settings.started -= instance.OnSettings;
             @Settings.performed -= instance.OnSettings;
             @Settings.canceled -= instance.OnSettings;
+            @TowerButton.started -= instance.OnTowerButton;
+            @TowerButton.performed -= instance.OnTowerButton;
+            @TowerButton.canceled -= instance.OnTowerButton;
+            @CloseTower.started -= instance.OnCloseTower;
+            @CloseTower.performed -= instance.OnCloseTower;
+            @CloseTower.canceled -= instance.OnCloseTower;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -378,5 +436,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     public interface IUIActions
     {
         void OnSettings(InputAction.CallbackContext context);
+        void OnTowerButton(InputAction.CallbackContext context);
+        void OnCloseTower(InputAction.CallbackContext context);
     }
 }

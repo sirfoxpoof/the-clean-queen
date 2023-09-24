@@ -6,15 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButtonFunction : MonoBehaviour
 {
-    public GameObject menu, loadingScreen, settingsPanel, eventSystem;
+    public GameObject menu, loadingScreen, settingsPanel;
     public bool settingsAan = false;
     public string sceneName;
 
     public void Start()
     {
         settingsPanel.gameObject.SetActive(false);
-        eventSystem.SetActive(true);
-
+        
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
         Cursor.lockState = CursorLockMode.None;
@@ -49,8 +48,6 @@ public class MainMenuButtonFunction : MonoBehaviour
 
     }
 
-
-    
     public void DoSettingsMenu(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -87,7 +84,10 @@ public class MainMenuButtonFunction : MonoBehaviour
         Time.timeScale = 1;
 
     }
-    
+
+  
+
+
 }
 
 
