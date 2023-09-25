@@ -39,7 +39,9 @@ public class NavMesh : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
+            SpawnEnemy.enemiesAlive--;
             Destroy(gameObject);
+           
         }
     }
 }

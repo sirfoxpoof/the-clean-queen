@@ -10,8 +10,11 @@ public class EnemyDead : MonoBehaviour
     {
         if (other.CompareTag("Enemy1"))
         {
+            SpawnEnemy.enemiesAlive--;
             print("hoi");
             Destroy(gameObject);
+
+            
         }
     }
 }
