@@ -8,6 +8,7 @@ public class IngameUI : MonoBehaviour
     public GameObject towerMenu, camSwitchButton, towerButton;
     public Movement moveScript;
     public Camera mainCam, towerCam;
+    public bool towermenuOn = false;
 
     private void Start()
     {
@@ -20,10 +21,11 @@ public class IngameUI : MonoBehaviour
     {
         if (context.performed)
         {
-            CloseTower();
-
-        }
-            
+            if (towermenuOn == true)
+            {
+                CloseTower();
+            }
+        }    
     }
 
     public void CloseTower()
@@ -33,19 +35,22 @@ public class IngameUI : MonoBehaviour
         Cursor.visible = false;
         Time.timeScale = 1;
         towerMenu.SetActive(false);
+        towermenuOn = false;
     }
 
     public void ShowTowerMenu(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
+
             Debug.Log("niet zo irritant doen <3");
             moveScript.enabled = false;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             Time.timeScale = 0;
             towerMenu.SetActive(true);
-
+            towerButton.SetActive(false);
+            towermenuOn = true;
         }
     }
 
@@ -54,6 +59,7 @@ public class IngameUI : MonoBehaviour
         if (other.gameObject.CompareTag("TowerMenu"))
         {
             towerButton.SetActive(true);
+            
 
         }
     }
