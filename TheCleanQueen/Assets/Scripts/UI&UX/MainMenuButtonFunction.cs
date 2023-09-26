@@ -7,9 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuButtonFunction : MonoBehaviour
 {
     public GameObject menu, loadingScreen, settingsPanel;
-    public bool settingsAan = false;
     public string sceneName;
-    public Movement moveScript;
 
 
     public void Start()
@@ -44,64 +42,6 @@ public class MainMenuButtonFunction : MonoBehaviour
         
         loadOperation.allowSceneActivation = true;
     }
-
-    public void DoSettingsMenu(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            Debug.Log("WERK NOU MEE JEZUS");
-
-            if (!settingsAan)
-            {
-                SettingsMenuOn();
-            }
-            else
-            {
-                SettingsMenuOff();
-
-            }
-            settingsAan = !settingsAan;
-        }
-    }
-
-    public void DoSettingsMenuButton()
-    {
-            Debug.Log("WERK NOU MEE JEZUS");
-
-            if (!settingsAan)
-            {
-                SettingsMenuOn();
-            }
-            else
-            {
-                SettingsMenuOff();
-
-            }
-            settingsAan = !settingsAan;
-    }
-
-    public void SettingsMenuOn()
-    {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        settingsPanel.gameObject.SetActive(true);
-        Time.timeScale = 0;
-        moveScript.enabled = false;
-    }
-
-
-    public void SettingsMenuOff()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        settingsPanel.gameObject.SetActive(false);
-        Time.timeScale = 1;
-        moveScript.enabled = true;
-    }
-
-  
-
-
 }
 
 
