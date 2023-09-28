@@ -8,7 +8,6 @@ public class Wave
     public WaveGroup[] enemies;
 
     [System.Serializable]
-
     public class WaveGroup
     {
         public GameObject enemy;

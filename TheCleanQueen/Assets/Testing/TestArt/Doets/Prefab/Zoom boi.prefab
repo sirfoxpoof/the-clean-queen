@@ -110,4 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c3498edc2625044a9c0919023509ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemies: {fileID: 11400000, guid: 21027bf62abd8634291279868cdd90a0, type: 2}
   speed: 10
+  turn: 2

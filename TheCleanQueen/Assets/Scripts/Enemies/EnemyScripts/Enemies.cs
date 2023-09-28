@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
-    public float speed;
+    public SpawnScribtableObject enemies;
+
+    public float speed, turn;
     private Transform target;
     private int waypoint = 0;
 
@@ -18,12 +20,14 @@ public class Enemies : MonoBehaviour
     private void Update()
     {
         dir = target.position - transform.position;
-        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+        transform.Translate(dir.normalized * enemies.speed * Time.deltaTime, Space.World);
+        transform.localRotation = Quaternion.Euler( dir.normalized * turn * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, target.position) <= 0.1f)
         {
             NextWaypoint();
         }
+       // print(enemies.damage);
     }
 
     void NextWaypoint()
