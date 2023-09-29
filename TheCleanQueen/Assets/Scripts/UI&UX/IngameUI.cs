@@ -71,18 +71,14 @@ public class IngameUI : MonoBehaviour
     {
         if (context.performed)
         {
-
-            Debug.Log("niet zo irritant doen <3");
-            moveScript.enabled = false;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            Time.timeScale = 0;
-            towerMenu.SetActive(true);
-            towerButton.SetActive(false);
-            towermenuOn = true;
-            PlayerPrefs.SetInt("ShowTutorial", 0);
-
-
+                moveScript.enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                Time.timeScale = 0;
+                towerMenu.SetActive(true);
+                towerButton.SetActive(false);
+                towermenuOn = true;
+                PlayerPrefs.SetInt("ShowTutorial", 0);
         }
     }
 
@@ -159,12 +155,21 @@ public class IngameUI : MonoBehaviour
 
     public void SettingsMenuOn()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        settingsPanel.gameObject.SetActive(true);
-        Time.timeScale = 0;
-        moveScript.enabled = false;
-        tutorialText.SetActive(false);
+        if(towermenuOn == true)
+        {
+            CloseTower();
+        }
+        else
+        {
+            Debug.Log("hoereding");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            settingsPanel.gameObject.SetActive(true);
+            Time.timeScale = 0;
+            moveScript.enabled = false;
+            tutorialText.SetActive(false);
+        }
+        
     }
 
     public void SettingsMenuOff()
