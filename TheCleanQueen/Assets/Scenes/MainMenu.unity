@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 022e71752654d3f4fa0cbe71b312ad20, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.926359, g: 0.32274467, b: 0.51847, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3955,14 +3955,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743066641}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.043128833, y: -0.9554961, z: -0.23089874, w: -0.17847401}
+  m_LocalPosition: {x: 0, y: -1817.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -25.205, y: 516.487, z: 10.497}
 --- !u!114 &743066645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4646,7 +4646,6 @@ MonoBehaviour:
   menu: {fileID: 0}
   loadingScreen: {fileID: 0}
   settingsPanel: {fileID: 0}
-  settingsAan: 0
   sceneName: 
 --- !u!114 &811191429
 MonoBehaviour:
@@ -5733,7 +5732,6 @@ MonoBehaviour:
   menu: {fileID: 1442565113}
   loadingScreen: {fileID: 527757344}
   settingsPanel: {fileID: 435767935}
-  settingsAan: 0
   sceneName: 
 --- !u!1 &1036327902
 GameObject:
@@ -9067,7 +9065,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7d3724506eb0c8d4ba306989815f4f81, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 46eb086183568814da8b1bf2e70ca9b1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

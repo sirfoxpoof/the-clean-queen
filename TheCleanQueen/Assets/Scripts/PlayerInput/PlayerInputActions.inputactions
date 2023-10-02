@@ -22,24 +22,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "219e5777-e9aa-4f16-898f-32024d66c3ee",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Sprint",
-                    "type": "Button",
-                    "id": "cc2b9bc0-9a2f-4c72-9204-58e0b5a4fbda",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -108,33 +90,11 @@
                     "action": "WASD",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "36362d32-0b6b-431a-adac-78fde5b116a9",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "db28e147-d1b4-40a3-81bd-cf2b3438dd27",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
         {
-            "name": "UI",
+            "name": "PlayerActionMap",
             "id": "f028c6f8-bc3e-46e5-ba90-8456b5ac6a3e",
             "actions": [
                 {
@@ -159,6 +119,33 @@
                     "name": "CloseTower",
                     "type": "Button",
                     "id": "9a0d7a25-174a-49e1-889c-5bd865e2c9a0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "ad60b2ca-a758-4390-b994-a0df70bf0a5e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "6d513e36-5d15-42f8-a51c-94610339fc7a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "putDownTower",
+                    "type": "Button",
+                    "id": "8b3694fc-790e-4c12-b0ea-c5000425fd76",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -196,6 +183,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "CloseTower",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d8582e8e-9fc7-4cc9-9f79-96ea0fd02261",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8627fe83-bba2-44bc-b238-0b12c5c34f50",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3aac2228-25f5-42d3-a614-44667c2b88d5",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "putDownTower",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

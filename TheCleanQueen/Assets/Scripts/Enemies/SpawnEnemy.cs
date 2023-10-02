@@ -1,32 +1,83 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
 {
+    public static int enemiesAlive;
 
-    public Transform  start;
-    public GameObject enemy1;
-    //public Transform finnish;
+    public Transform start;
 
-    public Transform[] pointss;
+    public Wave[] waves;
 
-    private void Start()
+    private int enemyIndex = 0;
+    public float timeBetweenWaves = 5f, countdown = 5f; 
+
+    private void OnEnable()
     {
-        StartCoroutine(EnemySpawn());
+        enemiesAlive = 0;
     }
 
-    private IEnumerator EnemySpawn()
+    private void Update()
     {
-       
-        for (int i = 0; i < 10; i++)
+        if (enemiesAlive > 0)
         {
-            yield return new WaitForSeconds(1f);
-            GameObject newObject = (Instantiate(enemy1, start));
-
-            //newObject.GetComponent<NavMesh>().finish = finnish;
-            newObject.GetComponent<NavMesh>().points = pointss;
+            return;
         }
+      
+        if (countdown <= 0)
+        {
+            StartCoroutine(SpawnWave());
+            countdown = timeBetweenWaves;
+
+            return;
+        }
+
+        countdown -= Time.deltaTime;
+        //Debug.Log(countdown);
+    }
+
+    private IEnumerator SpawnWave()
+    {
+
+        if (waves.Length > enemyIndex)
+        {
+            Wave wave = waves[enemyIndex];
+            for (int z = 0; z < wave.enemies.Length; z++)
+            {
+                for (int i = 0; i < wave.enemies[z].count; i++)
+                {
+                    EnemySpawn(wave.enemies[z].enemy);
+                    yield return new WaitForSeconds(1f / wave.rate);
+                }
+            }
+            enemyIndex++;
+        }
+        else
+        {
+            this.enabled = false;
+        }
+        /*Wave wave = waves[enemyIndex];
+
+        for (int i = 0; i < wave.count; i++)
+        {
+            EnemySpawn(wave.enemy);
+            yield return new WaitForSeconds(1f/ wave.rate);
+           
+        }
+
+        enemyIndex++;*/
+
+
+        Debug.Log(enemyIndex);
+    }
+
+    private void EnemySpawn(GameObject enemy)
+    {
+        GameObject newObject = (Instantiate(enemy, start));
+
+        enemiesAlive++;
     }
 }
