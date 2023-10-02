@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainBase : MonoBehaviour
 {
-    public GameObject baseProtect, emny, gameOverPanel;
+    public GameObject baseProtect, gameOverPanel;
     public Transform finish;
 
     public int health = 20, emnyDamage = 5;
