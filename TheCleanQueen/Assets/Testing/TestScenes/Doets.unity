@@ -1773,6 +1773,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 87294319}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &95381816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7947030546531295761, guid: abcf702f4d413c443a71f304fd24621e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2037475917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &103892179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1443266864426836313, guid: f2a13af70b2a4ff4eaec2757057a23e3,
@@ -15292,7 +15298,6 @@ MonoBehaviour:
   rotateKut: {fileID: 9955861}
   range: 4
   speed: 5
-  enemyTag: Enemy
 --- !u!1 &1486578417
 GameObject:
   m_ObjectHideFlags: 0
@@ -16327,6 +16332,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2037475917}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1552847897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95381816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c1f001776cd9549bea489e870c6469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateKut: {fileID: 1552847896}
+  range: 4
+  speed: 10
 --- !u!4 &1558134226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1443266864426836313, guid: f2a13af70b2a4ff4eaec2757057a23e3,
