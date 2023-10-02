@@ -12,7 +12,7 @@ public class Tower : MonoBehaviour
 
     private GameObject nearestEnemy;
 
-    public string enemyTag = "Enemy";
+   
 
     void Start()
     {
@@ -21,7 +21,7 @@ public class Tower : MonoBehaviour
 
     void TowerUpdate()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         shortDistance = Mathf.Infinity;
         nearestEnemy = null; 

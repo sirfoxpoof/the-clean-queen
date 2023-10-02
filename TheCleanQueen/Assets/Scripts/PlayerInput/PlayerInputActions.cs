@@ -163,15 +163,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""putDownTower"",
-                    ""type"": ""Button"",
-                    ""id"": ""8b3694fc-790e-4c12-b0ea-c5000425fd76"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -229,17 +220,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Sprint"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3aac2228-25f5-42d3-a614-44667c2b88d5"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""putDownTower"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -257,7 +237,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_PlayerActionMap_CloseTower = m_PlayerActionMap.FindAction("CloseTower", throwIfNotFound: true);
         m_PlayerActionMap_Jump = m_PlayerActionMap.FindAction("Jump", throwIfNotFound: true);
         m_PlayerActionMap_Sprint = m_PlayerActionMap.FindAction("Sprint", throwIfNotFound: true);
-        m_PlayerActionMap_putDownTower = m_PlayerActionMap.FindAction("putDownTower", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -378,7 +357,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerActionMap_CloseTower;
     private readonly InputAction m_PlayerActionMap_Jump;
     private readonly InputAction m_PlayerActionMap_Sprint;
-    private readonly InputAction m_PlayerActionMap_putDownTower;
     public struct PlayerActionMapActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -388,7 +366,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @CloseTower => m_Wrapper.m_PlayerActionMap_CloseTower;
         public InputAction @Jump => m_Wrapper.m_PlayerActionMap_Jump;
         public InputAction @Sprint => m_Wrapper.m_PlayerActionMap_Sprint;
-        public InputAction @putDownTower => m_Wrapper.m_PlayerActionMap_putDownTower;
         public InputActionMap Get() { return m_Wrapper.m_PlayerActionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -413,9 +390,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
-            @putDownTower.started += instance.OnPutDownTower;
-            @putDownTower.performed += instance.OnPutDownTower;
-            @putDownTower.canceled += instance.OnPutDownTower;
         }
 
         private void UnregisterCallbacks(IPlayerActionMapActions instance)
@@ -435,9 +409,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
-            @putDownTower.started -= instance.OnPutDownTower;
-            @putDownTower.performed -= instance.OnPutDownTower;
-            @putDownTower.canceled -= instance.OnPutDownTower;
         }
 
         public void RemoveCallbacks(IPlayerActionMapActions instance)
@@ -467,6 +438,5 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnCloseTower(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
-        void OnPutDownTower(InputAction.CallbackContext context);
     }
 }
