@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemies : MonoBehaviour
 {
     public SpawnScribtableObject enemies;
+    public TowerScribtableObject towers;
 
     public float speed, turn;
     private Transform target;
@@ -27,7 +28,8 @@ public class Enemies : MonoBehaviour
         {
             NextWaypoint();
         }
-       // print(enemies.damage);
+
+        Debug.Log(enemies.health);
     }
 
     void NextWaypoint()
@@ -41,6 +43,20 @@ public class Enemies : MonoBehaviour
         }
         waypoint++;
         target = Waypoints.points[waypoint];   
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Tower"))
+        {
+            enemies.health -= towers.damage;
+        }
+
+        if(enemies.health <= 0)
+        {
+            Destroy(gameObject); 
+            return;
+        }
     }
 }
 

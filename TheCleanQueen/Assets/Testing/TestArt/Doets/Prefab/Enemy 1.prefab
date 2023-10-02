@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7463585284543346648}
   m_Layer: 0
   m_Name: Enemy 1
-  m_TagString: Enemy1
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7932761380143939432}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -112,5 +112,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies: {fileID: 11400000, guid: 6d72e72546ac1b44a92ee5b6f58a00e5, type: 2}
+  towers: {fileID: 11400000, guid: 6d9431d68b2340a4eac393a3b0f70678, type: 2}
   speed: 20
   turn: 2

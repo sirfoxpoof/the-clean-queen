@@ -26,8 +26,8 @@ public class Movement : MonoBehaviour
         input = new PlayerInputActions();
         rb = GetComponent<Rigidbody>();
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
     }
 
     private void OnEnable()

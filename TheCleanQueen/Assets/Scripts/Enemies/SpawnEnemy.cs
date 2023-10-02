@@ -36,7 +36,7 @@ public class SpawnEnemy : MonoBehaviour
         }
 
         countdown -= Time.deltaTime;
-        Debug.Log(countdown);
+        //Debug.Log(countdown);
     }
 
     private IEnumerator SpawnWave()
