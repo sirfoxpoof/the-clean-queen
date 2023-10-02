@@ -158,6 +158,7 @@ public class IngameUI : MonoBehaviour
         if(towermenuOn == true)
         {
             CloseTower();
+            settingsAan = !settingsAan;
         }
         else
         {
