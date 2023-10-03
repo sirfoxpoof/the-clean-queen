@@ -82,24 +82,7 @@ public class IngameUI : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("TowerMenu"))
-        {
-            towerButton.SetActive(true);
-            
-
-        }
-    }
-    public void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("TowerMenu"))
-        {
-            towerButton.SetActive(false);
-
-        }
-
-    }
+    
 
 
     public void TowerCamSwitch()
