@@ -8,11 +8,13 @@ public class MainBase : MonoBehaviour
     public GameObject baseProtect, gameOverPanel;
     public Transform finish;
 
-    public int health = 20, emnyDamage = 5;
+    public int health, emnyDamage;
     private bool gameOver;
 
     public Movement move;
     public SpawnEnemy spawnEnemy;
+    public SpawnScribtableObject enemies;
+
 
     private void Start()
     {
@@ -39,9 +41,9 @@ public class MainBase : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy1"))
+        if (other.CompareTag("Enemy"))
         {
-            health -= emnyDamage;
+            health -= enemies.damage;
         }
     }
 

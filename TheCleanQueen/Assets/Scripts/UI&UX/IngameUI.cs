@@ -11,7 +11,7 @@ public class IngameUI : MonoBehaviour
     public Movement moveScript;
     public Camera mainCam, towerCam;
     public string sceneName;
-    public bool towermenuOn = false, settingsAan = false;
+    public bool towermenuOn = false, settingsAan = false, topDown = false;
     
 
     public void Start()
@@ -44,6 +44,13 @@ public class IngameUI : MonoBehaviour
                 tutorialText.SetActive(false);
             }
         }
+
+        if (!topDown)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+
     }
 
     public void CloseTowerMenu(InputAction.CallbackContext context)
@@ -91,6 +98,7 @@ public class IngameUI : MonoBehaviour
         towerCam.enabled = true;
         towerMenu.SetActive(false);
         camSwitchButton.SetActive(true);
+        topDown = true;
     }
 
     public void MainCamSwitch()
@@ -99,6 +107,7 @@ public class IngameUI : MonoBehaviour
         towerCam.enabled = false;
         towerMenu.SetActive(true);
         camSwitchButton.SetActive(false);
+        topDown = false;
     }
 
     public void DoSettingsMenu(InputAction.CallbackContext context)

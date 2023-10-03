@@ -19231,13 +19231,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseProtect: {fileID: 845315170}
-  emny: {fileID: 7932761380143939432, guid: 5d0fdfac4476e1047b3314c39f41d904, type: 3}
   gameOverPanel: {fileID: 65898577}
   finish: {fileID: 1872261063}
   health: 100
   emnyDamage: 5
   move: {fileID: 904371498}
   spawnEnemy: {fileID: 751856945}
+  enemies: {fileID: 0}
 --- !u!1001 &1883176016
 PrefabInstance:
   m_ObjectHideFlags: 0
