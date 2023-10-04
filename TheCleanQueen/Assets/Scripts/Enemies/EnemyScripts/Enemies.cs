@@ -8,7 +8,7 @@ public class Enemies : MonoBehaviour
     //public TowerScribtableObject towers;
 
     public int enemyHealth, enemyDamage;
-    public float speed, turn;
+    public float speed, turn = 10;
     private Transform target;
     private int waypoint = 0;
 
@@ -26,7 +26,8 @@ public class Enemies : MonoBehaviour
     {
         dir = target.position - transform.position;
         transform.Translate(dir.normalized * enemies.speed * Time.deltaTime, Space.World);
-        transform.localRotation = Quaternion.Euler( dir.normalized * turn * Time.deltaTime);
+        //transform.localRotation = Quaternion.Euler(transform.forward * turn * Time.deltaTime);
+        transform.LookAt(target.position * turn * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, target.position) <= 0.1f)
         {

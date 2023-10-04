@@ -113,8 +113,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies: {fileID: 11400000, guid: 21027bf62abd8634291279868cdd90a0, type: 2}
   enemyHealth: 0
+  enemyDamage: 0
   speed: 10
-  turn: 2
+  turn: 10
 --- !u!54 &1673782638557071225
 Rigidbody:
   m_ObjectHideFlags: 0
