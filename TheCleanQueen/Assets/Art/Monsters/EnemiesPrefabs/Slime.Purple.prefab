@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5978271864269471427}
   - component: {fileID: 4380978394849764127}
   - component: {fileID: 6871622685883177501}
+  - component: {fileID: 3829468918688856308}
+  - component: {fileID: 3541035740670377274}
   m_Layer: 0
   m_Name: Slime.Purple
   m_TagString: Untagged
@@ -101,6 +103,35 @@ MonoBehaviour:
   towers: {fileID: 0}
   speed: 0
   turn: 0
+--- !u!65 &3829468918688856308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638968426259734842}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.111759, y: 0.8000003, z: 1.085085}
+  m_Center: {x: 0.0009998381, y: 0.34791088, z: -0.046439648}
+--- !u!54 &3541035740670377274
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638968426259734842}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1118836432495118978
 PrefabInstance:
   m_ObjectHideFlags: 0
