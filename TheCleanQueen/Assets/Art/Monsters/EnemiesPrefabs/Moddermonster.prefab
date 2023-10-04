@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1392919537958193603}
   - component: {fileID: 7179749392763850780}
   m_Layer: 0
-  m_Name: Moddermonster
+  m_Name: MODDERMONSTER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,6 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4270541663634849887}
+  - {fileID: 5723027785805718761}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -225,4 +226,89 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3658051395418356947, guid: 8be71dce07f08564781be3d276b22fb3,
     type: 3}
   m_PrefabInstance: {fileID: 684548623538486412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5253165353506079490
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 225048229902611116}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9803922
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fa27a77b6176be47b5c4898e1d14a48, type: 2}
+    - target: {fileID: 919132149155446097, guid: 5a6a5b891e309a343a7822d867a4f52c,
+        type: 3}
+      propertyPath: m_Name
+      value: MODDERMONSTER 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5a6a5b891e309a343a7822d867a4f52c, type: 3}
+--- !u!4 &5723027785805718761 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5a6a5b891e309a343a7822d867a4f52c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5253165353506079490}
   m_PrefabAsset: {fileID: 0}
