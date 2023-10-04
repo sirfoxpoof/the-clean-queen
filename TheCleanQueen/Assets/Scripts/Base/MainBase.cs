@@ -13,7 +13,7 @@ public class MainBase : MonoBehaviour
 
     public Movement move;
     public SpawnEnemy spawnEnemy;
-    public SpawnScribtableObject enemies;
+    public Enemies enemies;
 
 
     private void Start()
@@ -43,7 +43,7 @@ public class MainBase : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            health -= enemies.damage;
+            health -= enemies.enemyDamage;
         }
     }
 

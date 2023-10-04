@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
-    private Transform tower;
+    public Enemies emny;
+    public TowerScribtableObject towers;
+
+    private Transform enemy;
     public Transform rotateKut;
     public int range = 4;
     private float enemyDistance, shortDistance;
     public float speed = 10f;
 
     private GameObject nearestEnemy;
+    private GameObject[] enemies;
 
-   
 
     void Start()
     {
@@ -21,7 +24,7 @@ public class Tower : MonoBehaviour
 
     void TowerUpdate()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         shortDistance = Mathf.Infinity;
         nearestEnemy = null; 
@@ -29,34 +32,47 @@ public class Tower : MonoBehaviour
         foreach (GameObject enemy in enemies)
         {
             enemyDistance = Vector3.Distance(transform.position, enemy.transform.position);
-
+            
             if (enemyDistance < shortDistance)
             {
                 shortDistance = enemyDistance;
-                nearestEnemy = enemy;   
+                nearestEnemy = enemy;
+              
             }
 
             if(nearestEnemy != null && shortDistance <= range)
             {
-                tower = nearestEnemy.transform;
+                this.enemy = nearestEnemy.transform;
             }
             else
             {
-                tower = null;
+                this.enemy = null;
             }
+
+           
         }
     }
+
+   /* private IEnumerator DoDamage()
+    {
+
+        yield return new WaitForSeconds(0.5f);
+        emny.enemyHealth -= towers.damage;
+    }*/
+
     void Update() 
     {
-        if(tower == null)
+        if(enemy == null)
         {
             return;
         }
 
-        Vector3 dir = tower.position - transform.position;
+        Vector3 dir = enemy.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = Quaternion.Lerp(rotateKut.rotation, lookRotation, Time.deltaTime * speed).eulerAngles;
         rotateKut.rotation = Quaternion.Euler(0, rotation.y, 0);
+
+       // Debug.Log(enemies.health);
     }
 
     private void OnDrawGizmos()
@@ -70,6 +86,7 @@ public class Tower : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
            TowerUpdate();
+           // GetComponent<Enemies>
         }
     }
 }
