@@ -12,7 +12,9 @@ public class IngameUI : MonoBehaviour
     public Camera mainCam, towerCam;
     public string sceneName;
     public bool towermenuOn = false, settingsAan = false, topDown = false;
-    
+
+
+    public TowerPlace buildTower;
 
     public void Start()
     {
@@ -20,7 +22,7 @@ public class IngameUI : MonoBehaviour
         camSwitchButton.SetActive(false);
         towerButton.SetActive(false);
         tutorialText.SetActive(true);
-
+        buildTower.enabled = false;
 
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
@@ -45,10 +47,17 @@ public class IngameUI : MonoBehaviour
             }
         }
 
-        if (!topDown)
+        if (topDown)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            buildTower.enabled = true;
+        }
+        else
+        {
+           /* Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;*/
+            buildTower.enabled = false;
         }
 
     }
