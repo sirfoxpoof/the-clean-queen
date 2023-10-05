@@ -7,33 +7,50 @@ public class TowerPlace : MonoBehaviour
     private Color hoverColor, startColor;
     private Renderer ren;
     private GameObject towers;
+    //public Transform[] towerVakjes;
 
+    public IngameUI gameUI;
+
+  
     private void Start()
     {
         hoverColor = Color.magenta;
         ren = GetComponent<Renderer>();
         startColor = ren.material.color;
-       
     }
 
     private void OnMouseDown()
     {
-        if(towers != null)
+        if (gameUI.topDown)
         {
-            Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAH");
-            return;
-        }
+            if (towers != null)
+            {
+                Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAH");
+                return;
+            }
 
-        GameObject buildTower = TowerBuild.instance.GetBuildTower();
-        towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
+            GameObject buildTower = TowerBuild.instance.GetBuildTower();
+            towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
+        }
+       
     }
     void OnMouseEnter()
     {
-       ren.material.color = hoverColor;
+        if (gameUI.topDown)
+        {
+          ren.material.color = hoverColor;
+        }
+         
+        
 
     }
     private void OnMouseExit()
     {
-        ren.material.color = startColor;
+        
+        if (gameUI.topDown)
+        {
+            ren.material.color = startColor;
+        }
+        
     }
 }

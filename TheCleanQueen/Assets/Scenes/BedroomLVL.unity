@@ -653,6 +653,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vloer (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3738639572972306939, guid: 2812c2f5dbd2b3c4ca7603ffe1731c1b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4082935612645825345, guid: 2812c2f5dbd2b3c4ca7603ffe1731c1b,
         type: 3}
       propertyPath: m_RootOrder
@@ -1262,6 +1267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41452190ed04a9447a545d09e6c1512c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUI: {fileID: 1244827101}
 --- !u!1 &310348527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,6 +2828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41452190ed04a9447a545d09e6c1512c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUI: {fileID: 1244827101}
 --- !u!1 &483884273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3371,6 +3378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41452190ed04a9447a545d09e6c1512c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUI: {fileID: 1244827101}
 --- !u!1001 &512806722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5790,6 +5798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41452190ed04a9447a545d09e6c1512c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUI: {fileID: 1244827101}
 --- !u!1 &787203797
 GameObject:
   m_ObjectHideFlags: 0
@@ -6411,6 +6420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41452190ed04a9447a545d09e6c1512c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUI: {fileID: 1244827101}
 --- !u!1 &844562368
 GameObject:
   m_ObjectHideFlags: 0
@@ -7193,6 +7203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41452190ed04a9447a545d09e6c1512c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUI: {fileID: 1244827101}
 --- !u!1 &953504199
 GameObject:
   m_ObjectHideFlags: 0
@@ -8151,6 +8162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41452190ed04a9447a545d09e6c1512c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUI: {fileID: 1244827101}
 --- !u!1 &1138049965
 GameObject:
   m_ObjectHideFlags: 0
@@ -8688,7 +8700,6 @@ MonoBehaviour:
   towermenuOn: 0
   settingsAan: 0
   topDown: 0
-  buildTower: {fileID: 0}
 --- !u!114 &1244827102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10523,6 +10534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41452190ed04a9447a545d09e6c1512c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUI: {fileID: 1244827101}
 --- !u!1 &1583932816
 GameObject:
   m_ObjectHideFlags: 0
@@ -12720,6 +12732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41452190ed04a9447a545d09e6c1512c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUI: {fileID: 1244827101}
 --- !u!1 &1996548039
 GameObject:
   m_ObjectHideFlags: 0
