@@ -44,6 +44,7 @@ public class MainBase : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             health -= enemies.enemyDamage;
+            
         }
     }
 

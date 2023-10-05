@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1120133089255801714}
   m_Layer: 0
   m_Name: bord
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies: {fileID: 11400000, guid: 52086b89bebc8ea46998f05c0e56cb8b, type: 2}
-  towers: {fileID: 11400000, guid: 6d9431d68b2340a4eac393a3b0f70678, type: 2}
+  enemyHealth: 0
+  enemyDamage: 0
   speed: 0
   turn: 0
 --- !u!65 &597955182010059354

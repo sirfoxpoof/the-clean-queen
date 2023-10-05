@@ -59,6 +59,7 @@ public class Enemies : MonoBehaviour
         if(enemyHealth <= 0)
         {
             Die();
+            SpawnEnemy.enemiesAlive--;
         }
     }
    

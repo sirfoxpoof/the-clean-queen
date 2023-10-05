@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6469752782190149990}
   m_Layer: 0
   m_Name: Slime.Blue
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies: {fileID: 11400000, guid: 9988a6b80013be746aabb4b3588d47fc, type: 2}
-  towers: {fileID: 0}
+  enemyHealth: 0
+  enemyDamage: 0
   speed: 0
   turn: 0
 --- !u!65 &1595539899488848532

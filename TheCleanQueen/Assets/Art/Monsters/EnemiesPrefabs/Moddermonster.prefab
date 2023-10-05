@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1392919537958193603}
   - component: {fileID: 7179749392763850780}
   m_Layer: 0
-  m_Name: MODDERMONSTER
-  m_TagString: Untagged
+  m_Name: Moddermonster
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies: {fileID: 11400000, guid: 6f9bb2093a179ac4b943d217fa134b45, type: 2}
-  towers: {fileID: 11400000, guid: 6d9431d68b2340a4eac393a3b0f70678, type: 2}
+  enemyHealth: 0
+  enemyDamage: 0
   speed: 0
   turn: 0
 --- !u!1001 &684548623538486412
