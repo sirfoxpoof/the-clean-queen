@@ -4,23 +4,25 @@ using UnityEngine;
 
 public class FootstepManager : MonoBehaviour
 {
-    public List<AudioClip> footSteps = new List<AudioClip>();
+    public AudioClip[] audioClips;
     
-    private List<AudioClip> currentList;
-
-    private AudioSource source;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        source = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlayStep()
+    public void Step()
     {
-        if (currentList == null)
-            return;
+        AudioClip clip = GetRandomClip();
+        audioSource.PlayOneShot(clip);
+        Debug.Log("kaka kut ding");
+        
+    }
 
-        AudioClip clip = currentList[Random.Range(0, currentList.Count)];
-        source.PlayOneShot(clip);
+    public AudioClip GetRandomClip()
+    {
+        return audioClips[UnityEngine.Random.Range(0, audioClips.Length)];
     }
 }
