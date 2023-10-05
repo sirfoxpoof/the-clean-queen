@@ -12,6 +12,7 @@ public class IngameUI : MonoBehaviour
     public Camera mainCam, towerCam;
     public string sceneName;
     public bool towermenuOn = false, settingsAan = false, topDown = false;
+    public TowerMenu towerMenuScript;
 
     
 
@@ -79,8 +80,10 @@ public class IngameUI : MonoBehaviour
 
     public void ShowTowerMenu(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (towerMenuScript.bijTafel)
         {
+            if (context.performed)
+            {
                 moveScript.enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -89,7 +92,10 @@ public class IngameUI : MonoBehaviour
                 towerButton.SetActive(false);
                 towermenuOn = true;
                 PlayerPrefs.SetInt("ShowTutorial", 0);
+            }
+
         }
+        
     }
 
     

@@ -5,13 +5,14 @@ using UnityEngine;
 public class TowerMenu : MonoBehaviour
 {
     public GameObject towerButton;
+    public bool bijTafel;
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("TowerMenu"))
         {
             towerButton.SetActive(true);
-
+            bijTafel = true;
 
         }
     }
@@ -20,7 +21,7 @@ public class TowerMenu : MonoBehaviour
         if (other.gameObject.CompareTag("TowerMenu"))
         {
             towerButton.SetActive(false);
-
+            bijTafel = false;
         }
 
     }
