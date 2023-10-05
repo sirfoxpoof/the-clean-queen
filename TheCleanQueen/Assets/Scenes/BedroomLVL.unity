@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 246848362}
   - component: {fileID: 246848361}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: JesusSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -966,7 +966,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1244827101}
         m_TargetAssemblyTypeName: IngameUI, Assembly-CSharp
         m_MethodName: SettingsMenuOff
         m_Mode: 1

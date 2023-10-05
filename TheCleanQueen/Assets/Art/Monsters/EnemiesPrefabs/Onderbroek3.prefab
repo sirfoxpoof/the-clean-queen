@@ -1232,7 +1232,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies: {fileID: 11400000, guid: 7428c7f5590e9e2449b5ba1d4856b8aa, type: 2}
-  towers: {fileID: 0}
+  enemyHealth: 0
+  enemyDamage: 0
   speed: 0
   turn: 0
 --- !u!65 &7144860807082848903
@@ -1246,8 +1247,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.9215279, y: 0.7628851, z: 1}
+  m_Center: {x: -0.1997926, y: 0.46470404, z: 0}
 --- !u!54 &4969839434841271433
 Rigidbody:
   m_ObjectHideFlags: 0

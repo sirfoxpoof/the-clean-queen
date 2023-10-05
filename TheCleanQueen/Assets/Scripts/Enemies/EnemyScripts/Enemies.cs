@@ -1,4 +1,4 @@
-        using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +8,7 @@ public class Enemies : MonoBehaviour
     //public TowerScribtableObject towers;
 
     public int enemyHealth, enemyDamage;
-    public float speed, turn = 10;
+    public float speed, turn = 2;
     private Transform target;
     private int waypoint = 0;
 
