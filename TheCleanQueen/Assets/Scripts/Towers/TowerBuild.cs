@@ -8,6 +8,9 @@ public class TowerBuild : MonoBehaviour
 
     private GameObject buildTower;
     public GameObject[] towerPrefabs;
+
+    public TowerBuy koopjes;
+
     private void Awake()
     {
         if(instance != null)
@@ -17,9 +20,26 @@ public class TowerBuild : MonoBehaviour
         }
         instance = this;
     }
-    private void Start()
+    
+
+    private void Update()
     {
-        buildTower = towerPrefabs[0];
+        if (koopjes.towOne)
+        {
+            buildTower = towerPrefabs[0];
+        }
+        if (koopjes.towTwo)
+        {
+            buildTower = towerPrefabs[1];
+        }
+        if (koopjes.towThree)
+        {
+            buildTower = towerPrefabs[2];
+        }
+        if (koopjes.towFour)
+        {
+            buildTower = towerPrefabs[3];
+        }
     }
 
     public GameObject GetBuildTower()

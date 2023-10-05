@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3553514555702001732}
   - component: {fileID: 8958889848197490707}
   m_Layer: 0
-  m_Name: Muur
+  m_Name: Muur20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
