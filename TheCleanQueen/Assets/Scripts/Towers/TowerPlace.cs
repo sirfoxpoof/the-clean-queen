@@ -6,11 +6,12 @@ public class TowerPlace : MonoBehaviour
 {
     private Color hoverColor, startColor;
     private Renderer ren;
-    private GameObject towers;
+    private GameObject[] towers;
     //public Transform[] towerVakjes;
 
     public IngameUI gameUI;
 
+    private bool towOne, towTwo, towThree, towFour;
   
     private void Start()
     {
@@ -29,8 +30,27 @@ public class TowerPlace : MonoBehaviour
                 return;
             }
 
-            GameObject buildTower = TowerBuild.instance.GetBuildTower();
-            towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
+            if (towOne)
+            {
+                GameObject buildTower = TowerBuild.instance.GetBuildTower();
+                towers[0] = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
+            }
+            if (towTwo)
+            {
+                GameObject buildTower = TowerBuild.instance.GetBuildTower();
+                towers[1] = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
+            }
+            if (towThree)
+            {
+                GameObject buildTower = TowerBuild.instance.GetBuildTower();
+                towers[2] = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
+            }
+            if (towFour)
+            {
+                GameObject buildTower = TowerBuild.instance.GetBuildTower();
+                towers[3] = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
+            }
+
         }
        
     }
@@ -40,9 +60,6 @@ public class TowerPlace : MonoBehaviour
         {
           ren.material.color = hoverColor;
         }
-         
-        
-
     }
     private void OnMouseExit()
     {
@@ -51,6 +68,23 @@ public class TowerPlace : MonoBehaviour
         {
             ren.material.color = startColor;
         }
-        
     }
+
+    public void TowerOne()
+    {
+        towOne = true;
+    }
+    public void TowerTwo()
+    {
+        towTwo = true;
+    }
+    public void TowerThree()
+    {
+        towThree = true;    
+    }
+    public void TowerFOur()
+    {
+        towFour = true;
+    }
+
 }
