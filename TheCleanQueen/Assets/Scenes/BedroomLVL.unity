@@ -651,12 +651,12 @@ PrefabInstance:
     - target: {fileID: 3738639572972306939, guid: 2812c2f5dbd2b3c4ca7603ffe1731c1b,
         type: 3}
       propertyPath: m_Name
-      value: Vloer (1)
+      value: plafond
       objectReference: {fileID: 0}
     - target: {fileID: 3738639572972306939, guid: 2812c2f5dbd2b3c4ca7603ffe1731c1b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4082935612645825345, guid: 2812c2f5dbd2b3c4ca7603ffe1731c1b,
         type: 3}
@@ -8693,6 +8693,7 @@ MonoBehaviour:
   towerButton: {fileID: 1712112673}
   settingsPanel: {fileID: 1695409172}
   tutorialText: {fileID: 568228516}
+  plafond: {fileID: 1379036502}
   moveScript: {fileID: 491839445}
   mainCam: {fileID: 844814632}
   towerCam: {fileID: 428469395}
@@ -9420,6 +9421,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369790259}
   m_CullTransparentMesh: 1
+--- !u!1 &1379036502 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3738639572972306939, guid: 2812c2f5dbd2b3c4ca7603ffe1731c1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 246244434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1384780714
 GameObject:
   m_ObjectHideFlags: 0

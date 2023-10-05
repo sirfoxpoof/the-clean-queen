@@ -7,7 +7,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class IngameUI : MonoBehaviour
 {
-    public GameObject towerMenu, camSwitchButton, towerButton, settingsPanel, tutorialText;
+    public GameObject towerMenu, camSwitchButton, towerButton, settingsPanel, tutorialText, plafond;
     public Movement moveScript;
     public Camera mainCam, towerCam;
     public string sceneName;
@@ -102,6 +102,7 @@ public class IngameUI : MonoBehaviour
         towerMenu.SetActive(false);
         camSwitchButton.SetActive(true);
         topDown = true;
+        plafond.SetActive(false);
     }
 
     public void MainCamSwitch()
@@ -111,6 +112,7 @@ public class IngameUI : MonoBehaviour
         towerMenu.SetActive(true);
         camSwitchButton.SetActive(false);
         topDown = false;
+        plafond.SetActive(true);
     }
 
     public void DoSettingsMenu(InputAction.CallbackContext context)
