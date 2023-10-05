@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
-    public Enemies emny;
+   /* public Enemies emny;
     public TowerScribtableObject towers;
 
     private Transform enemy;
@@ -53,12 +53,12 @@ public class Tower : MonoBehaviour
         }
     }
 
-   /* private IEnumerator DoDamage()
+   *//* private IEnumerator DoDamage()
     {
 
         yield return new WaitForSeconds(0.5f);
         emny.enemyHealth -= towers.damage;
-    }*/
+    }*//*
 
     void Update() 
     {
@@ -88,5 +88,5 @@ public class Tower : MonoBehaviour
            TowerUpdate();
            // GetComponent<Enemies>
         }
-    }
+    }*/
 }

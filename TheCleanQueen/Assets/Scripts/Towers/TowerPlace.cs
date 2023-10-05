@@ -7,19 +7,25 @@ public class TowerPlace : MonoBehaviour
     private Color hoverColor, startColor;
     private Renderer ren;
     private GameObject towers;
-   
 
     public IngameUI gameUI;
     
-   
-  
     private void Start()
     {
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
         hoverColor = Color.magenta;
         ren = GetComponent<Renderer>();
         startColor = ren.material.color;
     }
 
+    private void Update()
+    {
+        if(gameUI.topDown)
+        {
+            gameObject.GetComponent<MeshRenderer>().enabled = true;
+        }
+    }
+     
     private void OnMouseDown()
     {
         if (gameUI.topDown)
@@ -50,22 +56,5 @@ public class TowerPlace : MonoBehaviour
             ren.material.color = startColor;
         }
     }
-
-   /* public void TowerOne()
-    {
-        towOne = true;
-    }
-    public void TowerTwo()
-    {
-        towTwo = true;
-    }
-    public void TowerThree()
-    {
-        towThree = true;    
-    }
-    public void TowerFOur()
-    {
-        towFour = true;
-    }*/
 
 }

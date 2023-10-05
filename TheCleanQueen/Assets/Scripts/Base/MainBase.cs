@@ -8,12 +8,11 @@ public class MainBase : MonoBehaviour
     public GameObject baseProtect, gameOverPanel;
     public Transform finish;
 
-    public int health, emnyDamage;
+    public int health;
     private bool gameOver;
 
     public Movement move;
     public SpawnEnemy spawnEnemy;
-    public Enemies enemies;
 
 
     private void Start()
@@ -39,12 +38,13 @@ public class MainBase : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void TakeDamage(int damage)
     {
-        if (other.CompareTag("Enemy"))
+        health -= damage;
+
+        if(health <= 0)
         {
-            health -= enemies.enemyDamage;
-            
+            Destroy(baseProtect);
         }
     }
 
