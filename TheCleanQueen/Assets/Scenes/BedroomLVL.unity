@@ -5612,6 +5612,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4485418987269284072, guid: 1441b674d99497b4a8a4c3f7bc6ff37f,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1441b674d99497b4a8a4c3f7bc6ff37f, type: 3}
 --- !u!4 &768251460 stripped
@@ -7606,8 +7611,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99b65f0235c1cd46a0b772e77f91b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: {fileID: 1695409172}
-  loadingScreen: {fileID: 527757344}
   settingsPanel: {fileID: 1695409172}
   sceneName: 
 --- !u!1 &1036327902
@@ -9303,6 +9306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485418987269284072, guid: 1441b674d99497b4a8a4c3f7bc6ff37f,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1441b674d99497b4a8a4c3f7bc6ff37f, type: 3}
