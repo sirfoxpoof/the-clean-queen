@@ -7,9 +7,7 @@ public class FootstepManager : MonoBehaviour
     public AudioClip[] audioClips;
     
     public AudioSource audioSource;
-   
-   
-    // Start is called before the first frame update
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -19,8 +17,6 @@ public class FootstepManager : MonoBehaviour
     {
         AudioClip clip = GetRandomClip();
         audioSource.PlayOneShot(clip);
-        Debug.Log("kaka kut ding");
-        
     }
 
     public AudioClip GetRandomClip()
