@@ -98,9 +98,6 @@ public class IngameUI : MonoBehaviour
         
     }
 
-    
-
-
     public void TowerCamSwitch()
     {
         mainCam.enabled = false;

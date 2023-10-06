@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 208171048359446990}
   - component: {fileID: 3840525819062732395}
   - component: {fileID: 1344534132597961377}
+  - component: {fileID: 8372579205421052637}
   m_Layer: 0
   m_Name: Plafond10
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8372579205421052637
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695879653869228916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 0.20000084, z: 10}
+  m_Center: {x: 0, y: -0.100000076, z: 0}

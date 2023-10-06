@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2268659282159754553}
   - component: {fileID: 2942044684878959260}
   - component: {fileID: 1094596004580795990}
+  - component: {fileID: 1085650751010676976}
   m_Layer: 0
   m_Name: Muur deur (10 Meter)
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1085650751010676976
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454721179229489027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.002241, y: 3, z: 0.1382109}
+  m_Center: {x: 2.5512688, y: 1.5, z: 0.006905809}

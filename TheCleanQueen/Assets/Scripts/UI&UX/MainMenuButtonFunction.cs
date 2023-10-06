@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButtonFunction : MonoBehaviour
 {
-    public GameObject menu, loadingScreen, settingsPanel;
+    public GameObject /*menu, loadingScreen,*/ settingsPanel;
     public string sceneName;
 
 
     public void Start()
     {
         settingsPanel.gameObject.SetActive(false);
-        
+
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
         Cursor.lockState = CursorLockMode.None;
@@ -24,12 +24,12 @@ public class MainMenuButtonFunction : MonoBehaviour
         Application.Quit();
     }
 
-    public void LoadLevelButton(string levelToLoad)
+   /* public void LoadLevelButton(string levelToLoad)
     {
         Debug.Log("buttonknop");
         menu.SetActive(false);
         loadingScreen.SetActive(true);
-        
+
         StartCoroutine(LoadLevelASync(levelToLoad));
     }
 
@@ -39,9 +39,9 @@ public class MainMenuButtonFunction : MonoBehaviour
         Time.timeScale = 1;
         loadOperation.allowSceneActivation = false;
         yield return new WaitForSeconds(2f);
-        
+
         loadOperation.allowSceneActivation = true;
-    }
+    }*/
 }
 
 
