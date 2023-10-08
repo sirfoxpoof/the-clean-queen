@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemies : MonoBehaviour
@@ -52,11 +53,13 @@ public class Enemies : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        
     }
 
     public void DoDamage(int damage)
     {
         enemyHealth -= damage;
+
         if(enemyHealth <= 0)
         {
             Die();

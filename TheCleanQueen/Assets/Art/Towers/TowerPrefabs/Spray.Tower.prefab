@@ -113,7 +113,7 @@ Transform:
   m_GameObject: {fileID: 8546379084480784288}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.91679, y: 5.91679, z: 5.91679}
+  m_LocalScale: {x: 2.9968874, y: 2.9968874, z: 2.9968874}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5059502180252887593}
@@ -196,6 +196,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies: []
   rotateKut: {fileID: 5059502180252887593}
-  damage: 10
+  damage: 2
   fireRate: 1.1
   enemiess: {fileID: 0}

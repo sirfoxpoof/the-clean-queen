@@ -23,7 +23,13 @@ public class TowerExample : MonoBehaviour
             return;
         }
         
-
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            if (enemies[i] == null)
+            {
+                enemies.RemoveAt(i);
+            }
+        }
         Vector3 dir = enemies[0].transform.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = Quaternion.Lerp(rotateKut.rotation, lookRotation, Time.deltaTime * rotationSpeed).eulerAngles;
@@ -48,22 +54,18 @@ public class TowerExample : MonoBehaviour
     }
 
     private void OnTriggerExit(Collider other)
-    {
-        
+    { 
         if (other.transform.tag == "Enemy")
         {
             RemoveEnemyFromList(other.transform.GetComponent<Enemies>());
         }
     }
 
-  
-
     public void Attack()
     {
         if (enemies.Count > 0)
         {
             enemies[0].DoDamage(damage);
-
         }
     }
 }

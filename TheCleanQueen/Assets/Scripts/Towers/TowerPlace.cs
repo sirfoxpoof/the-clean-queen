@@ -38,6 +38,11 @@ public class TowerPlace : MonoBehaviour
             GameObject buildTower = TowerBuild.instance.GetBuildTower();
             towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
 
+            gameUI.MainCamSwitch();
+            gameUI.towerMenu.SetActive(true);
+
+            //gameObject.GetComponent<MeshRenderer>().enabled = false;
+           
         }
        
     }
