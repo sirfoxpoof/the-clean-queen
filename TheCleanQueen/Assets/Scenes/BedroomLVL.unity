@@ -1516,7 +1516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305622435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.16, y: 0, z: -5.63}
+  m_LocalPosition: {x: 2.16, y: 0, z: -7.3}
   m_LocalScale: {x: 1.1219953, y: 0.23821582, z: 1.0110596}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8264,7 +8264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941078944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.65, y: 0, z: -1.16}
+  m_LocalPosition: {x: -3.33, y: 0, z: -1.16}
   m_LocalScale: {x: 1.1219953, y: 0.23821582, z: 1.0110596}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10288,6 +10288,7 @@ MonoBehaviour:
   camSwitchButton: {fileID: 706832548}
   towerButton: {fileID: 1712112673}
   settingsPanel: {fileID: 1695409172}
+  winPanel: {fileID: 632913541}
   tutorialText: {fileID: 568228516}
   plafond: {fileID: 2043207626}
   mainCam: {fileID: 844814632}

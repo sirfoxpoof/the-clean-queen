@@ -41,7 +41,7 @@ public class TowerPlace : MonoBehaviour
             gameUI.MainCamSwitch();
             gameUI.towerMenu.SetActive(true);
 
-            //gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
            
         }
        

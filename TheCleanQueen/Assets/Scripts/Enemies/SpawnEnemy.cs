@@ -61,7 +61,10 @@ public class SpawnEnemy : MonoBehaviour
         }
         else
         {
-            wavesClear = true;
+            if(enemiesAlive <= 0)
+            {
+                wavesClear = true;
+            }
             this.enabled = false;
         }
         /*Wave wave = waves[enemyIndex];
