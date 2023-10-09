@@ -13,7 +13,7 @@ public class Splash : MonoBehaviour
     }
     public IEnumerator SplashScreen()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene("MainMenu");
     }
 
