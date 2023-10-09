@@ -8,12 +8,13 @@ using static UnityEngine.Rendering.DebugUI;
 public class IngameUI : MonoBehaviour
 {
     public GameObject towerMenu, camSwitchButton, towerButton, settingsPanel, tutorialText, plafond;
-    public Movement moveScript;
     public Camera mainCam, towerCam;
     public string sceneName;
     public bool towermenuOn = false, settingsAan = false, topDown = false;
-    public TowerMenu towerMenuScript;
 
+    public TowerMenu towerMenuScript;
+    public Movement moveScript;
+    public SpawnEnemy spawnEnemy;
     
 
     public void Start()
@@ -22,7 +23,7 @@ public class IngameUI : MonoBehaviour
         camSwitchButton.SetActive(false);
         towerButton.SetActive(false);
         tutorialText.SetActive(true);
-       
+        
 
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
@@ -53,7 +54,18 @@ public class IngameUI : MonoBehaviour
             Cursor.visible = true;
           
         }
-       
+         
+        if(spawnEnemy.wavesClear)
+        {
+
+            //winscreen.enabled(true)
+            moveScript.enabled = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0;
+            
+            
+        }
 
     }
 
