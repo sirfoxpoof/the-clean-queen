@@ -17,6 +17,8 @@ public class VolumeSet : MonoBehaviour
         {
             mixer.SetFloat("MasterVolume", PlayerPrefs.GetFloat("MasterVolume"));
             mixer.SetFloat("MusicVolume", PlayerPrefs.GetFloat("MusicVolume"));
+            masterVol.value = PlayerPrefs.GetFloat("MasterVolume");
+            musicVol.value = PlayerPrefs.GetFloat("MusicVolume");
             SetSliders();
         }
         
@@ -49,6 +51,5 @@ public class VolumeSet : MonoBehaviour
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
-        print("fullscreen toggle");
     }
 }

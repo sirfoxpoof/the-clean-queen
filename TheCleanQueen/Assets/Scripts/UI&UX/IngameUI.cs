@@ -33,10 +33,6 @@ public class IngameUI : MonoBehaviour
         {
             PlayerPrefs.SetInt("ShowTutorial", 1);
         }
-
-        Debug.Log(PlayerPrefs.GetInt("ShowTutorial"));
-
-
     }
 
     public void Update()
@@ -132,7 +128,7 @@ public class IngameUI : MonoBehaviour
     {
         if (context.performed)
         {
-            Debug.Log("WERK NOU MEE JEZUS");
+            /*Debug.Log("WERK NOU MEE JEZUS");*/
 
             if (!settingsAan)
             {
@@ -149,7 +145,7 @@ public class IngameUI : MonoBehaviour
 
     public void DoSettingsMenuButton()
     {
-        Debug.Log("WERK NOU MEE JEZUS");
+       /* Debug.Log("WERK NOU MEE JEZUS");*/
 
         if (!settingsAan)
         {
@@ -172,7 +168,7 @@ public class IngameUI : MonoBehaviour
         }
         else
         {
-            Debug.Log("hoereding");
+            /*Debug.Log("hoereding");*/
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             settingsPanel.gameObject.SetActive(true);
