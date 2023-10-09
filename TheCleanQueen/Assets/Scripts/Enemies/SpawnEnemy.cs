@@ -13,10 +13,13 @@ public class SpawnEnemy : MonoBehaviour
     public Wave[] waves;
 
     private int enemyIndex = 0;
-    public float timeBetweenWaves = 5f, countdown = 5f; 
+    public float timeBetweenWaves = 5f, countdown = 5f;
+
+    public bool wavesClear;
 
     private void OnEnable()
     {
+        wavesClear = false; 
         enemiesAlive = 0;
     }
 
@@ -45,11 +48,12 @@ public class SpawnEnemy : MonoBehaviour
         if (waves.Length > enemyIndex)
         {
             Wave wave = waves[enemyIndex];
-            for (int z = 0; z < wave.enemies.Length; z++)
+
+            for (int a = 0; a < wave.enemies.Length; a++)
             {
-                for (int i = 0; i < wave.enemies[z].count; i++)
+                for (int i = 0; i < wave.enemies[a].count; i++)
                 {
-                    EnemySpawn(wave.enemies[z].enemy);
+                    EnemySpawn(wave.enemies[a].enemy);
                     yield return new WaitForSeconds(1f / wave.rate);
                 }
             }
@@ -57,6 +61,7 @@ public class SpawnEnemy : MonoBehaviour
         }
         else
         {
+            wavesClear = true;
             this.enabled = false;
         }
         /*Wave wave = waves[enemyIndex];
