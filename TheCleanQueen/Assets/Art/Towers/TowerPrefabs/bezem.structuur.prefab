@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9262c30c5894a1b46b8b21da3a032372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swingDamage: 5
+  swingDamage: 2
 --- !u!4 &1813710350291252972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfaa2655d353b4540ace9436024a6b3c,

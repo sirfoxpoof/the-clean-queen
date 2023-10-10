@@ -228,8 +228,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies: []
   rotateKut: {fileID: 7055717265479927788}
-  damage: 3
+  damage: 1
   fireRate: 1.1
   enemiess: {fileID: 0}
-  spawnBullet: {fileID: 1831448234336120052}
-  bullet: {fileID: 4332908212041121608, guid: fb9f109284c221d41a3de699111cf7a9, type: 3}

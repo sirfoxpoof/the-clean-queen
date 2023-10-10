@@ -102,6 +102,7 @@ MonoBehaviour:
   enemies: {fileID: 11400000, guid: 9988a6b80013be746aabb4b3588d47fc, type: 2}
   enemyHealth: 0
   enemyDamage: 0
+  isDead: 0
 --- !u!65 &3829468918688856308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -142,6 +143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HealthCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658051395418356946, guid: 8be71dce07f08564781be3d276b22fb3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3658051395418356947, guid: 8be71dce07f08564781be3d276b22fb3,
         type: 3}
