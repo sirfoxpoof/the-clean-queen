@@ -33,8 +33,9 @@ public class VolumeSet : MonoBehaviour
 
     void SetSliders()
     {
-        masterVol.value = 1f;
-        musicVol.value = 1f;
+        masterVol.value = 0.5f;
+        musicVol.value = 0.5f;
+        SFXVol.value = 0.5f;
     }
 
 
