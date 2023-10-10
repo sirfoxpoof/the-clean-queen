@@ -102,6 +102,7 @@ MonoBehaviour:
   enemies: {fileID: 11400000, guid: 52086b89bebc8ea46998f05c0e56cb8b, type: 2}
   enemyHealth: 0
   enemyDamage: 0
+  isDead: 0
 --- !u!65 &597955182010059354
 BoxCollider:
   m_ObjectHideFlags: 0
