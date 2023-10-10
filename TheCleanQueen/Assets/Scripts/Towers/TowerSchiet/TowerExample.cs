@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TowerExample : MonoBehaviour
@@ -11,6 +12,13 @@ public class TowerExample : MonoBehaviour
     public float fireRate = 1.1f;
 
     public Enemies enemiess;
+
+
+  /*  //bullet
+    public Transform spawnBullet;
+    public GameObject bullet;
+    private float speed = 2;*/
+
 
     private void Start()
     {
@@ -43,13 +51,12 @@ public class TowerExample : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-       
+    { 
         if (other.transform.tag == "Enemy")
         {
+            Attack();
             enemiess = other.transform.GetComponent<Enemies>();
             enemies.Add(enemiess);
-            Debug.Log(enemiess.enemyHealth);
         }
     }
 
@@ -66,6 +73,17 @@ public class TowerExample : MonoBehaviour
         if (enemies.Count > 0)
         {
             enemies[0].DoDamage(damage);
+           // ShootBullet();
         }
     }
+
+   /* void ShootBullet()
+    {
+        GameObject kog = Instantiate(bullet, spawnBullet.position, bullet.transform.rotation);
+        Rigidbody rb = kog.GetComponent<Rigidbody>();
+
+        rb.AddForce(spawnBullet.forward, ForceMode.Impulse);
+        enemies[0].DoDamage(damage);
+
+    }*/
 }

@@ -24,6 +24,10 @@ public class TowerPlace : MonoBehaviour
         {
             gameObject.GetComponent<MeshRenderer>().enabled = true;
         }
+        else
+        {
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+        }
     }
      
     private void OnMouseDown()
@@ -41,7 +45,7 @@ public class TowerPlace : MonoBehaviour
             gameUI.MainCamSwitch();
             gameUI.towerMenu.SetActive(true);
 
-            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            //gameObject.GetComponent<MeshRenderer>().enabled = false;
            
         }
        

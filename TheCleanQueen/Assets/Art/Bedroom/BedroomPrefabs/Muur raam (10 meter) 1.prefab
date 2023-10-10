@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6224026545253016713}
   - component: {fileID: 7048121046798920492}
   - component: {fileID: 5056139361925963750}
+  - component: {fileID: 3870200669368456355}
   m_Layer: 0
   m_Name: Muur raam (10 meter) 1
   m_TagString: Untagged
@@ -84,6 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3870200669368456355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6713740621537361459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 0.3725462}
+  m_Center: {x: 0.53760004, y: 1.5, z: 0.120747805}
 --- !u!1001 &5765167383212442800
 PrefabInstance:
   m_ObjectHideFlags: 0

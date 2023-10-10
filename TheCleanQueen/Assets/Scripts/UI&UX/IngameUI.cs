@@ -54,7 +54,6 @@ public class IngameUI : MonoBehaviour
          
         if(spawnEnemy.wavesClear)
         {
-
             winPanel.SetActive(true);
             moveScript.enabled = false;
             Cursor.lockState = CursorLockMode.None;

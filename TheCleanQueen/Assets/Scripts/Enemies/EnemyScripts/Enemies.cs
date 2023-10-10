@@ -14,6 +14,8 @@ public class Enemies : MonoBehaviour
     Vector3 dir;
     MainBase basis;
 
+    public bool isDead = false;
+
     private void Awake()
     {
         target = Waypoints.points[0];
@@ -52,8 +54,15 @@ public class Enemies : MonoBehaviour
 
     void Die()
     {
+        if (isDead)
+        {
+            return;
+        }
+        isDead = true;
+
+        SpawnEnemy.enemiesAlive--;
         Destroy(gameObject);
-        
+
     }
 
     public void DoDamage(int damage)
@@ -62,8 +71,7 @@ public class Enemies : MonoBehaviour
 
         if(enemyHealth <= 0)
         {
-            Die();
-            SpawnEnemy.enemiesAlive--;
+            Die();   
         }
     }
    
