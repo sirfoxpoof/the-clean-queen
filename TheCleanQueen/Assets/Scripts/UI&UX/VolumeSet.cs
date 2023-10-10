@@ -8,7 +8,7 @@ using static UnityEngine.Rendering.DebugUI;
 public class VolumeSet : MonoBehaviour
 {
     public AudioMixer mixer;
-    public Slider masterVol, musicVol;
+    public Slider masterVol, musicVol, SFXVol;
     
 
     public void Start()
@@ -17,9 +17,12 @@ public class VolumeSet : MonoBehaviour
         {
             mixer.SetFloat("MasterVolume", PlayerPrefs.GetFloat("MasterVolume"));
             mixer.SetFloat("MusicVolume", PlayerPrefs.GetFloat("MusicVolume"));
+            mixer.SetFloat("SFXVolume", PlayerPrefs.GetFloat("SFXVolume"));
+
             masterVol.value = PlayerPrefs.GetFloat("MasterVolume");
             musicVol.value = PlayerPrefs.GetFloat("MusicVolume");
-            SetSliders();
+            SFXVol.value = PlayerPrefs.GetFloat("SFXVolume");
+            
         }
         
         else
@@ -46,6 +49,12 @@ public class VolumeSet : MonoBehaviour
         mixer.SetFloat("MusicVolume", Mathf.Log10(sliderValue) * 20);
         PlayerPrefs.SetFloat("MusicVolume", musicVol.value);
      }
+
+    public void SetSFXMusic(float sliderValue)
+    {
+        mixer.SetFloat("SFXVolume", Mathf.Log10(sliderValue) * 20);
+        PlayerPrefs.SetFloat("SFXVolume", SFXVol.value);
+    }
 
 
     public void SetFullscreen(bool isFullscreen)
