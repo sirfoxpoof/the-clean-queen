@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2837032bcee90cd40b25e9b0b81d4d44, type: 3}
-  m_Name: ModdermonsterEnemy
+  m_Name: BustBunny
   m_EditorClassIdentifier: 
-  speed: 1
-  damage: 15
-  health: 35
-  coins: 10
+  speed: 2
+  damage: 10
+  health: 10
+  coins: 5

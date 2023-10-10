@@ -3499,7 +3499,6 @@ GameObject:
   - component: {fileID: 491839446}
   - component: {fileID: 491839445}
   - component: {fileID: 491839452}
-  - component: {fileID: 491839453}
   m_Layer: 0
   m_Name: CleanQueen
   m_TagString: Untagged
@@ -3635,27 +3634,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerButton: {fileID: 1712112673}
   bijTafel: 0
---- !u!95 &491839453
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491839444}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 04b306a141f83bb458e014a982cb78a9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &495980648
 GameObject:
   m_ObjectHideFlags: 0
@@ -9301,7 +9279,24 @@ MonoBehaviour:
   waves:
   - rate: 1
     enemies:
-    - enemy: {fileID: 7844651643683619767, guid: 37e2608a536c32847a5808f76046ac50,
+    - enemy: {fileID: 5548347288433832158, guid: 2795f48f888fe04448db77c9c67284c0,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 5192524529118355589, guid: b8956bbabc2bff24e8d3c6f79cf052ea,
+        type: 3}
+      count: 2
+    - enemy: {fileID: 7210400051921536613, guid: 8d9fc1b24aa8cb040b7f2dcb56f72643,
+        type: 3}
+      count: 2
+    - enemy: {fileID: 5548347288433832158, guid: 2795f48f888fe04448db77c9c67284c0,
+        type: 3}
+      count: 2
+    - enemy: {fileID: 7149402595858156826, guid: 6a7e7d602708b0140b47db25af91b7b7,
+        type: 3}
+      count: 1
+  - rate: 1
+    enemies:
+    - enemy: {fileID: 1088181426576185040, guid: 64cbf59476173f94b9806aa60f8bfd13,
         type: 3}
       count: 2
     - enemy: {fileID: 3525031502378232179, guid: 9912f4ef91e4c0a4b90a3fe4b90fa1df,
@@ -9335,36 +9330,19 @@ MonoBehaviour:
       count: 2
   - rate: 1
     enemies:
-    - enemy: {fileID: 5548347288433832158, guid: 2795f48f888fe04448db77c9c67284c0,
-        type: 3}
-      count: 1
     - enemy: {fileID: 5192524529118355589, guid: b8956bbabc2bff24e8d3c6f79cf052ea,
         type: 3}
       count: 2
-    - enemy: {fileID: 7210400051921536613, guid: 8d9fc1b24aa8cb040b7f2dcb56f72643,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 5548347288433832158, guid: 2795f48f888fe04448db77c9c67284c0,
+    - enemy: {fileID: 1638968426259734842, guid: 53fac31cda2f8354da60f8b4679ceba1,
         type: 3}
       count: 2
     - enemy: {fileID: 7210400051921536613, guid: 8d9fc1b24aa8cb040b7f2dcb56f72643,
+        type: 3}
+      count: 2
+    - enemy: {fileID: 7844651643683619767, guid: 37e2608a536c32847a5808f76046ac50,
         type: 3}
       count: 1
-  - rate: 1
-    enemies:
     - enemy: {fileID: 600201959845963798, guid: c29a77bf5e806b34b9f7bc7a43c431aa,
-        type: 3}
-      count: 1
-    - enemy: {fileID: 5192524529118355589, guid: b8956bbabc2bff24e8d3c6f79cf052ea,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 1638968426259734842, guid: 53fac31cda2f8354da60f8b4679ceba1,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 7210400051921536613, guid: 8d9fc1b24aa8cb040b7f2dcb56f72643,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 7844651643683619767, guid: 37e2608a536c32847a5808f76046ac50,
         type: 3}
       count: 1
   timeBetweenWaves: 5

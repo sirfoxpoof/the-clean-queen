@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5548347288433832158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -102,8 +102,6 @@ MonoBehaviour:
   enemies: {fileID: 11400000, guid: 52086b89bebc8ea46998f05c0e56cb8b, type: 2}
   enemyHealth: 0
   enemyDamage: 0
-  speed: 0
-  turn: 0
 --- !u!65 &597955182010059354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -140,6 +138,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5166861166133766756}
     m_Modifications:
+    - target: {fileID: 3658051395315866967, guid: 8be71dce07f08564781be3d276b22fb3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3658051395315866968, guid: 8be71dce07f08564781be3d276b22fb3,
         type: 3}
       propertyPath: m_AnchorMax.x
