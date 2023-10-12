@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a45fed302647e154db6b5cd4b14305c5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a45fed302647e154db6b5cd4b14305c5,
         type: 3}
@@ -193,7 +193,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a45fed302647e154db6b5cd4b14305c5,
         type: 3}
       propertyPath: m_Name
-      value: Vloer (10 meter)
+      value: Slaapkamer vloer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45fed302647e154db6b5cd4b14305c5, type: 3}
@@ -207,7 +207,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: efb17d2db9820a144bcfb0a525c0b86f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: efb17d2db9820a144bcfb0a525c0b86f,
         type: 3}
@@ -267,84 +267,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: efb17d2db9820a144bcfb0a525c0b86f,
         type: 3}
       propertyPath: m_Name
-      value: Muur raam (10 meter) 1
+      value: Slaapkamer 1 raam
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efb17d2db9820a144bcfb0a525c0b86f, type: 3}
---- !u!1001 &181624390
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.2166824
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.20000032
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.8416157
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 30af9cc2e3f89b84bb9417c53864677e, type: 2}
-    - target: {fileID: 919132149155446097, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_Name
-      value: Woonkamer muur (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca1a06a259749394d93c8af0c10990d9, type: 3}
 --- !u!1001 &443498189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -355,22 +281,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: bda40ead09d5f0c43a5918d7b9dae95f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bda40ead09d5f0c43a5918d7b9dae95f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.209908
+      value: -22.222294
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bda40ead09d5f0c43a5918d7b9dae95f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.20000045
+      value: 0.20000057
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bda40ead09d5f0c43a5918d7b9dae95f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.8491807
+      value: -4.8473477
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bda40ead09d5f0c43a5918d7b9dae95f,
         type: 3}
@@ -415,7 +341,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bda40ead09d5f0c43a5918d7b9dae95f,
         type: 3}
       propertyPath: m_Name
-      value: Woonkamer 3 deuren
+      value: Woonkamer 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bda40ead09d5f0c43a5918d7b9dae95f, type: 3}
@@ -429,7 +355,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a45fed302647e154db6b5cd4b14305c5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a45fed302647e154db6b5cd4b14305c5,
         type: 3}
@@ -489,7 +415,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a45fed302647e154db6b5cd4b14305c5,
         type: 3}
       propertyPath: m_Name
-      value: Vloer (10 meter) (1)
+      value: Slaapkamer plafond
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45fed302647e154db6b5cd4b14305c5, type: 3}
@@ -503,7 +429,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2c41b46be70a7b84ea909d9b28fb10bd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c41b46be70a7b84ea909d9b28fb10bd,
         type: 3}
@@ -582,7 +508,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 212ee1fc9723b87418adac1b7ff0536d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 212ee1fc9723b87418adac1b7ff0536d,
         type: 3}
@@ -651,7 +577,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ea925eb7c26d3844c8421adff05ba7ab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea925eb7c26d3844c8421adff05ba7ab,
         type: 3}
@@ -725,12 +651,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9442a6aa3a7ad9f4ca18d2bf10ea47b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9442a6aa3a7ad9f4ca18d2bf10ea47b7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.95544374
+      value: -8.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9442a6aa3a7ad9f4ca18d2bf10ea47b7,
         type: 3}
@@ -740,7 +666,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9442a6aa3a7ad9f4ca18d2bf10ea47b7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.38
+      value: -8.58
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9442a6aa3a7ad9f4ca18d2bf10ea47b7,
         type: 3}
@@ -799,7 +725,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1811e44c38f5cb04e83677cf3e783ae3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1811e44c38f5cb04e83677cf3e783ae3,
         type: 3}
@@ -873,12 +799,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b035ef454226e8c4085d5c5eabe0ddf9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b035ef454226e8c4085d5c5eabe0ddf9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.28
+      value: -8.54
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b035ef454226e8c4085d5c5eabe0ddf9,
         type: 3}
@@ -888,7 +814,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b035ef454226e8c4085d5c5eabe0ddf9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.81
+      value: -5.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b035ef454226e8c4085d5c5eabe0ddf9,
         type: 3}
@@ -947,22 +873,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8d52eff532a27ef438e416f853a73ad5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d52eff532a27ef438e416f853a73ad5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.234188
+      value: -16.24636
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d52eff532a27ef438e416f853a73ad5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.20000032
+      value: 0.20000052
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d52eff532a27ef438e416f853a73ad5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.732328
+      value: -12.731774
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d52eff532a27ef438e416f853a73ad5,
         type: 3}
@@ -1007,10 +933,79 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d52eff532a27ef438e416f853a73ad5,
         type: 3}
       propertyPath: m_Name
-      value: woonkamer deur (1)
+      value: woonkamer 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d52eff532a27ef438e416f853a73ad5, type: 3}
+--- !u!1001 &1283772948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e105244e768d8e64db5690ecfe74b48c,
+        type: 3}
+      propertyPath: m_Name
+      value: Woonkamer vloer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e105244e768d8e64db5690ecfe74b48c, type: 3}
 --- !u!1001 &1327231859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1021,7 +1016,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ab96f1439f456db4d87c4ed9026a4618,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab96f1439f456db4d87c4ed9026a4618,
         type: 3}
@@ -1095,7 +1090,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9267e196e9851824492175cefe7940e0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9267e196e9851824492175cefe7940e0,
         type: 3}
@@ -1155,84 +1150,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9267e196e9851824492175cefe7940e0,
         type: 3}
       propertyPath: m_Name
-      value: Muur deur (10 Meter)
+      value: Slaapkamer 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9267e196e9851824492175cefe7940e0, type: 3}
---- !u!1001 &1409260308
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -14.887612
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.8419075
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 51456e4ef84c71440b9669651a6851ba, type: 2}
-    - target: {fileID: 919132149155446097, guid: e105244e768d8e64db5690ecfe74b48c,
-        type: 3}
-      propertyPath: m_Name
-      value: Vloer woonkamer
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e105244e768d8e64db5690ecfe74b48c, type: 3}
 --- !u!1001 &1568882944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1312,7 +1233,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 570d1551ed3305c40a510bcb5f71a80b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 570d1551ed3305c40a510bcb5f71a80b,
         type: 3}
@@ -1372,7 +1293,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 570d1551ed3305c40a510bcb5f71a80b,
         type: 3}
       propertyPath: m_Name
-      value: Muur normaal (10 Meter)
+      value: Slaapkamer 1 & 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570d1551ed3305c40a510bcb5f71a80b, type: 3}
@@ -1445,6 +1366,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11cdf3e55361b2949b69ece64f4308e8, type: 3}
+--- !u!1 &1777834502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1777834503}
+  m_Layer: 0
+  m_Name: 'Suus '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1777834503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777834502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.2282104, y: -1.7187607, z: -5.5188456}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1793397449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1455,22 +1407,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2f60137bd2197354788e0554f6b605eb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f60137bd2197354788e0554f6b605eb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.234188
+      value: -16.24636
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f60137bd2197354788e0554f6b605eb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.20000033
+      value: 0.20000057
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f60137bd2197354788e0554f6b605eb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.732328
+      value: -12.731774
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f60137bd2197354788e0554f6b605eb,
         type: 3}
@@ -1515,7 +1467,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2f60137bd2197354788e0554f6b605eb,
         type: 3}
       propertyPath: m_Name
-      value: woonkamer deur raam
+      value: woonkamer 1 raam
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f60137bd2197354788e0554f6b605eb, type: 3}
@@ -1529,7 +1481,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4ef683c219b91814086ef7936421834b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ef683c219b91814086ef7936421834b,
         type: 3}
@@ -1672,7 +1624,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5bf0873b99144b441b9755740be33448,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bf0873b99144b441b9755740be33448,
         type: 3}
@@ -1682,12 +1634,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5bf0873b99144b441b9755740be33448,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000003501773
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bf0873b99144b441b9755740be33448,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5375994
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bf0873b99144b441b9755740be33448,
         type: 3}
@@ -1732,7 +1684,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5bf0873b99144b441b9755740be33448,
         type: 3}
       propertyPath: m_Name
-      value: Muur ramen (10 meter)
+      value: Slaapkamer 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bf0873b99144b441b9755740be33448, type: 3}
@@ -1854,80 +1806,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 260, z: 0}
---- !u!1001 &1979421452
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -14.221178
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.1999997
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.1579466
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 30af9cc2e3f89b84bb9417c53864677e, type: 2}
-    - target: {fileID: 919132149155446097, guid: ca1a06a259749394d93c8af0c10990d9,
-        type: 3}
-      propertyPath: m_Name
-      value: Woonkamer muur
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca1a06a259749394d93c8af0c10990d9, type: 3}
 --- !u!1001 &2050111033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1938,7 +1816,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 05e48641339b1b641904cdcc152384a9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 05e48641339b1b641904cdcc152384a9,
         type: 3}
