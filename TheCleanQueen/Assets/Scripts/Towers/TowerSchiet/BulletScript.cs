@@ -6,6 +6,12 @@ public class BulletScript : MonoBehaviour
 {
     public void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        if (other.transform.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
+       
+                
+       
     } 
 }

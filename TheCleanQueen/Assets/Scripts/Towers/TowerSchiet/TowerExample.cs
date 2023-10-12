@@ -14,10 +14,10 @@ public class TowerExample : MonoBehaviour
     public Enemies enemiess;
 
 
-  /*  //bullet
+    //bullet
     public Transform spawnBullet;
     public GameObject bullet;
-    private float speed = 2;*/
+    private float speed = 2;
 
 
     private void Start()
@@ -73,11 +73,11 @@ public class TowerExample : MonoBehaviour
         if (enemies.Count > 0)
         {
             enemies[0].DoDamage(damage);
-           // ShootBullet();
+           ShootBullet();
         }
     }
 
-   /* void ShootBullet()
+    void ShootBullet()
     {
         GameObject kog = Instantiate(bullet, spawnBullet.position, bullet.transform.rotation);
         Rigidbody rb = kog.GetComponent<Rigidbody>();
@@ -85,5 +85,5 @@ public class TowerExample : MonoBehaviour
         rb.AddForce(spawnBullet.forward, ForceMode.Impulse);
         enemies[0].DoDamage(damage);
 
-    }*/
+    }
 }

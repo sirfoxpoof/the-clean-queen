@@ -56,6 +56,8 @@ public class IngameUI : MonoBehaviour
         {
             winPanel.SetActive(true);
             moveScript.enabled = false;
+            spawnEnemy.countdown = 0;
+
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }

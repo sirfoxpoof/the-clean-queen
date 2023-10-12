@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+
 
 public class SpawnEnemy : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class SpawnEnemy : MonoBehaviour
     public Transform start;
 
     public Wave[] waves;
+
+    public TMP_Text waveCountDown;
 
     private int waveIndex = 0;
     public float timeBetweenWaves = 5f, countdown = 5f;
@@ -37,7 +41,10 @@ public class SpawnEnemy : MonoBehaviour
             countdown = timeBetweenWaves;
             return;
         }
-        
+          
+          waveCountDown.text = Mathf.Round(countdown).ToString();
+          //waveCountDown.text = string.Format("{0:00.0}", countdown);  
+
           countdown -= Time.deltaTime;
     }
 
@@ -66,16 +73,6 @@ public class SpawnEnemy : MonoBehaviour
         }
 
         waveIndex++;
-        /* if (enemyIndex == waves.Length)
-         {
-             this.enabled = false;
-
-             if(enemiesAlive <= 0)
-             {
-                 wavesClear = true;
-             }
-         }*/
-
         Debug.Log(waveIndex);
     }
 
