@@ -14,11 +14,11 @@ public class TowerExample : MonoBehaviour
     public Enemies enemiess;
 
 
-    //bullet
+   /* //bullet
     public Transform spawnBullet;
     public GameObject bullet;
     private float speed = 2;
-
+*/
 
     private void Start()
     {
@@ -38,10 +38,13 @@ public class TowerExample : MonoBehaviour
                 enemies.RemoveAt(i);
             }
         }
-        Vector3 dir = enemies[0].transform.position - transform.position;
-        Quaternion lookRotation = Quaternion.LookRotation(dir);
-        Vector3 rotation = Quaternion.Lerp(rotateKut.rotation, lookRotation, Time.deltaTime * rotationSpeed).eulerAngles;
-        rotateKut.rotation = Quaternion.Euler(0, rotation.y, 0);
+        if(enemies.Count > 0)
+        {
+            Vector3 dir = enemies[0].transform.position - transform.position;
+            Quaternion lookRotation = Quaternion.LookRotation(dir);
+            Vector3 rotation = Quaternion.Lerp(rotateKut.rotation, lookRotation, Time.deltaTime * rotationSpeed).eulerAngles;
+            rotateKut.rotation = Quaternion.Euler(0, rotation.y, 0);
+        }
 
     }
 
@@ -73,11 +76,11 @@ public class TowerExample : MonoBehaviour
         if (enemies.Count > 0)
         {
             enemies[0].DoDamage(damage);
-           ShootBullet();
+           //ShootBullet();
         }
     }
 
-    void ShootBullet()
+  /*  void ShootBullet()
     {
         GameObject kog = Instantiate(bullet, spawnBullet.position, bullet.transform.rotation);
         Rigidbody rb = kog.GetComponent<Rigidbody>();
@@ -85,5 +88,5 @@ public class TowerExample : MonoBehaviour
         rb.AddForce(spawnBullet.forward, ForceMode.Impulse);
         enemies[0].DoDamage(damage);
 
-    }
+    }*/
 }

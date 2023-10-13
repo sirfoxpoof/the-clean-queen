@@ -1848,14 +1848,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305622435}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 2.16, y: 0, z: -7.3}
   m_LocalScale: {x: 1.1219953, y: 0.23821582, z: 1.0110596}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 979274313}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &305622437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1932,6 +1932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
+  koopjes: {fileID: 1244827105}
 --- !u!1 &319821245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3425,6 +3426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
+  koopjes: {fileID: 1244827105}
 --- !u!1001 &458911989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4095,6 +4097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
+  koopjes: {fileID: 1244827105}
 --- !u!1 &523296512
 GameObject:
   m_ObjectHideFlags: 0
@@ -5987,14 +5990,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775985496}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -6.73, y: 0, z: 4.82}
   m_LocalScale: {x: 1.1219953, y: 0.23821582, z: 1.0110596}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 979274313}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &775985498
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6071,6 +6074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
+  koopjes: {fileID: 1244827105}
 --- !u!1001 &776174653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6324,14 +6328,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841453052}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -2.12, y: 0, z: -7.35}
   m_LocalScale: {x: 1.1219953, y: 0.23821582, z: 1.0110596}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 979274313}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &841453054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6408,6 +6412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
+  koopjes: {fileID: 1244827105}
 --- !u!1 &844814629
 GameObject:
   m_ObjectHideFlags: 0
@@ -7553,14 +7558,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941078944}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -3.33, y: 0, z: -1.16}
   m_LocalScale: {x: 1.1219953, y: 0.23821582, z: 1.0110596}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 979274313}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &941078946
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7637,6 +7642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
+  koopjes: {fileID: 1244827105}
 --- !u!1 &971608821
 GameObject:
   m_ObjectHideFlags: 0
@@ -8603,6 +8609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
+  koopjes: {fileID: 1244827105}
 --- !u!1 &1138049965
 GameObject:
   m_ObjectHideFlags: 0
@@ -9463,75 +9470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   start: {fileID: 1402638171}
-  waves:
-  - rate: 1
-    enemies:
-    - enemy: {fileID: 7844651643683619767, guid: 37e2608a536c32847a5808f76046ac50,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 1088181426576185040, guid: 64cbf59476173f94b9806aa60f8bfd13,
-        type: 3}
-      count: 1
-    - enemy: {fileID: 1088181426576185040, guid: 64cbf59476173f94b9806aa60f8bfd13,
-        type: 3}
-      count: 1
-    - enemy: {fileID: 1638968426259734842, guid: 53fac31cda2f8354da60f8b4679ceba1,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 3525031502378232179, guid: 9912f4ef91e4c0a4b90a3fe4b90fa1df,
-        type: 3}
-      count: 2
-  - rate: 1
-    enemies:
-    - enemy: {fileID: 5192524529118355589, guid: b8956bbabc2bff24e8d3c6f79cf052ea,
-        type: 3}
-      count: 1
-    - enemy: {fileID: 7210400051921536613, guid: 8d9fc1b24aa8cb040b7f2dcb56f72643,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 6669589988380764741, guid: 2eafb6ce8c17f1240b49cd2132664c89,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 6669589988380764741, guid: 2eafb6ce8c17f1240b49cd2132664c89,
-        type: 3}
-      count: 1
-    - enemy: {fileID: 7210400051921536613, guid: 8d9fc1b24aa8cb040b7f2dcb56f72643,
-        type: 3}
-      count: 2
-  - rate: 1
-    enemies:
-    - enemy: {fileID: 5548347288433832158, guid: 2795f48f888fe04448db77c9c67284c0,
-        type: 3}
-      count: 1
-    - enemy: {fileID: 5192524529118355589, guid: b8956bbabc2bff24e8d3c6f79cf052ea,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 7210400051921536613, guid: 8d9fc1b24aa8cb040b7f2dcb56f72643,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 5548347288433832158, guid: 2795f48f888fe04448db77c9c67284c0,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 7210400051921536613, guid: 8d9fc1b24aa8cb040b7f2dcb56f72643,
-        type: 3}
-      count: 1
-  - rate: 1
-    enemies:
-    - enemy: {fileID: 8386981912274098696, guid: 3c53be3c946b3554ba4d0155746fa978,
-        type: 3}
-      count: 1
-    - enemy: {fileID: 5192524529118355589, guid: b8956bbabc2bff24e8d3c6f79cf052ea,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 8386981912274098696, guid: 3c53be3c946b3554ba4d0155746fa978,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 7210400051921536613, guid: 8d9fc1b24aa8cb040b7f2dcb56f72643,
-        type: 3}
-      count: 1
-    - enemy: {fileID: 600201959845963798, guid: c29a77bf5e806b34b9f7bc7a43c431aa,
-        type: 3}
-      count: 1
+  wavess: {fileID: 11400000, guid: eef8214bb3d175e48ac658799f9f9ca4, type: 2}
   waveCountDown: {fileID: 320065527}
   timeBetweenWaves: 5.5
   countdown: 5
@@ -9565,7 +9504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefabs:
-  - {fileID: 672041132021850644, guid: 09ae8486a594d1345b5c52b26ce81d80, type: 3}
+  - {fileID: 6740455643977592502, guid: afc488bc60fede94d83bf754e3eb2981, type: 3}
   - {fileID: 6884278877439810910, guid: b8be7cfef3615d14eada724f53768180, type: 3}
   - {fileID: 5791866954924425517, guid: 991b4dd406488c048902feda531fd339, type: 3}
   - {fileID: 1406787693065516954, guid: 8ca1c09d0b5852d479f47373375a2693, type: 3}
@@ -9620,7 +9559,7 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 37ab586d8f33fde43b1cacb1a1b9b37d, type: 2}
   masterVol: {fileID: 1931097675}
   musicVol: {fileID: 1335240403}
-  SFXVol: {fileID: 1394162025}
+  sfxVol: {fileID: 0}
 --- !u!1 &1253200905
 GameObject:
   m_ObjectHideFlags: 0
@@ -11851,14 +11790,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548859250}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -7.05, y: 0, z: -7.06}
   m_LocalScale: {x: 1.1219953, y: 0.23821582, z: 1.0110596}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 979274313}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!65 &1548859252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11935,6 +11874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
+  koopjes: {fileID: 1244827105}
 --- !u!1 &1580210328
 GameObject:
   m_ObjectHideFlags: 0
@@ -15734,6 +15674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
+  koopjes: {fileID: 1244827105}
 --- !u!1 &1996548039
 GameObject:
   m_ObjectHideFlags: 0

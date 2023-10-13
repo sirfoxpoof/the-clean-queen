@@ -47,9 +47,15 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        Move();
         Rotate();
 
+
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
+        
     }
 
     private void Move()
@@ -72,7 +78,7 @@ public class Movement : MonoBehaviour
         camHold.transform.localRotation = Quaternion.Euler(y, 0, 0 * sens * Time.deltaTime);
     }
 
-    public void Sprint(InputAction.CallbackContext context)
+   /* public void Sprint(InputAction.CallbackContext context)
     {
         if (context.started)
         {
@@ -93,5 +99,5 @@ public class Movement : MonoBehaviour
                 rb.AddForce(Vector3.up * jumpHight, ForceMode.Impulse);
             }
         }
-    }
+    }*/
 }

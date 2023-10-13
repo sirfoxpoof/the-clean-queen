@@ -7,8 +7,10 @@ public class TowerPlace : MonoBehaviour
     private Color hoverColor, startColor;
     private Renderer ren;
     private GameObject towers;
+    private Vector3 offset;
 
     public IngameUI gameUI;
+    public TowerBuy koopjes;
     
     private void Start()
     {
@@ -39,16 +41,33 @@ public class TowerPlace : MonoBehaviour
                 Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAH");
                 return;
             }
-            GameObject buildTower = TowerBuild.instance.GetBuildTower();
+
+            if(koopjes.towOne ||koopjes.towTwo || koopjes.towThree || koopjes.towFour)
+            {
+                GameObject buildTower = TowerBuild.instance.GetBuildTower();
+                towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
+
+                koopjes.towOne = false;
+                koopjes.towTwo = false;
+                koopjes.towThree = false;
+                koopjes.towFour = false;
+            }
+            else
+            {
+                Debug.Log("No tower selected!!!");
+            }
+            /*GameObject buildTower = TowerBuild.instance.GetBuildTower();
             towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
 
-            gameUI.MainCamSwitch();
-            gameUI.towerMenu.SetActive(true);
+            koopjes.towOne = false;
+            koopjes.towTwo = false;
+            koopjes.towThree = false;
+            koopjes.towFour = false;*/
 
-            //gameObject.GetComponent<MeshRenderer>().enabled = false;
-           
+            //gameUI.MainCamSwitch();
+            //gameUI.towerMenu.SetActive(true);
+
         }
-       
     }
     void OnMouseEnter()
     {

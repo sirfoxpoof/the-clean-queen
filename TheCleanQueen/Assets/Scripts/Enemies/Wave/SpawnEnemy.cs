@@ -12,7 +12,7 @@ public class SpawnEnemy : MonoBehaviour
 
     public Transform start;
 
-    public Wave[] waves;
+    public WaveScribtableObject wavess;
 
     public TMP_Text waveCountDown;
 
@@ -43,16 +43,16 @@ public class SpawnEnemy : MonoBehaviour
         }
           
           waveCountDown.text = Mathf.Round(countdown).ToString();
-          //waveCountDown.text = string.Format("{0:00.0}", countdown);  
+          //waveCountDown.text = string.Format("{0:00.00}", countdown);  
 
           countdown -= Time.deltaTime;
     }
 
     private IEnumerator SpawnWave()
     {
-        if (waves.Length > waveIndex)
+        if (wavess.waves.Length > waveIndex)
         {
-            Wave wave = waves[waveIndex];
+            Wave wave = wavess.waves[waveIndex];
 
             for (int a = 0; a < wave.enemies.Length; a++)
             {
@@ -63,14 +63,14 @@ public class SpawnEnemy : MonoBehaviour
                 }
             }
         }
-        else
+
+        if (enemiesAlive <= 0)
         {
-            if (enemiesAlive <= 0)
-            {
-                wavesClear = true;
-            }
+            wavesClear = true;
             this.enabled = false;
         }
+       
+
 
         waveIndex++;
         Debug.Log(waveIndex);
