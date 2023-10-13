@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainBase : MonoBehaviour
 {
-    public GameObject baseProtect, gameOverPanel;
+    public GameObject baseProtect, gameOverPanel, tutorialPanel, pressEPanel;
     public Transform finish;
 
     public int health;
@@ -32,6 +32,10 @@ public class MainBase : MonoBehaviour
             move.enabled = false;
             spawnEnemy.enabled = false;
             gameOverPanel.SetActive(true);
+            Time.timeScale = 0;
+            tutorialPanel.SetActive(false);
+            pressEPanel.SetActive(false);
+
 
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

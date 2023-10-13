@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BedroomLVL.unity
     guid: 4b61bb26fb6ca0644b93c654ff8c1251
+  - enabled: 1
+    path: Assets/Scenes/LivingroomLVL.unity
+    guid: 3d3e895387db863489935b2b6a60f8c3
   m_configObjects: {}

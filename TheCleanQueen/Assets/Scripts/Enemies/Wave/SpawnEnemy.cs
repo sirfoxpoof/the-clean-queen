@@ -8,6 +8,7 @@ using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
 {
+    public GameObject tutorialPanel, pressEPanel;
     public static int enemiesAlive;
 
     public Transform start;
@@ -68,6 +69,9 @@ public class SpawnEnemy : MonoBehaviour
         {
             wavesClear = true;
             this.enabled = false;
+            Time.timeScale = 0;
+            tutorialPanel.SetActive(false);
+            pressEPanel.SetActive(false);
         }
        
 
