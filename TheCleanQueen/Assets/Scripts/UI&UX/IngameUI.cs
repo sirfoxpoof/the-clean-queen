@@ -83,6 +83,9 @@ public class IngameUI : MonoBehaviour
         Time.timeScale = 1;
         towerMenu.SetActive(false);
         towermenuOn = false;
+        mainCam.enabled = true;
+        towerCam.enabled = false;
+        plafond.SetActive(true);
     }
 
     public void ShowTowerMenu(InputAction.CallbackContext context)
@@ -91,6 +94,8 @@ public class IngameUI : MonoBehaviour
         {
             if (context.performed)
             {
+                mainCam.enabled = false;
+                towerCam.enabled = true;
                 moveScript.enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -99,13 +104,14 @@ public class IngameUI : MonoBehaviour
                 towerButton.SetActive(false);
                 towermenuOn = true;
                 PlayerPrefs.SetInt("ShowTutorial", 0);
+                plafond.SetActive(false);
             }
 
         }
         
     }
 
-    public void TowerCamSwitch()
+    /*public void TowerCamSwitch()
     {
         mainCam.enabled = false;
         towerCam.enabled = true;
@@ -113,12 +119,11 @@ public class IngameUI : MonoBehaviour
         camSwitchButton.SetActive(true);
         topDown = true;
         plafond.SetActive(false);
-    }
+    }*/
 
     public void MainCamSwitch()
     {
-        mainCam.enabled = true;
-        towerCam.enabled = false;
+        
         towerMenu.SetActive(true);
         camSwitchButton.SetActive(false);
         topDown = false;

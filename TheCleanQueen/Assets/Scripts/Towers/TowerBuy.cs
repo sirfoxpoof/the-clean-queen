@@ -15,7 +15,7 @@ public class TowerBuy : MonoBehaviour
         towThree = false;
         towFour = false;
 
-        gameUI.TowerCamSwitch();
+        /*gameUI.TowerCamSwitch();*/
     }
     public void TowerTwo()
     {
@@ -24,7 +24,7 @@ public class TowerBuy : MonoBehaviour
         towThree = false;
         towFour = false;
 
-        gameUI.TowerCamSwitch();
+        /*gameUI.TowerCamSwitch();*/
     }
     public void TowerThree()
     {
@@ -33,7 +33,7 @@ public class TowerBuy : MonoBehaviour
         towThree = true;
         towFour = false;
 
-        gameUI.TowerCamSwitch();
+        /*gameUI.TowerCamSwitch();*/
     }
     public void TowerFOur()
     {
@@ -42,6 +42,6 @@ public class TowerBuy : MonoBehaviour
         towThree = false;
         towFour = true;
 
-        gameUI.TowerCamSwitch();
+        /*gameUI.TowerCamSwitch();*/
     }
 }
