@@ -8,18 +8,22 @@ public class TowerExample : MonoBehaviour
     public List<Enemies> enemies = new List<Enemies>();
     public Transform rotateKut;
     private float rotationSpeed = 10f;
+
+    //public static int towerMoney;
+
     public int damage = 10;
     public float fireRate = 1.1f;
 
     public Enemies enemiess;
 
-
-   /* //bullet
+/*
+    //bullet
     public Transform spawnBullet;
     public GameObject bullet;
     private float speed = 2;
 */
 
+    //boobies (geen concentratie) ga werken!!!
     private void Start()
     {
         InvokeRepeating("Attack", 0, fireRate);
@@ -44,7 +48,17 @@ public class TowerExample : MonoBehaviour
             Quaternion lookRotation = Quaternion.LookRotation(dir);
             Vector3 rotation = Quaternion.Lerp(rotateKut.rotation, lookRotation, Time.deltaTime * rotationSpeed).eulerAngles;
             rotateKut.rotation = Quaternion.Euler(0, rotation.y, 0);
+
+            if (enemies[0].isDead)
+            {
+                print("feuwafbaebefj");
+                Currency.towerMoney += enemies[0].money;
+            }
         }
+
+        
+
+       
 
     }
 

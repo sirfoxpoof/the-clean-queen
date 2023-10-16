@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,8 +14,6 @@ public class TowerBuy : MonoBehaviour
         towTwo = false;
         towThree = false;
         towFour = false;
-
-        /*gameUI.TowerCamSwitch();*/
     }
     public void TowerTwo()
     {
@@ -23,8 +21,6 @@ public class TowerBuy : MonoBehaviour
         towTwo = true;
         towThree = false;
         towFour = false;
-
-        /*gameUI.TowerCamSwitch();*/
     }
     public void TowerThree()
     {
@@ -32,8 +28,6 @@ public class TowerBuy : MonoBehaviour
         towTwo = false;
         towThree = true;
         towFour = false;
-
-        /*gameUI.TowerCamSwitch();*/
     }
     public void TowerFOur()
     {
@@ -41,7 +35,6 @@ public class TowerBuy : MonoBehaviour
         towTwo = false;
         towThree = false;
         towFour = true;
-
-        /*gameUI.TowerCamSwitch();*/
     }
 }
+*/

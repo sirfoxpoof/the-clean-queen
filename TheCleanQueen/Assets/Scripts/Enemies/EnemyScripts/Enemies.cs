@@ -6,7 +6,7 @@ using UnityEngine;
 public class Enemies : MonoBehaviour
 {
     public SpawnScribtableObject enemies;
-    public int enemyHealth, enemyDamage;
+    public int enemyHealth, enemyDamage, money;
    
     private Transform target;
     private int waypoint = 0;
@@ -21,6 +21,7 @@ public class Enemies : MonoBehaviour
         target = Waypoints.points[0];
         enemyHealth = enemies.health;
         enemyDamage = enemies.damage;
+        money = enemies.coins;
 
         basis = GameObject.Find("Finish").GetComponent<MainBase>();
     }
@@ -59,10 +60,11 @@ public class Enemies : MonoBehaviour
             return;
         }
         isDead = true;
+        
+        Currency.towerMoney += money;
 
         SpawnEnemy.enemiesAlive--;
         Destroy(gameObject);
-
     }
 
     public void DoDamage(int damage)

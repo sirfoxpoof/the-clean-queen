@@ -7,10 +7,11 @@ public class TowerPlace : MonoBehaviour
     private Color hoverColor, startColor;
     private Renderer ren;
     private GameObject towers;
-    private Vector3 offset;
+
+    private int neededMoney;
 
     public IngameUI gameUI;
-    public TowerBuy koopjes;
+    public TowerBuild towerBuild;
     
     private void Start()
     {
@@ -38,35 +39,24 @@ public class TowerPlace : MonoBehaviour
         {
             if (towers != null)
             {
-                Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAH");
+                Debug.Log("STAAT AL EEN TOWER AAAAAAAAAAAAAAAAH");
                 return;
             }
 
-            if(koopjes.towOne ||koopjes.towTwo || koopjes.towThree || koopjes.towFour)
+            if(towerBuild.towOne ||towerBuild.towTwo || towerBuild.towThree || towerBuild.towFour)
             {
                 GameObject buildTower = TowerBuild.instance.GetBuildTower();
                 towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
 
-                koopjes.towOne = false;
-                koopjes.towTwo = false;
-                koopjes.towThree = false;
-                koopjes.towFour = false;
+                towerBuild.towOne = false;
+                towerBuild.towTwo = false;
+                towerBuild.towThree = false;
+                towerBuild.towFour = false;
             }
             else
             {
                 Debug.Log("No tower selected!!!");
             }
-            /*GameObject buildTower = TowerBuild.instance.GetBuildTower();
-            towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
-
-            koopjes.towOne = false;
-            koopjes.towTwo = false;
-            koopjes.towThree = false;
-            koopjes.towFour = false;*/
-
-            //gameUI.MainCamSwitch();
-            //gameUI.towerMenu.SetActive(true);
-
         }
     }
     void OnMouseEnter()
@@ -78,7 +68,6 @@ public class TowerPlace : MonoBehaviour
     }
     private void OnMouseExit()
     {
-        
         if (gameUI.topDown)
         {
             ren.material.color = startColor;

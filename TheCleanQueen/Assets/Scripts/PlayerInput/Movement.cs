@@ -13,10 +13,10 @@ public class Movement : MonoBehaviour
     public GameObject camHold;
     public float speed, sprint, sens, jumpHight;
   
-    private RaycastHit hit;
+    //private RaycastHit hit;
 
     private Vector2 move, look;
-    private Vector3 jump;
+   // private Vector3 jump;
 
     private InputAction movew, rotate;
     private float x, y;
@@ -69,13 +69,13 @@ public class Movement : MonoBehaviour
     {
         look = rotate.ReadValue<Vector2>();
 
-        x += look.x;
-        y -= look.y;
+        x += look.x * sens;
+        y -= look.y * sens;
 
         y = Mathf.Clamp(y, -85, 85);
 
-        transform.localRotation = Quaternion.Euler(0, x, 0 * sens * Time.deltaTime);
-        camHold.transform.localRotation = Quaternion.Euler(y, 0, 0 * sens * Time.deltaTime);
+        transform.localRotation = Quaternion.Euler(0, x, 0 * Time.deltaTime);
+        camHold.transform.localRotation = Quaternion.Euler(y, 0, 0 * Time.deltaTime);
     }
 
    /* public void Sprint(InputAction.CallbackContext context)

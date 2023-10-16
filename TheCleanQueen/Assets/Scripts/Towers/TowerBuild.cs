@@ -9,7 +9,10 @@ public class TowerBuild : MonoBehaviour
     private GameObject buildTower;
     public GameObject[] towerPrefabs;
 
-    public TowerBuy koopjes;
+    public bool towOne, towTwo, towThree, towFour;
+    public IngameUI gameUI;
+
+    //public int money;
 
     private void Awake()
     {
@@ -24,22 +27,52 @@ public class TowerBuild : MonoBehaviour
 
     private void Update()
     {
-        if (koopjes.towOne)
+        if (towOne)
         {
             buildTower = towerPrefabs[0];
         }
-        if (koopjes.towTwo)
+        if (towTwo)
         {
             buildTower = towerPrefabs[1];
         }
-        if (koopjes.towThree)
+        if (towThree)
         {
             buildTower = towerPrefabs[2];
         }
-        if (koopjes.towFour)
+        if (towFour)
         {
             buildTower = towerPrefabs[3];
         }
+    }
+
+
+    public void BroomTower()
+    {
+        towOne = true;
+        towTwo = false;
+        towThree = false;
+        towFour = false;
+    }
+    public void AirFreshenerTower()
+    {
+        towOne = false;
+        towTwo = true;
+        towThree = false;
+        towFour = false;
+    }
+    public void HillyHooverTower()
+    {
+        towOne = false;
+        towTwo = false;
+        towThree = true;
+        towFour = false;
+    }
+    public void SoapTower()
+    {
+        towOne = false;
+        towTwo = false;
+        towThree = false;
+        towFour = true;
     }
 
     public GameObject GetBuildTower()
