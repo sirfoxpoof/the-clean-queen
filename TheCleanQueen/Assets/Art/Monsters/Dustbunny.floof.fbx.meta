@@ -33,9 +33,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Plane.001|walk
-      takeName: Plane.001|walk
-      internalID: 1521315047395574081
+      name: Plane.001|Plane.001Action
+      takeName: Plane.001|Plane.001Action
+      internalID: -2858551162337178960
       firstFrame: 0
       lastFrame: 30
       wrapMode: 0
@@ -44,7 +44,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -62,18 +62,18 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Plane.001|wolk
-      takeName: Plane.001|wolk
-      internalID: -2934282349728629780
+      name: Plane.001|WOLK
+      takeName: Plane.001|WOLK
+      internalID: -7818264985483914681
       firstFrame: 0
-      lastFrame: 30
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

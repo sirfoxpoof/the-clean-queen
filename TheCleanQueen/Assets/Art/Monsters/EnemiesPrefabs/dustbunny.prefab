@@ -51,6 +51,7 @@ MonoBehaviour:
   enemies: {fileID: 11400000, guid: b3f43d5a630ef3e4aad3b0ee6a587ca4, type: 2}
   enemyHealth: 0
   enemyDamage: 0
+  money: 0
   isDead: 0
 --- !u!65 &1767222863134878074
 BoxCollider:
@@ -161,7 +162,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3171612819647222512}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &3171612819151374728
+--- !u!95 &303233676664290860
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -171,7 +172,7 @@ Animator:
   m_GameObject: {fileID: 2360656824352960417}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b824647e6a2368244ac3c51829de8e86, type: 2}
+  m_Controller: {fileID: 9100000, guid: 30548ed38979f4e4097d02923360ce02, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -260,6 +261,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dustbunny.oren
       objectReference: {fileID: 0}
+    - target: {fileID: 1602564128540957456, guid: bede77f7dcef2d74cb788c0f7d72c540,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcb5470fdc4e25840bd1a3327ccc60be, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bede77f7dcef2d74cb788c0f7d72c540, type: 3}
 --- !u!1 &2360656823405419384 stripped
@@ -268,7 +274,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3171612819907126825}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &3171612819058063099
+--- !u!95 &6390653196871762644
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -278,7 +284,7 @@ Animator:
   m_GameObject: {fileID: 2360656823405419384}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b7c0c289d0e9b964dbf05e84e3075e06, type: 2}
+  m_Controller: {fileID: 9100000, guid: 437e0aea616b79a4f87efc1b52241a76, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
