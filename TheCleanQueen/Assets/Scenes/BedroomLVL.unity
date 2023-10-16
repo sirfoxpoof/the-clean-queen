@@ -1718,11 +1718,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vloer (10 meter)
       objectReference: {fileID: 0}
-    - target: {fileID: 7599688584649709323, guid: 60a86d931b535da4a99007828ff78720,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a86d931b535da4a99007828ff78720, type: 3}
 --- !u!4 &284697348 stripped
@@ -17022,25 +17017,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
---- !u!1 &2138223309 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7599688584649709323, guid: 60a86d931b535da4a99007828ff78720,
-    type: 3}
-  m_PrefabInstance: {fileID: 284697347}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &2138223313
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138223309}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 0.20000084, z: 10}
-  m_Center: {x: 0, y: -0.100000076, z: 0}
 --- !u!1 &2145729315
 GameObject:
   m_ObjectHideFlags: 0
