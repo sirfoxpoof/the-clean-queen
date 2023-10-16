@@ -1533,7 +1533,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2948778027561749266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.935549, y: 0, z: -96.62567}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1578,6 +1578,7 @@ MonoBehaviour:
   enemies: {fileID: 11400000, guid: b8539669b57a66340bec1df3da35e39e, type: 2}
   enemyHealth: 0
   enemyDamage: 0
+  money: 0
   isDead: 0
 --- !u!65 &8959112297932659549
 BoxCollider:

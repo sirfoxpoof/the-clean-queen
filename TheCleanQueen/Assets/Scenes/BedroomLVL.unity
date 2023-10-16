@@ -1927,7 +1927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
-  koopjes: {fileID: 1244827105}
+  towerBuild: {fileID: 1244827104}
 --- !u!1 &319821245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,7 +3422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
-  koopjes: {fileID: 1244827105}
+  towerBuild: {fileID: 1244827104}
 --- !u!1001 &458911989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3697,7 +3697,7 @@ MonoBehaviour:
   camHold: {fileID: 844814629}
   speed: 5
   sprint: 4
-  sens: 0.3
+  sens: 0.08
   jumpHight: 5
 --- !u!54 &491839446
 Rigidbody:
@@ -4093,7 +4093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
-  koopjes: {fileID: 1244827105}
+  towerBuild: {fileID: 1244827104}
 --- !u!1 &523296512
 GameObject:
   m_ObjectHideFlags: 0
@@ -6070,7 +6070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
-  koopjes: {fileID: 1244827105}
+  towerBuild: {fileID: 1244827104}
 --- !u!1001 &776174653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6408,7 +6408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
-  koopjes: {fileID: 1244827105}
+  towerBuild: {fileID: 1244827104}
 --- !u!1 &844814629
 GameObject:
   m_ObjectHideFlags: 0
@@ -7715,7 +7715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
-  koopjes: {fileID: 1244827105}
+  towerBuild: {fileID: 1244827104}
 --- !u!1 &971608821
 GameObject:
   m_ObjectHideFlags: 0
@@ -8682,7 +8682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
-  koopjes: {fileID: 1244827105}
+  towerBuild: {fileID: 1244827104}
 --- !u!1 &1138049965
 GameObject:
   m_ObjectHideFlags: 0
@@ -9492,7 +9492,6 @@ GameObject:
   - component: {fileID: 1244827102}
   - component: {fileID: 1244827101}
   - component: {fileID: 1244827104}
-  - component: {fileID: 1244827105}
   - component: {fileID: 1244827106}
   - component: {fileID: 1244827107}
   m_Layer: 0
@@ -9548,7 +9547,7 @@ MonoBehaviour:
   wavess: {fileID: 11400000, guid: eef8214bb3d175e48ac658799f9f9ca4, type: 2}
   waveCountDown: {fileID: 320065527}
   timeBetweenWaves: 5.5
-  countdown: 5
+  countdown: 20
   wavesClear: 0
 --- !u!4 &1244827103
 Transform:
@@ -9583,19 +9582,6 @@ MonoBehaviour:
   - {fileID: 6884278877439810910, guid: b8be7cfef3615d14eada724f53768180, type: 3}
   - {fileID: 5791866954924425517, guid: 991b4dd406488c048902feda531fd339, type: 3}
   - {fileID: 1406787693065516954, guid: 8ca1c09d0b5852d479f47373375a2693, type: 3}
-  koopjes: {fileID: 1244827105}
---- !u!114 &1244827105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244827100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfd9e6bb4929f754b811d2e3c0f91585, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   towOne: 0
   towTwo: 0
   towThree: 0
@@ -9755,9 +9741,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1244827105}
-        m_TargetAssemblyTypeName: TowerBuy, Assembly-CSharp
-        m_MethodName: TowerTwo
+      - m_Target: {fileID: 1244827104}
+        m_TargetAssemblyTypeName: TowerBuild, Assembly-CSharp
+        m_MethodName: AirFreshenerTower
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11951,7 +11937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
-  koopjes: {fileID: 1244827105}
+  towerBuild: {fileID: 1244827104}
 --- !u!1 &1580210328
 GameObject:
   m_ObjectHideFlags: 0
@@ -14271,9 +14257,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1244827105}
-        m_TargetAssemblyTypeName: TowerBuy, Assembly-CSharp
-        m_MethodName: TowerOne
+      - m_Target: {fileID: 1244827104}
+        m_TargetAssemblyTypeName: TowerBuild, Assembly-CSharp
+        m_MethodName: BroomTower
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15001,9 +14987,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1244827105}
-        m_TargetAssemblyTypeName: TowerBuy, Assembly-CSharp
-        m_MethodName: TowerFOur
+      - m_Target: {fileID: 1244827104}
+        m_TargetAssemblyTypeName: TowerBuild, Assembly-CSharp
+        m_MethodName: SoapTower
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15500,9 +15486,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1244827105}
-        m_TargetAssemblyTypeName: TowerBuy, Assembly-CSharp
-        m_MethodName: TowerThree
+      - m_Target: {fileID: 1244827104}
+        m_TargetAssemblyTypeName: TowerBuild, Assembly-CSharp
+        m_MethodName: HillyHooverTower
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15751,7 +15737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1244827101}
-  koopjes: {fileID: 1244827105}
+  towerBuild: {fileID: 1244827104}
 --- !u!1 &1996548039
 GameObject:
   m_ObjectHideFlags: 0
