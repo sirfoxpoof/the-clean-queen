@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TowerBuild : MonoBehaviour
 {
     public static TowerBuild instance;
+
+    public int neededMoney;
 
     private GameObject buildTower;
     public GameObject[] towerPrefabs;
@@ -12,7 +15,9 @@ public class TowerBuild : MonoBehaviour
     public bool towOne, towTwo, towThree, towFour;
     public IngameUI gameUI;
 
-    //public int money;
+    //placeholder
+    public TMP_Text needText;
+
 
     private void Awake()
     {
@@ -30,19 +35,25 @@ public class TowerBuild : MonoBehaviour
         if (towOne)
         {
             buildTower = towerPrefabs[0];
+            neededMoney = 10;
         }
         if (towTwo)
         {
             buildTower = towerPrefabs[1];
+            neededMoney = 15;
         }
         if (towThree)
         {
             buildTower = towerPrefabs[2];
+            neededMoney = 5;
         }
         if (towFour)
         {
             buildTower = towerPrefabs[3];
+            neededMoney = 8;
         }
+
+        needText.text = neededMoney.ToString();
     }
 
 

@@ -8,8 +8,6 @@ public class TowerPlace : MonoBehaviour
     private Renderer ren;
     private GameObject towers;
 
-    private int neededMoney;
-
     public IngameUI gameUI;
     public TowerBuild towerBuild;
     
@@ -43,7 +41,31 @@ public class TowerPlace : MonoBehaviour
                 return;
             }
 
-            if(towerBuild.towOne ||towerBuild.towTwo || towerBuild.towThree || towerBuild.towFour)
+            if(Currency.towerMoney >= towerBuild.neededMoney)
+            {
+                if (towerBuild.towOne || towerBuild.towTwo || towerBuild.towThree || towerBuild.towFour)
+                {
+                    GameObject buildTower = TowerBuild.instance.GetBuildTower();
+                    towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
+
+                    Currency.towerMoney -= towerBuild.neededMoney;
+
+                    towerBuild.towOne = false;
+                    towerBuild.towTwo = false;
+                    towerBuild.towThree = false;
+                    towerBuild.towFour = false;
+                }
+                else
+                {
+                    Debug.Log("No tower selected!!!");
+                }
+            }
+            else
+            {
+                Debug.Log("Not enough money!!!!");
+            }
+
+            /*if(towerBuild.towOne ||towerBuild.towTwo || towerBuild.towThree || towerBuild.towFour)
             {
                 GameObject buildTower = TowerBuild.instance.GetBuildTower();
                 towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
@@ -56,7 +78,7 @@ public class TowerPlace : MonoBehaviour
             else
             {
                 Debug.Log("No tower selected!!!");
-            }
+            }*/
         }
     }
     void OnMouseEnter()

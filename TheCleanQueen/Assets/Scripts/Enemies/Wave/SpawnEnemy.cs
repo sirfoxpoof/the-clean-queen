@@ -70,6 +70,9 @@ public class SpawnEnemy : MonoBehaviour
             wavesClear = true;
             this.enabled = false;
             Time.timeScale = 0;
+
+            Currency.towerMoney = 10;
+
             tutorialPanel.SetActive(false);
             pressEPanel.SetActive(false);
         }
