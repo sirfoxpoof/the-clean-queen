@@ -3226,6 +3226,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beker.Blauw
       objectReference: {fileID: 0}
+    - target: {fileID: 3355996053305268376, guid: 451356f861c3ca74dbb9b90e08598cf8,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451356f861c3ca74dbb9b90e08598cf8, type: 3}
 --- !u!1001 &3171612819027219334
