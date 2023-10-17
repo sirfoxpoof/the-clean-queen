@@ -524,6 +524,21 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
+  - m_Index: 44
+    m_Metrics:
+      m_Width: 71.625
+      m_Height: 85.953125
+      m_HorizontalBearingX: 2.640625
+      m_HorizontalBearingY: 80.859375
+      m_HorizontalAdvance: 77.78125
+    m_GlyphRect:
+      m_X: 554
+      m_Y: 463
+      m_Width: 73
+      m_Height: 87
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
   - m_Index: 45
     m_Metrics:
       m_Width: 101.328125
@@ -1154,21 +1169,6 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
-  - m_Index: 44
-    m_Metrics:
-      m_Width: 71.625
-      m_Height: 85.953125
-      m_HorizontalBearingX: 2.640625
-      m_HorizontalBearingY: 80.859375
-      m_HorizontalAdvance: 77.78125
-    m_GlyphRect:
-      m_X: 554
-      m_Y: 463
-      m_Width: 73
-      m_Height: 87
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 32
@@ -1301,6 +1301,10 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 73
     m_GlyphIndex: 41
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 76
+    m_GlyphIndex: 44
     m_Scale: 1
   - m_ElementType: 1
     m_Unicode: 77
@@ -1465,10 +1469,6 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 8230
     m_GlyphIndex: 225
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 76
-    m_GlyphIndex: 44
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: 9076764961416182975}
@@ -2137,7 +2137,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Thin Pencil Handwriting Atlas Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - UNDERLAY_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2200,7 +2201,7 @@ Material:
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 0.73125
-    - _ScaleRatioC: 0.73125
+    - _ScaleRatioC: 0.4202586
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -2213,10 +2214,10 @@ Material:
     - _StencilWriteMask: 255
     - _TextureHeight: 1024
     - _TextureWidth: 1024
-    - _UnderlayDilate: 0
-    - _UnderlayOffsetX: -0.9
-    - _UnderlayOffsetY: 0
-    - _UnderlaySoftness: 0
+    - _UnderlayDilate: -0.26
+    - _UnderlayOffsetX: -1
+    - _UnderlayOffsetY: -1
+    - _UnderlaySoftness: 1
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
     - _WeightBold: 0.75
@@ -2231,7 +2232,7 @@ Material:
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderlayColor: {r: 0.9811321, g: 0, b: 0.31571075, a: 1}
+    - _UnderlayColor: {r: 0.6792453, g: 0, b: 0.08881889, a: 1}
   m_BuildTextureStacks: []
 --- !u!28 &9076764961416182975
 Texture2D:
