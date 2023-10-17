@@ -7,7 +7,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class IngameUI : MonoBehaviour
 {
-    public GameObject towerMenu, camSwitchButton, towerButton, settingsPanel, winPanel, tutorialText, plafond;
+    public GameObject towerMenu, camSwitchButton, towerButton, settingsPanel, winPanel, plafond, tutorial, moneyPanel, timePanel;
     public Camera mainCam, towerCam;
     public string sceneName;
     public bool towermenuOn = false, settingsAan = false, topDown = false;
@@ -15,16 +15,22 @@ public class IngameUI : MonoBehaviour
     public TowerMenu towerMenuScript;
     public Movement moveScript;
     public SpawnEnemy spawnEnemy;
-    
 
-    public void Start()
+
+    private void Start()
     {
         towerMenu.SetActive(false);
         camSwitchButton.SetActive(false);
         towerButton.SetActive(false);
-        tutorialText.SetActive(true);
         winPanel.SetActive(false);
-        
+        /*tutorial.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        moveScript.enabled = false;
+
+        Time.timeScale = 0;*/
 
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
@@ -35,16 +41,8 @@ public class IngameUI : MonoBehaviour
         }
     }
 
-    public void Update()
+    private void Update()
     {
-        if (sceneName == "BedroomLVL")
-        {
-            if (PlayerPrefs.GetInt("ShowTutorial") == 0)
-            {
-                tutorialText.SetActive(false);
-            }
-        }
-
         if (topDown)
         {
             Cursor.lockState = CursorLockMode.None;
@@ -55,6 +53,7 @@ public class IngameUI : MonoBehaviour
         if(spawnEnemy.wavesClear)
         {
             winPanel.SetActive(true);
+
             moveScript.enabled = false;
             spawnEnemy.countdown = 0;
 
@@ -63,6 +62,20 @@ public class IngameUI : MonoBehaviour
         }
 
     }
+
+   /* public void Tutorial()
+    {
+        Time.timeScale = 1;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        moveScript.enabled = true;
+
+        tutorial.SetActive(false);
+        moneyPanel.SetActive(true);
+        timePanel.SetActive(true);
+    }*/
 
     public void CloseTowerMenu(InputAction.CallbackContext context)
     {
@@ -78,15 +91,19 @@ public class IngameUI : MonoBehaviour
     public void CloseTower()
     {
         moveScript.enabled = true;
+
+        plafond.SetActive(true);
+        towerMenu.SetActive(false);
+
+        towermenuOn = false;
+
+        topDown = false;
+        towerCam.enabled = false;
+        mainCam.enabled = true;
+        
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Time.timeScale = 1;
-        towerMenu.SetActive(false);
-        towermenuOn = false;
-        mainCam.enabled = true;
-        towerCam.enabled = false;
-        plafond.SetActive(true);
-        topDown = false;
     }
 
     public void ShowTowerMenu(InputAction.CallbackContext context)
@@ -98,46 +115,29 @@ public class IngameUI : MonoBehaviour
                 mainCam.enabled = false;
                 towerCam.enabled = true;
                 moveScript.enabled = false;
+
+                towerMenu.SetActive(true);
+                towerButton.SetActive(false);
+                plafond.SetActive(false);
+
+                towermenuOn = true;
+
+                topDown = true;
+
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 Time.timeScale = 0;
-                towerMenu.SetActive(true);
-                towerButton.SetActive(false);
-                towermenuOn = true;
-                PlayerPrefs.SetInt("ShowTutorial", 0);
-                plafond.SetActive(false);
-                topDown = true;
+
             }
 
         }
         
     }
 
-    /*public void TowerCamSwitch()
-    {
-        mainCam.enabled = false;
-        towerCam.enabled = true;
-        towerMenu.SetActive(false);
-        camSwitchButton.SetActive(true);
-        topDown = true;
-        plafond.SetActive(false);
-    }*/
-
-    /*public void MainCamSwitch()
-    {
-        
-        towerMenu.SetActive(true);
-        camSwitchButton.SetActive(false);
-        topDown = false;
-        plafond.SetActive(true);
-    }*/
-
     public void DoSettingsMenu(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            /*Debug.Log("WERK NOU MEE JEZUS");*/
-
             if (!settingsAan)
             {
                 SettingsMenuOn();
@@ -151,9 +151,8 @@ public class IngameUI : MonoBehaviour
         }
     }
 
-    public void DoSettingsMenuButton()
+    private void DoSettingsMenuButton()
     {
-       /* Debug.Log("WERK NOU MEE JEZUS");*/
 
         if (!settingsAan)
         {
@@ -176,13 +175,14 @@ public class IngameUI : MonoBehaviour
         }
         else
         {
-            /*Debug.Log("hoereding");*/
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            settingsPanel.gameObject.SetActive(true);
             Time.timeScale = 0;
+
+            settingsPanel.gameObject.SetActive(true);
+            
             moveScript.enabled = false;
-            tutorialText.SetActive(false);
+            
         }
         
     }
@@ -191,10 +191,12 @@ public class IngameUI : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        settingsPanel.gameObject.SetActive(false);
         Time.timeScale = 1;
+
+        settingsPanel.gameObject.SetActive(false);
+        
         moveScript.enabled = true;
-        tutorialText.SetActive(true);
+        
     }
 }
 
