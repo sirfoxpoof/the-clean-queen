@@ -7,7 +7,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class IngameUI : MonoBehaviour
 {
-    public GameObject towerMenu, camSwitchButton, towerButton, settingsPanel, winPanel, plafond, tutorial, moneyPanel, timePanel;
+    public GameObject towerMenu, towerButton, settingsPanel, winPanel, plafond, tutorial, moneyPanel, timePanel;
     public Camera mainCam, towerCam;
     public string sceneName;
     public bool towermenuOn = false, settingsAan = false, topDown = false;
@@ -20,7 +20,6 @@ public class IngameUI : MonoBehaviour
     private void Start()
     {
         towerMenu.SetActive(false);
-        camSwitchButton.SetActive(false);
         towerButton.SetActive(false);
         winPanel.SetActive(false);
         /*tutorial.SetActive(true);

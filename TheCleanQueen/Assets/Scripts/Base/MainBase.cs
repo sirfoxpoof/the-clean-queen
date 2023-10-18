@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainBase : MonoBehaviour
 {
-    public GameObject baseProtect, gameOverPanel, tutorialPanel, pressEPanel;
+    public GameObject gameOverPanel;
     public Transform finish;
 
     public int health;
@@ -23,7 +23,6 @@ public class MainBase : MonoBehaviour
     {
         if(health <= 0)
         {
-            Destroy(baseProtect);
             gameOver = true;
         }
 
@@ -32,11 +31,8 @@ public class MainBase : MonoBehaviour
             move.enabled = false;
             spawnEnemy.enabled = false;
             gameOverPanel.SetActive(true);
+
             Time.timeScale = 0;
-            tutorialPanel.SetActive(false);
-            pressEPanel.SetActive(false);
-
-
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
@@ -45,11 +41,6 @@ public class MainBase : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-
-        if(health <= 0)
-        {
-            Destroy(baseProtect);
-        }
     }
 
     public void TryAgain()
