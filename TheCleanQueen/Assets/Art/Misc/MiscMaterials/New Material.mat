@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material
-  m_Shader: {fileID: -6465566751694194690, guid: c23cd5d7846e25e4797df110b9168264,
+  m_Shader: {fileID: -6465566751694194690, guid: 17fcec2996dcc184aa3f87127234dd71,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -78,6 +78,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NoiseTexture:
+        m_Texture: {fileID: 2800000, guid: a3e127b5618d4644f84acb90044d03bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Normal:
         m_Texture: {fileID: 2800000, guid: f6f8b0db41f92794da4be0cd667f71a1, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -120,12 +124,16 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _FresnelPower: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _GradientPower: 0.5
     - _Metallic: 0
+    - _NoiseRotation: 0
     - _NoiseStep: 0
     - _OcclusionStrength: 1
+    - _Offset: 0.5
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -140,8 +148,13 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 1, g: 1, b: 1, a: 0}
+    - _Color2: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 0.6226415, g: 0.043467402, b: 0.1933712, a: 0}
     - _FresnelshineColor: {r: 22.363522, g: 22.363522, b: 22.363522, a: 0.09411765}
+    - _GlitterColor: {r: 1, g: 1, b: 1, a: 0}
+    - _NoiseScale: {r: 5, g: 5, b: 0, a: 0}
     - _NoiseSpeed: {r: 0, g: 0.1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
