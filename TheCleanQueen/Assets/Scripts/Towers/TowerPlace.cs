@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TowerPlace : MonoBehaviour
 {
-    private Color hoverColor, startColor;
+    private Color startColour;
     private Renderer ren;
     private GameObject towers;
 
@@ -13,21 +13,23 @@ public class TowerPlace : MonoBehaviour
     
     private void Start()
     {
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
-        hoverColor = Color.white;
-        ren = GetComponent<Renderer>();
-        startColor = ren.material.color;
+
+        gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+        //hoverColour = Color.white;
+        ren = GetComponentInChildren<MeshRenderer>();
+        startColour = ren.material.GetColor("_Color");
+        //ren.material.SetColor("_Color", Color.blue);
     }
 
     private void Update()
     {
         if(gameUI.topDown)
         {
-            gameObject.GetComponent<MeshRenderer>().enabled = true;
+            gameObject.GetComponentInChildren<MeshRenderer>().enabled = true;
         }
         else
         {
-            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
         }
     }
      
@@ -64,35 +66,21 @@ public class TowerPlace : MonoBehaviour
             {
                 Debug.Log("Not enough money!!!!");
             }
-
-            /*if(towerBuild.towOne ||towerBuild.towTwo || towerBuild.towThree || towerBuild.towFour)
-            {
-                GameObject buildTower = TowerBuild.instance.GetBuildTower();
-                towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
-
-                towerBuild.towOne = false;
-                towerBuild.towTwo = false;
-                towerBuild.towThree = false;
-                towerBuild.towFour = false;
-            }
-            else
-            {
-                Debug.Log("No tower selected!!!");
-            }*/
         }
     }
     void OnMouseEnter()
     {
         if (gameUI.topDown)
         {
-          ren.material.color = hoverColor;
+            // ren.material.color = hoverColour;
+            ren.material.SetColor("_Color", Color.blue);
         }
     }
     private void OnMouseExit()
     {
         if (gameUI.topDown)
         {
-            ren.material.color = startColor;
+            ren.material.color = startColour;
         }
     }
 
