@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class Currency : MonoBehaviour
 {
-    public static int towerMoney = 10;
+    public static int money = 10;
     public TMP_Text moneyText;
 
     private void Update()
     {
-        moneyText.text = towerMoney.ToString();
+        moneyText.text = money.ToString();
     }
 }

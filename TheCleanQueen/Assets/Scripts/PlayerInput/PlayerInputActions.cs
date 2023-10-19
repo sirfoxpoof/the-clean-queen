@@ -163,6 +163,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""TrashPickup"",
+                    ""type"": ""Button"",
+                    ""id"": ""f3a2d53e-b1cc-4488-b58b-b001bcb0ea4a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -220,6 +229,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Sprint"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2c352cc2-42f1-426e-bff6-3c207f153c54"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TrashPickup"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -237,6 +257,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_PlayerActionMap_CloseTower = m_PlayerActionMap.FindAction("CloseTower", throwIfNotFound: true);
         m_PlayerActionMap_Jump = m_PlayerActionMap.FindAction("Jump", throwIfNotFound: true);
         m_PlayerActionMap_Sprint = m_PlayerActionMap.FindAction("Sprint", throwIfNotFound: true);
+        m_PlayerActionMap_TrashPickup = m_PlayerActionMap.FindAction("TrashPickup", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -357,6 +378,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerActionMap_CloseTower;
     private readonly InputAction m_PlayerActionMap_Jump;
     private readonly InputAction m_PlayerActionMap_Sprint;
+    private readonly InputAction m_PlayerActionMap_TrashPickup;
     public struct PlayerActionMapActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -366,6 +388,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @CloseTower => m_Wrapper.m_PlayerActionMap_CloseTower;
         public InputAction @Jump => m_Wrapper.m_PlayerActionMap_Jump;
         public InputAction @Sprint => m_Wrapper.m_PlayerActionMap_Sprint;
+        public InputAction @TrashPickup => m_Wrapper.m_PlayerActionMap_TrashPickup;
         public InputActionMap Get() { return m_Wrapper.m_PlayerActionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -390,6 +413,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
+            @TrashPickup.started += instance.OnTrashPickup;
+            @TrashPickup.performed += instance.OnTrashPickup;
+            @TrashPickup.canceled += instance.OnTrashPickup;
         }
 
         private void UnregisterCallbacks(IPlayerActionMapActions instance)
@@ -409,6 +435,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
+            @TrashPickup.started -= instance.OnTrashPickup;
+            @TrashPickup.performed -= instance.OnTrashPickup;
+            @TrashPickup.canceled -= instance.OnTrashPickup;
         }
 
         public void RemoveCallbacks(IPlayerActionMapActions instance)
@@ -438,5 +467,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnCloseTower(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
+        void OnTrashPickup(InputAction.CallbackContext context);
     }
 }

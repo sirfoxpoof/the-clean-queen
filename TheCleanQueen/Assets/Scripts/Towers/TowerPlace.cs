@@ -43,14 +43,14 @@ public class TowerPlace : MonoBehaviour
                 return;
             }
 
-            if(Currency.towerMoney >= towerBuild.neededMoney)
+            if(Currency.money >= towerBuild.neededMoney)
             {
                 if (towerBuild.towOne || towerBuild.towTwo || towerBuild.towThree || towerBuild.towFour)
                 {
                     GameObject buildTower = TowerBuild.instance.GetBuildTower();
                     towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
 
-                    Currency.towerMoney -= towerBuild.neededMoney;
+                    Currency.money -= towerBuild.neededMoney;
 
                     towerBuild.towOne = false;
                     towerBuild.towTwo = false;

@@ -16,6 +16,10 @@ public class TowerExample : MonoBehaviour
 
     public Enemies enemiess;
 
+    //geld
+
+    //public Transform spawnVuilnisZak;
+
 /*
     //bullet
     public Transform spawnBullet;
@@ -52,14 +56,9 @@ public class TowerExample : MonoBehaviour
             if (enemies[0].isDead)
             {
                 print("feuwafbaebefj");
-                Currency.towerMoney += enemies[0].money;
+                Currency.money += enemies[0].enemyMoney;
             }
         }
-
-        
-
-       
-
     }
 
     public void RemoveEnemyFromList(Enemies thisEnemy)

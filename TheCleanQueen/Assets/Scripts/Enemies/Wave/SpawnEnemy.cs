@@ -71,7 +71,7 @@ public class SpawnEnemy : MonoBehaviour
             this.enabled = false;
             Time.timeScale = 0;
 
-            Currency.towerMoney = 10;
+            Currency.money = 10;
 
             tutorialPanel.SetActive(false);
             pressEPanel.SetActive(false);

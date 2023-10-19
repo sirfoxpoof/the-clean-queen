@@ -7,7 +7,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class IngameUI : MonoBehaviour
 {
-    public GameObject towerMenu, towerButton, settingsPanel, winPanel, plafond, tutorial, moneyPanel, timePanel;
+    public GameObject towerMenu, towerButton, settingsPanel, winPanel, plafond, tutorial, moneyPanel, timePanel, towerCostPanel;
     public Camera mainCam, towerCam;
     public string sceneName;
     public bool towermenuOn = false, settingsAan = false, topDown = false;
@@ -93,6 +93,7 @@ public class IngameUI : MonoBehaviour
 
         plafond.SetActive(true);
         towerMenu.SetActive(false);
+        towerCostPanel.SetActive(false);
 
         towermenuOn = false;
 
@@ -118,6 +119,7 @@ public class IngameUI : MonoBehaviour
                 towerMenu.SetActive(true);
                 towerButton.SetActive(false);
                 plafond.SetActive(false);
+                towerCostPanel.SetActive(true);
 
                 towermenuOn = true;
 
