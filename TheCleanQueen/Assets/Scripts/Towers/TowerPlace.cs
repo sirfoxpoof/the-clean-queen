@@ -6,14 +6,15 @@ public class TowerPlace : MonoBehaviour
 {
     private Color startColour;
     private Renderer ren;
-    private GameObject towers;
+    private GameObject towers, buildTower;
+
+    public GameObject deleteKnop;
 
     public IngameUI gameUI;
     public TowerBuild towerBuild;
     
     private void Start()
     {
-
         gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
         //hoverColour = Color.white;
         ren = GetComponentInChildren<MeshRenderer>();
@@ -40,6 +41,7 @@ public class TowerPlace : MonoBehaviour
             if (towers != null)
             {
                 Debug.Log("STAAT AL EEN TOWER AAAAAAAAAAAAAAAAH");
+               //deleteKnop.SetActive(true);
                 return;
             }
 
@@ -47,7 +49,7 @@ public class TowerPlace : MonoBehaviour
             {
                 if (towerBuild.towOne || towerBuild.towTwo || towerBuild.towThree || towerBuild.towFour)
                 {
-                    GameObject buildTower = TowerBuild.instance.GetBuildTower();
+                    buildTower = TowerBuild.instance.GetBuildTower();
                     towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
 
                     Currency.money -= towerBuild.neededMoney;
@@ -83,5 +85,11 @@ public class TowerPlace : MonoBehaviour
             ren.material.color = startColour;
         }
     }
+
+    /*public void DeleteTower()
+    {
+        Destroy(buildTower.gameObject);
+        deleteKnop.SetActive(false);
+    }*/
 
 }

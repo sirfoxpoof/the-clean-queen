@@ -9,19 +9,16 @@ public class TowerExample : MonoBehaviour
     public Transform rotateKut;
     private float rotationSpeed = 10f;
 
-    //public static int towerMoney;
+   
 
     public int damage = 10;
     public float fireRate = 1.1f;
 
     public Enemies enemiess;
 
-    //geld
-
-    //public Transform spawnVuilnisZak;
-
+    public Transform spawnVuilnisZak, vuilnis;
+    
 /*
-    //bullet
     public Transform spawnBullet;
     public GameObject bullet;
     private float speed = 2;
@@ -53,11 +50,12 @@ public class TowerExample : MonoBehaviour
             Vector3 rotation = Quaternion.Lerp(rotateKut.rotation, lookRotation, Time.deltaTime * rotationSpeed).eulerAngles;
             rotateKut.rotation = Quaternion.Euler(0, rotation.y, 0);
 
-            if (enemies[0].isDead)
-            {
-                print("feuwafbaebefj");
-                Currency.money += enemies[0].enemyMoney;
-            }
+            /* if (enemies[0].isDead)
+             {
+                 print("ngrjek");
+                 Instantiate(vuilnis, spawnVuilnisZak);
+                 //Currency.money += enemies[0].enemyMoney;
+             }*/
         }
     }
 
