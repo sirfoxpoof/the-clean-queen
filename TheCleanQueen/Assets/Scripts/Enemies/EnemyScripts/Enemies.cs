@@ -76,7 +76,7 @@ public class Enemies : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void DoDamage(int damage)
+    public void DoDamage(int damage, Transform tower)
     {
         enemyHealth -= damage;
         if (damage > 10)
@@ -89,6 +89,7 @@ public class Enemies : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
+            tower.GetComponent<TowerExample>().PlaatsVuilnis();
             Die();   
         }
     }

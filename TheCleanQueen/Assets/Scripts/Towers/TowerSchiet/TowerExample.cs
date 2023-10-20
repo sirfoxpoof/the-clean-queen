@@ -17,7 +17,7 @@ public class TowerExample : MonoBehaviour
     public Enemies enemiess;
 
     public Transform spawnVuilnisZak, vuilnis;
-    
+    public bool vuilnisHier;
 /*
     public Transform spawnBullet;
     public GameObject bullet;
@@ -49,13 +49,6 @@ public class TowerExample : MonoBehaviour
             Quaternion lookRotation = Quaternion.LookRotation(dir);
             Vector3 rotation = Quaternion.Lerp(rotateKut.rotation, lookRotation, Time.deltaTime * rotationSpeed).eulerAngles;
             rotateKut.rotation = Quaternion.Euler(0, rotation.y, 0);
-
-            /* if (enemies[0].isDead)
-             {
-                 print("ngrjek");
-                 Instantiate(vuilnis, spawnVuilnisZak);
-                 //Currency.money += enemies[0].enemyMoney;
-             }*/
         }
     }
 
@@ -86,8 +79,21 @@ public class TowerExample : MonoBehaviour
     {
         if (enemies.Count > 0)
         {
-            enemies[0].DoDamage(damage);
+            enemies[0].DoDamage(damage, transform);
            //ShootBullet();
+        }
+    }
+
+    public void PlaatsVuilnis ()
+    {
+        if (!vuilnisHier)
+        {
+            Instantiate(vuilnis, spawnVuilnisZak);
+            vuilnisHier = true;
+        }
+        else
+        {
+            return;
         }
     }
 

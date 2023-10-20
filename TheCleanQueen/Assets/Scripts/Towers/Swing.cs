@@ -18,6 +18,6 @@ public class Swing : MonoBehaviour
 
     public void Attack()
     {
-         enemies.DoDamage(swingDamage);
+         enemies.DoDamage(swingDamage, transform);
     }
 }
