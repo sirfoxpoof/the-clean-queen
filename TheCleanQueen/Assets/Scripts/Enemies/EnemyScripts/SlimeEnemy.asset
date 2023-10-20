@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   damage: 10
-  health: 10
-  coins: 5
+  health: 50
+  coins: 20

@@ -99,6 +99,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bezem.structuur
       objectReference: {fileID: 0}
+    - target: {fileID: 910721041334442467, guid: 09ae8486a594d1345b5c52b26ce81d80,
+        type: 3}
+      propertyPath: swingDamage
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09ae8486a594d1345b5c52b26ce81d80, type: 3}
 --- !u!4 &3391397697409680049 stripped

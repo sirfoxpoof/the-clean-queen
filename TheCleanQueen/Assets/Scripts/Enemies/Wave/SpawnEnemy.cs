@@ -8,7 +8,6 @@ using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
 {
-    public GameObject tutorialPanel, pressEPanel;
     public static int enemiesAlive;
 
     public Transform start;
@@ -16,6 +15,8 @@ public class SpawnEnemy : MonoBehaviour
     public WaveScribtableObject wavess;
 
     public TMP_Text waveCountDown;
+
+    public IngameUI IngameUI;
 
     private int waveIndex = 0;
     public float timeBetweenWaves = 5f, countdown = 5f;
@@ -42,11 +43,17 @@ public class SpawnEnemy : MonoBehaviour
             countdown = timeBetweenWaves;
             return;
         }
-          
-          waveCountDown.text = Mathf.Round(countdown).ToString();
-          //waveCountDown.text = string.Format("{0:00.00}", countdown);  
 
-          countdown -= Time.deltaTime;
+        if (IngameUI.playTimer)
+        {
+            waveCountDown.text = Mathf.Round(countdown).ToString();
+            //waveCountDown.text = string.Format("{0:00.00}", countdown);  
+
+            countdown -= Time.deltaTime;
+
+        }
+          
+          
     }
 
     private IEnumerator SpawnWave()
@@ -73,8 +80,7 @@ public class SpawnEnemy : MonoBehaviour
 
             Currency.money = 10;
 
-            tutorialPanel.SetActive(false);
-            pressEPanel.SetActive(false);
+            
         }
        
 
