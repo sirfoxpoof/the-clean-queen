@@ -7,6 +7,7 @@ public class TowerBuild : MonoBehaviour
 {
     public static TowerBuild instance;
 
+    public int[] needMoney;
     public int neededMoney;
 
     private GameObject buildTower;
@@ -35,22 +36,22 @@ public class TowerBuild : MonoBehaviour
         if (towOne)
         {
             buildTower = towerPrefabs[0];
-            neededMoney = 10;
+            neededMoney = needMoney[0];
         }
         if (towTwo)
         {
             buildTower = towerPrefabs[1];
-            neededMoney = 15;
+            neededMoney = needMoney[1];
         }
         if (towThree)
         {
             buildTower = towerPrefabs[2];
-            neededMoney = 5;
+            neededMoney = needMoney[2];
         }
         if (towFour)
         {
             buildTower = towerPrefabs[3];
-            neededMoney = 8;
+            neededMoney = needMoney[3];
         }
 
         needText.text = neededMoney.ToString();

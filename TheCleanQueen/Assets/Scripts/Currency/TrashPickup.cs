@@ -27,7 +27,8 @@ public class TrashPickup : MonoBehaviour
                         trash = hit.transform;
 
                         pickedUp = true;
-                        towerExample = gameObject.GetComponent<TowerExample>();
+                        //towerExample = gameObject.GetComponent<TowerExample>();
+                        towerExample = trash.GetComponentInParent<TowerExample>();
                     }
                 }
             }
@@ -54,10 +55,11 @@ public class TrashPickup : MonoBehaviour
         {
             if (pickedUp)
             {
+                //towerExample.vuilnisHier = false;
                 trash.position = pickupPoint.position;
                 trash.GetComponent<Rigidbody>().useGravity = false;
-                towerExample.vuilnisHier = false;
 
+                trash.GetComponentInParent<TowerExample>().vuilnisHier = false;
                 towerExample = null;
             }
             else
