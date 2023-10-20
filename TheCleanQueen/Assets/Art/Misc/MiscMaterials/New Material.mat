@@ -130,7 +130,7 @@ Material:
     - _GlossyReflections: 0
     - _GradientPower: 0.5
     - _Metallic: 0
-    - _NoiseRotation: 0
+    - _NoiseRotation: 1
     - _NoiseStep: 0
     - _OcclusionStrength: 1
     - _Offset: 0.5

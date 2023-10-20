@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class Enemies : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class Enemies : MonoBehaviour
 
     public bool isDead = false;
 
+    public Vector3 startSize;
+    private Vector3 endSize;
+    public float shrinkFactor = 0.1f;
+    private float startHealth;
+
     private void Awake()
     {
         target = Waypoints.points[0];
@@ -24,6 +30,9 @@ public class Enemies : MonoBehaviour
         enemyMoney = enemies.coins;
 
         basis = GameObject.Find("Finish").GetComponent<MainBase>();
+        startSize = transform.localScale;
+        endSize = startSize * shrinkFactor;
+        startHealth = enemyHealth;
     }
 
 
@@ -70,8 +79,15 @@ public class Enemies : MonoBehaviour
     public void DoDamage(int damage)
     {
         enemyHealth -= damage;
+        if (damage > 10)
+        {
+        }
 
-        if(enemyHealth <= 0)
+        float t = (((enemyHealth - 0f) * (1f - 0f)) / (startHealth - 0f)) + 0f;
+        Vector3 scale = Vector3.Lerp(startSize, endSize, t);
+        transform.localScale = scale;
+
+        if (enemyHealth <= 0)
         {
             Die();   
         }
