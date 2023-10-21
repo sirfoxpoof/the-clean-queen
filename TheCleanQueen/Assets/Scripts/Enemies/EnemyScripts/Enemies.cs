@@ -90,6 +90,7 @@ public class Enemies : MonoBehaviour
         if (enemyHealth <= 0)
         {
             tower.GetComponent<TowerExample>().PlaatsVuilnis();
+            tower.GetComponent<Swing>().PlaatsVuilnis();
             Die();   
         }
     }

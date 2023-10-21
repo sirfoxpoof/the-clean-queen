@@ -7,6 +7,9 @@ public class Swing : MonoBehaviour
     public int swingDamage = 5;
     Enemies enemies;
 
+    public Transform spawnVuilnisZak, vuilnis;
+    public bool hierVuilnis;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Enemy")
@@ -19,5 +22,18 @@ public class Swing : MonoBehaviour
     public void Attack()
     {
          enemies.DoDamage(swingDamage, transform);
+    }
+
+    public void PlaatsVuilnis()
+    {
+        if (!hierVuilnis)
+        {
+            Instantiate(vuilnis, spawnVuilnisZak);
+            hierVuilnis = true;
+        }
+        else
+        {
+            return;
+        }
     }
 }

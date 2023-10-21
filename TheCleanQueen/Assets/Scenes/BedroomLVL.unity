@@ -10622,7 +10622,6 @@ MonoBehaviour:
   trash: {fileID: 0}
   camCam: {fileID: 844814632}
   pickedUp: 0
-  towerExample: {fileID: 0}
 --- !u!1 &847065522
 GameObject:
   m_ObjectHideFlags: 0
@@ -15753,8 +15752,8 @@ MonoBehaviour:
   towerPrefabs:
   - {fileID: 6740455643977592502, guid: afc488bc60fede94d83bf754e3eb2981, type: 3}
   - {fileID: 8265486624793619590, guid: cf407b9b103f6114c8e0f780172b1de9, type: 3}
-  - {fileID: 5791866954924425517, guid: 991b4dd406488c048902feda531fd339, type: 3}
-  - {fileID: 2240053829510536120, guid: 497cd900bf56f534bab629a96230d88f, type: 3}
+  - {fileID: 6693734723484084688, guid: 74005e7fd33f14e45b90f442d9113358, type: 3}
+  - {fileID: 3544886483783010871, guid: 8016598047b6b3849820a310a3f2d428, type: 3}
   towOne: 0
   towTwo: 0
   towThree: 0
