@@ -23,6 +23,8 @@ public class SpawnEnemy : MonoBehaviour
 
     public bool wavesClear;
 
+    public GameObject waveStart;
+
     private void OnEnable()
     {
         wavesClear = false; 
@@ -38,6 +40,7 @@ public class SpawnEnemy : MonoBehaviour
 
         if (countdown <= 0)
         {
+            waveStart.SetActive(true);
             StartCoroutine(SpawnWave());
 
             countdown = timeBetweenWaves;
