@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 19e332fe9eb8ea2469f52dfca89b2cf8
+guid: 313f8bbe590b6574c97bfb2d791bf41f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plattegrond_0
+      name: CloudInside_0
       rect:
         serializedVersion: 2
-        x: 114
-        y: 121
-        width: 1587
-        height: 880
+        x: 1020
+        y: 0
+        width: 900
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30f6ea7e7b4852b4999bfb1380485690
-      internalID: -1524425923
+      spriteID: e3b387227ab1ff04e9687c07d9ede938
+      internalID: 242682730
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 123f8ac9d23fdb148bde4a1d73f049bc
     internalID: 0
     vertices: []
     indices: 
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      plattegrond_0: -1524425923
+      CloudInside_0: 242682730
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
