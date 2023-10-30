@@ -16,8 +16,6 @@ public class TowerBuild : MonoBehaviour
     public bool towOne, towTwo, towThree, towFour;
     public IngameUI gameUI;
 
-    //placeholder
-    public TMP_Text needText;
 
 
     private void Awake()
@@ -54,7 +52,6 @@ public class TowerBuild : MonoBehaviour
             neededMoney = needMoney[3];
         }
 
-        needText.text = neededMoney.ToString();
     }
 
 

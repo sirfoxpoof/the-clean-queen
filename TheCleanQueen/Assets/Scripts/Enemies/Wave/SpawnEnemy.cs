@@ -18,7 +18,7 @@ public class SpawnEnemy : MonoBehaviour
 
     public IngameUI IngameUI;
 
-    private int waveIndex = 0;
+    public int waveIndex = 0;
     public float timeBetweenWaves = 5f, countdown = 5f;
 
     public bool wavesClear;
