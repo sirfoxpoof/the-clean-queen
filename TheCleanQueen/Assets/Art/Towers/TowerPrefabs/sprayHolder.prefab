@@ -116,6 +116,7 @@ MonoBehaviour:
   damage: 1
   fireRate: 1.1
   enemiess: {fileID: 0}
+  trash: {fileID: 1906438528701835861, guid: 722d5b46166e7584bbe565d67839f379, type: 3}
   spawnVuilnisZak: {fileID: 1217801146819921359}
   vuilnis: {fileID: 2130151629573364971, guid: 722d5b46166e7584bbe565d67839f379, type: 3}
   vuilnisHier: 0
@@ -144,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 8054820012748882194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.14314839, y: 0.05005189, z: -0.066735856}
-  m_LocalScale: {x: 0.08298603, y: 0.08298603, z: 0.08298603}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8134513586000944429}
@@ -161,7 +162,7 @@ GameObject:
   - component: {fileID: 4956478418095535021}
   m_Layer: 0
   m_Name: sprayHolder
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

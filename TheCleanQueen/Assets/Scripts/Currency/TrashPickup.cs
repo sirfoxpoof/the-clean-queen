@@ -28,8 +28,6 @@ public class TrashPickup : MonoBehaviour
                         trash = hit.transform;
 
                         pickedUp = true;
-                        //towerExample = gameObject.GetComponent<TowerExample>();
-                        //towerExample = trash.GetComponentInChildren<TowerExample>();
                     }
                 }
             }
@@ -56,12 +54,17 @@ public class TrashPickup : MonoBehaviour
         {
             if (pickedUp)
             {
-                //towerExample.vuilnisHier = false;
                 trash.position = pickupPoint.position;
                 trash.GetComponent<Rigidbody>().useGravity = false;
 
-                trash.GetComponentInChildren<Swing>().hierVuilnis = false;
-                trash.GetComponentInParent<TowerExample>().vuilnisHier = false;
+                if (trash.CompareTag("Swing"))
+                {
+                    trash.GetComponentInParent<Swing>().hierVuilnis = false;
+                }
+                else
+                {
+                    trash.GetComponentInParent<TowerExample>().vuilnisHier = false;
+                }
                 towerExample = null;
             }
             else

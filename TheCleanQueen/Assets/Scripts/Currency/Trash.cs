@@ -5,6 +5,7 @@ using UnityEngine;
 public class Trash : MonoBehaviour
 {
     public TowerExample towerExample;
+    public int trashMoney = 0;
     private void Awake()
     {
         towerExample = GetComponentInParent<TowerExample>();

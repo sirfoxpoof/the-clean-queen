@@ -70,7 +70,7 @@ public class Enemies : MonoBehaviour
         }
         isDead = true;
         
-        Currency.money += enemyMoney;
+        //Currency.money += enemyMoney;
 
         SpawnEnemy.enemiesAlive--;
         Destroy(gameObject);
@@ -79,9 +79,9 @@ public class Enemies : MonoBehaviour
     public void DoDamage(int damage, Transform tower)
     {
         enemyHealth -= damage;
-        if (damage > 10)
+        /*if (damage > 10)
         {
-        }
+        }*/
 
         float t = (((enemyHealth - 0f) * (1f - 0f)) / (startHealth - 0f)) + 0f;
         Vector3 scale = Vector3.Lerp(startSize, endSize, t);
@@ -89,8 +89,15 @@ public class Enemies : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
-            tower.GetComponent<TowerExample>().PlaatsVuilnis();
-            tower.GetComponent<Swing>().PlaatsVuilnis();
+            if (tower.CompareTag("Swing"))
+            {
+                print("aaaaaaaaah");
+                 tower.GetComponent<Swing>().PlaatsVuilnis();
+            }
+            else
+            {
+                tower.GetComponent<TowerExample>().PlaatsVuilnis();
+            }
             Die();   
         }
     }

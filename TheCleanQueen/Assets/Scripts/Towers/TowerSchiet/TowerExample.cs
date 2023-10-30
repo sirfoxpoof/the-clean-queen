@@ -15,6 +15,7 @@ public class TowerExample : MonoBehaviour
     public float fireRate = 1.1f;
 
     public Enemies enemiess;
+    public Trash trash;
 
     public Transform spawnVuilnisZak, vuilnis;
     public bool vuilnisHier;
@@ -89,6 +90,7 @@ public class TowerExample : MonoBehaviour
         if (!vuilnisHier)
         {
             Instantiate(vuilnis, spawnVuilnisZak);
+            trash.trashMoney += enemiess.enemyMoney;
             vuilnisHier = true;
         }
         else
