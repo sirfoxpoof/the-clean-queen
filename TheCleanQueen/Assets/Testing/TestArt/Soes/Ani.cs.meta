@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 495589655716ed14c8996cf6d9b4667f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - walk: {fileID: 4261142923940577074, guid: a6b0606d8ae6a1a40bc412d3045912a3, type: 3}
+  - fall: {fileID: 996556327985334516, guid: a6b0606d8ae6a1a40bc412d3045912a3, type: 3}
+  - kruip: {fileID: -7556381026867111763, guid: a6b0606d8ae6a1a40bc412d3045912a3,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

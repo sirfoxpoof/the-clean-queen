@@ -329,9 +329,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7340432340153797649}
   - component: {fileID: 7085513717068384953}
-  - component: {fileID: 8557571114406563364}
   - component: {fileID: 4835645666579650288}
   - component: {fileID: 4158768614506901485}
+  - component: {fileID: 4838338104536423845}
   m_Layer: 0
   m_Name: kussen
   m_TagString: Enemy
@@ -377,25 +377,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8557571114406563364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7968456530525181611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c3498edc2625044a9c0919023509ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies: {fileID: 0}
-  enemyHealth: 0
-  enemyDamage: 0
-  enemyMoney: 0
-  isDead: 0
-  startSize: {x: 0, y: 0, z: 0}
-  shrinkFactor: 0.1
 --- !u!65 &4835645666579650288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -425,6 +406,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4838338104536423845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968456530525181611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495589655716ed14c8996cf6d9b4667f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8233132041129697909
 GameObject:
   m_ObjectHideFlags: 0
