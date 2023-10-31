@@ -9,7 +9,7 @@ public class MainBase : MonoBehaviour
     public Transform finish;
 
     public int health;
-    private bool gameOver;
+    public bool gameOver;
 
     public Movement move;
     public SpawnEnemy spawnEnemy;
@@ -19,14 +19,11 @@ public class MainBase : MonoBehaviour
     {
         gameOverPanel.SetActive(false);
     }
-    void Update()
-    {
-        if(health <= 0)
-        {
-            gameOver = true;
-        }
 
-        if(gameOver)
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if(health <= 0)
         {
             move.enabled = false;
             spawnEnemy.enabled = false;
@@ -36,11 +33,6 @@ public class MainBase : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
     }
 
     public void TryAgain()

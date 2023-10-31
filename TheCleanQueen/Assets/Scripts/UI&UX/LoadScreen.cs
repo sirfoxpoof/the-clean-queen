@@ -15,30 +15,23 @@ public class LoadScreen : MonoBehaviour
     {
         menuScreen.SetActive(false);
         loadingScreen.SetActive(true);
-        Time.timeScale = 1;
         StartCoroutine(LoadLevelASync(levelToLoad));
     }
 
     IEnumerator LoadLevelASync(string levelToLoad)
     {
+        GameObject[] e = GameObject.FindGameObjectsWithTag("Enemy");
+        for(int i = 0; i < e.Length; i++)
+        {
+            Destroy(e[i]);
+        }
+        Time.timeScale = 1;
         animatorSprite.Play("GirlRun");
         animatorSlider.Play("FakeLoadslider");
-
         AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
-
         loadOperation.allowSceneActivation = false;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(3);
         loadOperation.allowSceneActivation = true;
-
-
-
-        /*while (!loadOperation.isDone)
-        {
-            progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
-            loadprogressSlider.value = progressValue;
-            
-
-        }*/
     }
 
 }

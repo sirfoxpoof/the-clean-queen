@@ -654,7 +654,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 3
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20827085, y: 0.7307038}
   m_AnchorMax: {x: 0.33437508, y: 0.7906296}
@@ -822,7 +822,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.8396226, g: 0, b: 0, a: 1}
     m_HighlightedColor: {r: 1, g: 0.40943396, b: 0.40943396, a: 1}
     m_PressedColor: {r: 0.8392157, g: 0, b: 0, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 0.8392157, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -996,12 +996,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -17, y: 17}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &239992336
 MonoBehaviour:
@@ -1161,7 +1161,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.55300003, y: 0.42229632}
   m_AnchorMax: {x: 0.822, y: 0.56562966}
@@ -1808,7 +1808,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 6
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.56654173, y: 0.45744446}
   m_AnchorMax: {x: 0.8092916, y: 0.5101852}
@@ -2674,7 +2674,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 14
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.65843755, y: 0.6691852}
   m_AnchorMax: {x: 0.80360425, y: 0.74362963}
@@ -2878,7 +2878,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.647, y: 0.439}
   m_AnchorMax: {x: 0.7078126, y: 0.5406667}
@@ -3032,7 +3032,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5608126, y: 0.6488519}
   m_AnchorMax: {x: 0.63000005, y: 0.7182593}
@@ -3092,7 +3092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &561141521
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3107,23 +3107,23 @@ RectTransform:
   m_Children:
   - {fileID: 1393689760}
   - {fileID: 568233258}
-  - {fileID: 638348365}
-  - {fileID: 156362358}
   - {fileID: 257767291}
-  - {fileID: 498556819}
-  - {fileID: 386669955}
   - {fileID: 1085014050}
-  - {fileID: 1605674000}
-  - {fileID: 791065779}
   - {fileID: 1852173033}
+  - {fileID: 638348365}
+  - {fileID: 498556819}
+  - {fileID: 1605674000}
   - {fileID: 1820200986}
-  - {fileID: 1414514231}
-  - {fileID: 1208144263}
-  - {fileID: 454500649}
-  - {fileID: 548265168}
   - {fileID: 1037038027}
+  - {fileID: 156362358}
+  - {fileID: 386669955}
+  - {fileID: 791065779}
+  - {fileID: 1414514231}
+  - {fileID: 548265168}
   - {fileID: 1158845553}
   - {fileID: 239992335}
+  - {fileID: 1208144263}
+  - {fileID: 454500649}
   - {fileID: 2018161194}
   - {fileID: 23409752}
   - {fileID: 1981894174}
@@ -3491,7 +3491,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24239583, y: 0.7307038}
   m_AnchorMax: {x: 0.2837083, y: 0.80266666}
@@ -5148,7 +5148,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.63000005, y: 0.25933337}
   m_AnchorMax: {x: 0.74852085, y: 0.3095556}
@@ -6622,7 +6622,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 16
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5608126, y: 0.6488519}
   m_AnchorMax: {x: 0.6185418, y: 0.74362963}
@@ -6730,7 +6730,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 0.3556144, b: 0, a: 1}
     m_HighlightedColor: {r: 1, g: 0.5716463, b: 0.3339622, a: 1}
     m_PressedColor: {r: 1, g: 0.3556144, b: 0, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 0.35686275, b: 0, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6952,7 +6952,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.55300003, y: 0.20955558}
   m_AnchorMax: {x: 0.81731254, y: 0.365}
@@ -7346,7 +7346,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.56654173, y: 0.6691852}
   m_AnchorMax: {x: 0.6138543, y: 0.7182593}
@@ -7755,7 +7755,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 13
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6402292, y: 0.60451853}
   m_AnchorMax: {x: 0.822, y: 0.8183704}
@@ -8757,7 +8757,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.293, y: 0.365}
   m_AnchorMax: {x: 0.44343752, y: 0.48611116}
@@ -9089,7 +9089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1442565114
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9620,7 +9620,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.8392157, g: 0, b: 0.4779429, a: 1}
     m_HighlightedColor: {r: 1, g: 0.1830188, b: 0.64877456, a: 1}
     m_PressedColor: {r: 0.8392157, g: 0, b: 0.47843137, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.8392157, g: 0, b: 0.47843137, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10093,7 +10093,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.65843755, y: 0.23433337}
   m_AnchorMax: {x: 0.7078126, y: 0.32618517}
@@ -10960,7 +10960,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3196042, y: 0.35114816}
   m_AnchorMax: {x: 0.41500002, y: 0.52862966}
@@ -11128,7 +11128,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561141521}
-  m_RootOrder: 10
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20827085, y: 0.2993704}
   m_AnchorMax: {x: 0.52043754, y: 0.5915556}
@@ -12443,7 +12443,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.9150943, g: 0.8425012, b: 0, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9398008, b: 0.22075468, a: 1}
     m_PressedColor: {r: 0.9137255, g: 0.84313726, b: 0, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.9137255, g: 0.84313726, b: 0, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
