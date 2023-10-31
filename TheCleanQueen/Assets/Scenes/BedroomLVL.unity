@@ -3688,6 +3688,30 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f3a2d53e-b1cc-4488-b58b-b001bcb0ea4a
     m_ActionName: PlayerActionMap/TrashPickup[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1244827110}
+        m_TargetAssemblyTypeName: cheat, Assembly-CSharp
+        m_MethodName: ExtraMOney
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6ad42b72-9a44-4508-8750-1d027edde5be
+    m_ActionName: PlayerActionMap/GetMoney[/Keyboard/f1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9955cbb9-c880-4fae-bc4d-cb39b12fb34c
+    m_ActionName: PlayerActionMap/SkipWave[/Keyboard/f2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 146f7ad2-4260-4515-b4ae-a846a09f3468
+    m_ActionName: PlayerActionMap/KillEnemies[/Keyboard/f3]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerActionMap
@@ -3762,7 +3786,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &320065526
 GameObject:
@@ -5162,7 +5186,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &431692315
 PrefabInstance:
@@ -5944,7 +5968,7 @@ Transform:
   m_Children:
   - {fileID: 844814633}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &491839452
 MonoBehaviour:
@@ -6572,7 +6596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587392203}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4389999, y: -0.254021, z: 0.602}
+  m_LocalPosition: {x: 0.4389999, y: -0.254021, z: 0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15849,6 +15873,7 @@ GameObject:
   - component: {fileID: 1244827107}
   - component: {fileID: 1244827108}
   - component: {fileID: 1244827109}
+  - component: {fileID: 1244827110}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -15921,7 +15946,7 @@ Transform:
   m_Children:
   - {fileID: 1803592616}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1244827104
 MonoBehaviour:
@@ -16009,6 +16034,18 @@ MonoBehaviour:
   enemyCount: {fileID: 1685582361}
   waveCount: {fileID: 1643539960}
   SpawnEnemy: {fileID: 1244827102}
+--- !u!114 &1244827110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244827100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b325f556605456b46ac61fb00a3b497f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1244928788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18183,7 +18220,7 @@ Transform:
   m_Children:
   - {fileID: 716887812}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1385393158 stripped
 Transform:
@@ -19882,7 +19919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 1836323110}
   finish: {fileID: 1538104294}
-  health: 10
+  health: 20
   gameOver: 0
   move: {fileID: 491839445}
   spawnEnemy: {fileID: 1244827102}
@@ -21271,7 +21308,7 @@ Transform:
   - {fileID: 529550875}
   - {fileID: 1538104294}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1676275805
 PrefabInstance:
@@ -27127,7 +27164,7 @@ Transform:
   - {fileID: 1544986635}
   - {fileID: 1374269111}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1990353206
 GameObject:

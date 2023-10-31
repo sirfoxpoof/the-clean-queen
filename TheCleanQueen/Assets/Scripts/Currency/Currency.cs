@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class Currency : MonoBehaviour
 {
-    public static int money = 1000;
+    public static int money;
     public TMP_Text moneyText;
 
+    private void Awake()
+    {
+        money = 100;
+    }
     private void Update()
     {
         moneyText.text = money.ToString();
