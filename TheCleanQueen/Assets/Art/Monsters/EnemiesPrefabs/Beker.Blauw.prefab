@@ -1522,7 +1522,7 @@ GameObject:
   - component: {fileID: 2510269812539389351}
   m_Layer: 0
   m_Name: Beker.Blauw
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1580,8 +1580,10 @@ MonoBehaviour:
   enemies: {fileID: 11400000, guid: b8539669b57a66340bec1df3da35e39e, type: 2}
   enemyHealth: 0
   enemyDamage: 0
-  money: 0
+  enemyMoney: 0
   isDead: 0
+  startSize: {x: 0, y: 0, z: 0}
+  shrinkFactor: 0.1
 --- !u!65 &8959112297932659549
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6682706898909354338}
   m_Layer: 0
   m_Name: Bordd
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,8 +50,10 @@ MonoBehaviour:
   enemies: {fileID: 11400000, guid: 52086b89bebc8ea46998f05c0e56cb8b, type: 2}
   enemyHealth: 0
   enemyDamage: 0
-  money: 0
+  enemyMoney: 0
   isDead: 0
+  startSize: {x: 0, y: 0, z: 0}
+  shrinkFactor: 0.1
 --- !u!65 &2446491714501673987
 BoxCollider:
   m_ObjectHideFlags: 0
