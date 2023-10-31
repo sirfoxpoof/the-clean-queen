@@ -125,27 +125,36 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "ad60b2ca-a758-4390-b994-a0df70bf0a5e",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Sprint",
-                    "type": "Button",
-                    "id": "6d513e36-5d15-42f8-a51c-94610339fc7a",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "TrashPickup",
                     "type": "Button",
                     "id": "f3a2d53e-b1cc-4488-b58b-b001bcb0ea4a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GetMoney",
+                    "type": "Button",
+                    "id": "6ad42b72-9a44-4508-8750-1d027edde5be",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SkipWave",
+                    "type": "Button",
+                    "id": "9955cbb9-c880-4fae-bc4d-cb39b12fb34c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "KillEnemies",
+                    "type": "Button",
+                    "id": "146f7ad2-4260-4515-b4ae-a846a09f3468",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -188,34 +197,45 @@
                 },
                 {
                     "name": "",
-                    "id": "d8582e8e-9fc7-4cc9-9f79-96ea0fd02261",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8627fe83-bba2-44bc-b238-0b12c5c34f50",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "2c352cc2-42f1-426e-bff6-3c207f153c54",
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "TrashPickup",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e073b459-6cb5-46d2-a6f3-1504d36e4430",
+                    "path": "<Keyboard>/f1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GetMoney",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6acf34bb-d2a3-441b-bc91-8c81c678eb2f",
+                    "path": "<Keyboard>/f2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SkipWave",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dd65313e-59f1-4f1b-981a-a6ffa8fdae54",
+                    "path": "<Keyboard>/f3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KillEnemies",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

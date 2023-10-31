@@ -147,27 +147,36 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Jump"",
-                    ""type"": ""Button"",
-                    ""id"": ""ad60b2ca-a758-4390-b994-a0df70bf0a5e"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Sprint"",
-                    ""type"": ""Button"",
-                    ""id"": ""6d513e36-5d15-42f8-a51c-94610339fc7a"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""TrashPickup"",
                     ""type"": ""Button"",
                     ""id"": ""f3a2d53e-b1cc-4488-b58b-b001bcb0ea4a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""GetMoney"",
+                    ""type"": ""Button"",
+                    ""id"": ""6ad42b72-9a44-4508-8750-1d027edde5be"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SkipWave"",
+                    ""type"": ""Button"",
+                    ""id"": ""9955cbb9-c880-4fae-bc4d-cb39b12fb34c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""KillEnemies"",
+                    ""type"": ""Button"",
+                    ""id"": ""146f7ad2-4260-4515-b4ae-a846a09f3468"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -210,34 +219,45 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""d8582e8e-9fc7-4cc9-9f79-96ea0fd02261"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8627fe83-bba2-44bc-b238-0b12c5c34f50"",
-                    ""path"": ""<Keyboard>/shift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Sprint"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""2c352cc2-42f1-426e-bff6-3c207f153c54"",
                     ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""TrashPickup"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e073b459-6cb5-46d2-a6f3-1504d36e4430"",
+                    ""path"": ""<Keyboard>/f1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GetMoney"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6acf34bb-d2a3-441b-bc91-8c81c678eb2f"",
+                    ""path"": ""<Keyboard>/f2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SkipWave"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dd65313e-59f1-4f1b-981a-a6ffa8fdae54"",
+                    ""path"": ""<Keyboard>/f3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""KillEnemies"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -255,9 +275,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_PlayerActionMap_Settings = m_PlayerActionMap.FindAction("Settings", throwIfNotFound: true);
         m_PlayerActionMap_TowerButton = m_PlayerActionMap.FindAction("TowerButton", throwIfNotFound: true);
         m_PlayerActionMap_CloseTower = m_PlayerActionMap.FindAction("CloseTower", throwIfNotFound: true);
-        m_PlayerActionMap_Jump = m_PlayerActionMap.FindAction("Jump", throwIfNotFound: true);
-        m_PlayerActionMap_Sprint = m_PlayerActionMap.FindAction("Sprint", throwIfNotFound: true);
         m_PlayerActionMap_TrashPickup = m_PlayerActionMap.FindAction("TrashPickup", throwIfNotFound: true);
+        m_PlayerActionMap_GetMoney = m_PlayerActionMap.FindAction("GetMoney", throwIfNotFound: true);
+        m_PlayerActionMap_SkipWave = m_PlayerActionMap.FindAction("SkipWave", throwIfNotFound: true);
+        m_PlayerActionMap_KillEnemies = m_PlayerActionMap.FindAction("KillEnemies", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -376,9 +397,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerActionMap_Settings;
     private readonly InputAction m_PlayerActionMap_TowerButton;
     private readonly InputAction m_PlayerActionMap_CloseTower;
-    private readonly InputAction m_PlayerActionMap_Jump;
-    private readonly InputAction m_PlayerActionMap_Sprint;
     private readonly InputAction m_PlayerActionMap_TrashPickup;
+    private readonly InputAction m_PlayerActionMap_GetMoney;
+    private readonly InputAction m_PlayerActionMap_SkipWave;
+    private readonly InputAction m_PlayerActionMap_KillEnemies;
     public struct PlayerActionMapActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -386,9 +408,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @Settings => m_Wrapper.m_PlayerActionMap_Settings;
         public InputAction @TowerButton => m_Wrapper.m_PlayerActionMap_TowerButton;
         public InputAction @CloseTower => m_Wrapper.m_PlayerActionMap_CloseTower;
-        public InputAction @Jump => m_Wrapper.m_PlayerActionMap_Jump;
-        public InputAction @Sprint => m_Wrapper.m_PlayerActionMap_Sprint;
         public InputAction @TrashPickup => m_Wrapper.m_PlayerActionMap_TrashPickup;
+        public InputAction @GetMoney => m_Wrapper.m_PlayerActionMap_GetMoney;
+        public InputAction @SkipWave => m_Wrapper.m_PlayerActionMap_SkipWave;
+        public InputAction @KillEnemies => m_Wrapper.m_PlayerActionMap_KillEnemies;
         public InputActionMap Get() { return m_Wrapper.m_PlayerActionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -407,15 +430,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @CloseTower.started += instance.OnCloseTower;
             @CloseTower.performed += instance.OnCloseTower;
             @CloseTower.canceled += instance.OnCloseTower;
-            @Jump.started += instance.OnJump;
-            @Jump.performed += instance.OnJump;
-            @Jump.canceled += instance.OnJump;
-            @Sprint.started += instance.OnSprint;
-            @Sprint.performed += instance.OnSprint;
-            @Sprint.canceled += instance.OnSprint;
             @TrashPickup.started += instance.OnTrashPickup;
             @TrashPickup.performed += instance.OnTrashPickup;
             @TrashPickup.canceled += instance.OnTrashPickup;
+            @GetMoney.started += instance.OnGetMoney;
+            @GetMoney.performed += instance.OnGetMoney;
+            @GetMoney.canceled += instance.OnGetMoney;
+            @SkipWave.started += instance.OnSkipWave;
+            @SkipWave.performed += instance.OnSkipWave;
+            @SkipWave.canceled += instance.OnSkipWave;
+            @KillEnemies.started += instance.OnKillEnemies;
+            @KillEnemies.performed += instance.OnKillEnemies;
+            @KillEnemies.canceled += instance.OnKillEnemies;
         }
 
         private void UnregisterCallbacks(IPlayerActionMapActions instance)
@@ -429,15 +455,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @CloseTower.started -= instance.OnCloseTower;
             @CloseTower.performed -= instance.OnCloseTower;
             @CloseTower.canceled -= instance.OnCloseTower;
-            @Jump.started -= instance.OnJump;
-            @Jump.performed -= instance.OnJump;
-            @Jump.canceled -= instance.OnJump;
-            @Sprint.started -= instance.OnSprint;
-            @Sprint.performed -= instance.OnSprint;
-            @Sprint.canceled -= instance.OnSprint;
             @TrashPickup.started -= instance.OnTrashPickup;
             @TrashPickup.performed -= instance.OnTrashPickup;
             @TrashPickup.canceled -= instance.OnTrashPickup;
+            @GetMoney.started -= instance.OnGetMoney;
+            @GetMoney.performed -= instance.OnGetMoney;
+            @GetMoney.canceled -= instance.OnGetMoney;
+            @SkipWave.started -= instance.OnSkipWave;
+            @SkipWave.performed -= instance.OnSkipWave;
+            @SkipWave.canceled -= instance.OnSkipWave;
+            @KillEnemies.started -= instance.OnKillEnemies;
+            @KillEnemies.performed -= instance.OnKillEnemies;
+            @KillEnemies.canceled -= instance.OnKillEnemies;
         }
 
         public void RemoveCallbacks(IPlayerActionMapActions instance)
@@ -465,8 +494,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnSettings(InputAction.CallbackContext context);
         void OnTowerButton(InputAction.CallbackContext context);
         void OnCloseTower(InputAction.CallbackContext context);
-        void OnJump(InputAction.CallbackContext context);
-        void OnSprint(InputAction.CallbackContext context);
         void OnTrashPickup(InputAction.CallbackContext context);
+        void OnGetMoney(InputAction.CallbackContext context);
+        void OnSkipWave(InputAction.CallbackContext context);
+        void OnKillEnemies(InputAction.CallbackContext context);
     }
 }

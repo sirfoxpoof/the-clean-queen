@@ -139,13 +139,18 @@ PrefabInstance:
     - target: {fileID: 910721041334442467, guid: 09ae8486a594d1345b5c52b26ce81d80,
         type: 3}
       propertyPath: swingDamage
-      value: 5
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 910721041334442467, guid: 09ae8486a594d1345b5c52b26ce81d80,
         type: 3}
       propertyPath: spawnVuilnisZak
       value: 
       objectReference: {fileID: 3234783512765116405}
+    - target: {fileID: 1324136737357655126, guid: 09ae8486a594d1345b5c52b26ce81d80,
+        type: 3}
+      propertyPath: m_TagString
+      value: Swing
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09ae8486a594d1345b5c52b26ce81d80, type: 3}
 --- !u!4 &3391397697409680049 stripped

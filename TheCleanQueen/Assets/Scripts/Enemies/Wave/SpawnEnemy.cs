@@ -75,13 +75,13 @@ public class SpawnEnemy : MonoBehaviour
             }
         }
 
-        if (enemiesAlive <= 0)
+        if (enemiesAlive <= 0 && waveIndex == wavess.waves.Length)
         {
             wavesClear = true;
             this.enabled = false;
             Time.timeScale = 0;
 
-            Currency.money = 10;
+           // Currency.money = 10;
 
             
         }

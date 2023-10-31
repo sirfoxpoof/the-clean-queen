@@ -70,7 +70,7 @@ public class Enemies : MonoBehaviour
         }
         isDead = true;
         
-        //Currency.money += enemyMoney;
+        Currency.money += enemyMoney;
 
         SpawnEnemy.enemiesAlive--;
         Destroy(gameObject);
@@ -89,14 +89,18 @@ public class Enemies : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
-            if (tower.CompareTag("Swing"))
+            if (tower.CompareTag("Tower"))
             {
                 print("aaaaaaaaah");
-                 tower.GetComponent<Swing>().PlaatsVuilnis();
+                tower.GetComponent<TowerExample>().PlaatsVuilnis();
+            }
+            else if (tower.CompareTag("Swing"))
+            {
+                tower.GetComponent<Swing>().PlaatsVuilnis();
             }
             else
             {
-                tower.GetComponent<TowerExample>().PlaatsVuilnis();
+                return;
             }
             Die();   
         }

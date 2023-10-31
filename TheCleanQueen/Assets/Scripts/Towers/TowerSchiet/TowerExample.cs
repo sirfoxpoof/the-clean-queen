@@ -90,11 +90,12 @@ public class TowerExample : MonoBehaviour
         if (!vuilnisHier)
         {
             Instantiate(vuilnis, spawnVuilnisZak);
-            trash.trashMoney += enemiess.enemyMoney;
             vuilnisHier = true;
+            //trash.trashMoney = enemiess.enemyMoney;
         }
         else
         {
+            //trash.trashMoney += enemiess.enemyMoney;
             return;
         }
     }
