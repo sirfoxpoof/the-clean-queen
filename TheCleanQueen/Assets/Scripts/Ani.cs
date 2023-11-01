@@ -11,25 +11,33 @@ using UnityEngine.Playables;
 public class Ani : MonoBehaviour
 {
     public Animator falll;
-   public bool fallen; 
+    int kussenhealth;
+    Enemies enemies;
 
+    private void Awake()
+    {
+        enemies = gameObject.GetComponentInParent<Enemies>();
+    }
     private void Start()
     {
-        falll.Play("Walk");
-        
+        kussenhealth = enemies.enemyHealth;
+
+        //falll.Play("Walk");
+
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            print("Q");
-            falll.Play("fall");
-           
-        }
-        
-        
-       
+        falll.SetFloat("Health", kussenhealth);
+        //if (kussenhealth  < 5)
+        //{
+
+        //falll.Play("fall");
+
+        //}
+
+
+
     }
    
 }

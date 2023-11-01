@@ -21,6 +21,7 @@ public class Enemies : MonoBehaviour
     private Vector3 endSize;
     public float shrinkFactor = 0.1f;
     private float startHealth;
+    private float enemyMinSize = 0.25f;
 
     private void Awake()
     {
@@ -79,13 +80,10 @@ public class Enemies : MonoBehaviour
     public void DoDamage(int damage, Transform tower)
     {
         enemyHealth -= damage;
-        /*if (damage > 10)
-        {
-        }*/
 
-        float t = (((enemyHealth - 0f) * (1f - 0f)) / (startHealth - 0f)) + 0f;
-        Vector3 scale = Vector3.Lerp(startSize, endSize, Mathf.Clamp01(t));
-        transform.localScale = scale;
+        float t = (((enemyHealth - 0f) * (1f - enemyMinSize)) / (startHealth - 0f)) + enemyMinSize;
+        t = Mathf.Clamp01(t);
+        transform.localScale = new Vector3(t, t, t);
 
 
         if (enemyHealth <= 0)
