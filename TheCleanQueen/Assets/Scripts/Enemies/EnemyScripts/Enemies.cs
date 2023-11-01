@@ -70,7 +70,7 @@ public class Enemies : MonoBehaviour
         }
         isDead = true;
         
-        Currency.money += enemyMoney;
+        //Currency.money += enemyMoney;
 
         SpawnEnemy.enemiesAlive--;
         Destroy(gameObject);
@@ -84,8 +84,9 @@ public class Enemies : MonoBehaviour
         }*/
 
         float t = (((enemyHealth - 0f) * (1f - 0f)) / (startHealth - 0f)) + 0f;
-        Vector3 scale = Vector3.Lerp(startSize, endSize, t);
+        Vector3 scale = Vector3.Lerp(startSize, endSize, Mathf.Clamp01(t));
         transform.localScale = scale;
+
 
         if (enemyHealth <= 0)
         {

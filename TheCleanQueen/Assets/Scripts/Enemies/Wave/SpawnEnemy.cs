@@ -82,12 +82,8 @@ public class SpawnEnemy : MonoBehaviour
             Time.timeScale = 0;
 
            // Currency.money = 10;
-
-            
         }
        
-
-
         waveIndex++;
         Debug.Log(waveIndex);
     }

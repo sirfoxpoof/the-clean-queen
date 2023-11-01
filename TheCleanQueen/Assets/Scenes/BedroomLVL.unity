@@ -16019,6 +16019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 1077435624}
+  moneyTowerText: {fileID: 1481206074}
 --- !u!114 &1244827109
 MonoBehaviour:
   m_ObjectHideFlags: 0

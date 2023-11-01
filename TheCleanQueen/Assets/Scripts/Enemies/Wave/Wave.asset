@@ -13,11 +13,32 @@ MonoBehaviour:
   m_Name: Wave
   m_EditorClassIdentifier: 
   waves:
-  - rate: 2
+  - rate: 1
     enemies:
     - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
         type: 3}
-      count: 8
+      count: 1
+    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
+        type: 3}
+      count: 1
   - rate: 1
     enemies:
     - enemy: {fileID: 3886670808775458884, guid: 8c143a301c0c8a747946885e5a807be2,

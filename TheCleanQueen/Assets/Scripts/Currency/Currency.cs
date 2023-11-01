@@ -6,7 +6,7 @@ using UnityEngine;
 public class Currency : MonoBehaviour
 {
     public static int money;
-    public TMP_Text moneyText;
+    public TMP_Text moneyText, moneyTowerText;
 
     private void Awake()
     {
@@ -15,5 +15,6 @@ public class Currency : MonoBehaviour
     private void Update()
     {
         moneyText.text = money.ToString();
+        moneyTowerText.text = money.ToString();
     }
 }

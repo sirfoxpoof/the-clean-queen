@@ -59,7 +59,7 @@ public class TrashPickup : MonoBehaviour
 
                 if (trash.CompareTag("Swing"))
                 {
-                    trash.GetComponentInParent<Swing>().hierVuilnis = false;
+                    trash.GetComponentInChildren<Swing>().hierVuilnis = false;
                 }
                 else
                 {

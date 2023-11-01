@@ -100,7 +100,7 @@ public class IngameUI : MonoBehaviour
         topDown = false;
         towerCam.enabled = false;
         mainCam.enabled = true;
-        
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Time.timeScale = 1;
