@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3171612820617892916}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -51,8 +51,10 @@ MonoBehaviour:
   enemies: {fileID: 11400000, guid: b3f43d5a630ef3e4aad3b0ee6a587ca4, type: 2}
   enemyHealth: 0
   enemyDamage: 0
-  money: 0
+  enemyMoney: 0
   isDead: 0
+  startSize: {x: 0, y: 0, z: 0}
+  shrinkFactor: 0.1
 --- !u!65 &1767222863134878074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -184,9 +186,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -203,13 +205,31 @@ AudioSource:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      time: 0.15809119
+      value: 0.85552555
+      inSlope: -1.1479214
+      outSlope: -1.1479214
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
+      outWeight: 0.3570051
+    - serializedVersion: 3
+      time: 0.4995435
+      value: 0.20845181
+      inSlope: -1.0855882
+      outSlope: -1.0855882
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.37036648
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.5071717
+      outSlope: -0.5071717
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.4331538
       outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -219,7 +239,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -249,7 +269,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.821
       inSlope: 0
       outSlope: 0
       tangentMode: 0
