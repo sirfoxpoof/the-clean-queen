@@ -15988,6 +15988,7 @@ MonoBehaviour:
   settingsAan: 0
   topDown: 0
   playTimer: 0
+  tutorialDone: 0
   towerMenuScript: {fileID: 491839452}
   moveScript: {fileID: 491839445}
   spawnEnemy: {fileID: 1244827102}

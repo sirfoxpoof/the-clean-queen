@@ -10,7 +10,7 @@ public class IngameUI : MonoBehaviour
     public GameObject towerMenu, towerButton, settingsPanel, winPanel, plafond, tutorial, moneyPanel, timePanel;
     public Camera mainCam, towerCam;
     public string sceneName;
-    public bool towermenuOn = false, settingsAan = false, topDown = false, playTimer = false;
+    public bool towermenuOn = false, settingsAan = false, topDown = false, playTimer = false, tutorialDone = false;
 
     public TowerMenu towerMenuScript;
     public Movement moveScript;
@@ -71,6 +71,7 @@ public class IngameUI : MonoBehaviour
 
         moveScript.enabled = true;
         playTimer = true;
+        tutorialDone = true;
 
         tutorial.SetActive(false);
         moneyPanel.SetActive(true);
@@ -188,13 +189,29 @@ public class IngameUI : MonoBehaviour
 
     public void SettingsMenuOff()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        Time.timeScale = 1;
+        if(tutorialDone == false)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0;
 
-        settingsPanel.gameObject.SetActive(false);
+            settingsPanel.gameObject.SetActive(false);
+
+            moveScript.enabled = false;
+        }
+
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Time.timeScale = 1;
+
+            settingsPanel.gameObject.SetActive(false);
+
+            moveScript.enabled = true;
+
+        }
         
-        moveScript.enabled = true;
         
     }
 }
