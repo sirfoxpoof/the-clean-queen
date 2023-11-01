@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41452190ed04a9447a545d09e6c1512c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deleteKnop: {fileID: 0}
   gameUI: {fileID: 0}
   towerBuild: {fileID: 0}
 --- !u!1001 &5730215459827292476
@@ -68,16 +69,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8846749344780560594}
     m_Modifications:
-    - target: {fileID: 7084558736078780359, guid: 8cf1cf39d6fd69144acf24476ce71a1a,
-        type: 3}
-      propertyPath: gameUI
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7084558736078780359, guid: 8cf1cf39d6fd69144acf24476ce71a1a,
-        type: 3}
-      propertyPath: towerBuild
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7371780145762531306, guid: 8cf1cf39d6fd69144acf24476ce71a1a,
         type: 3}
       propertyPath: m_Name
@@ -87,21 +78,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7855969145513553232, guid: 8cf1cf39d6fd69144acf24476ce71a1a,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7855969145513553232, guid: 8cf1cf39d6fd69144acf24476ce71a1a,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7855969145513553232, guid: 8cf1cf39d6fd69144acf24476ce71a1a,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.525126
       objectReference: {fileID: 0}
     - target: {fileID: 7855969145513553232, guid: 8cf1cf39d6fd69144acf24476ce71a1a,
         type: 3}
@@ -153,9 +129,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7084558736078780359, guid: 8cf1cf39d6fd69144acf24476ce71a1a, type: 3}
-    - {fileID: 5935193133925083254, guid: 8cf1cf39d6fd69144acf24476ce71a1a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cf1cf39d6fd69144acf24476ce71a1a, type: 3}
 --- !u!4 &2487063181675377772 stripped
 Transform:

@@ -105,6 +105,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp ding
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d5656bc78a1b2d4d856bd3e580a6130,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d5656bc78a1b2d4d856bd3e580a6130, type: 3}
 --- !u!4 &2886806838289396875 stripped
@@ -184,6 +189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3710f9646420d734bab7de431f8326a9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3710f9646420d734bab7de431f8326a9, type: 3}
