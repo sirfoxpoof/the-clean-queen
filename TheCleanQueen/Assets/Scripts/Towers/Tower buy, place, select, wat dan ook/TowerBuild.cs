@@ -12,11 +12,10 @@ public class TowerBuild : MonoBehaviour
 
     private GameObject buildTower;
     public GameObject[] towerPrefabs;
+    public GameObject selectedTowerPlacer;
 
     public bool towOne, towTwo, towThree, towFour;
     public IngameUI gameUI;
-
-
 
     private void Awake()
     {
@@ -50,6 +49,7 @@ public class TowerBuild : MonoBehaviour
         {
             buildTower = towerPrefabs[3];
             neededMoney = needMoney[3];
+            
         }
 
     }
@@ -86,6 +86,7 @@ public class TowerBuild : MonoBehaviour
 
     public GameObject GetBuildTower()
     {
+        Debug.Log(buildTower);
         return buildTower;
     }
 }

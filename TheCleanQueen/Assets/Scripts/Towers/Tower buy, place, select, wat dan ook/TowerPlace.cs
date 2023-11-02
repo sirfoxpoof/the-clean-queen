@@ -10,6 +10,8 @@ public class TowerPlace : MonoBehaviour
 
     public GameObject deleteKnop;
 
+    public GameObject towerSprites;
+    public Vector3 posTowerPlace;
     public IngameUI gameUI;
     public TowerBuild towerBuild;
     
@@ -18,7 +20,7 @@ public class TowerPlace : MonoBehaviour
         gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
         //hoverColour = Color.white;
         ren = GetComponentInChildren<MeshRenderer>();
-        startColour = ren.material.GetColor("_Color");
+        startColour = ren.material.GetColor("_ShimmerColor");
         //ren.material.SetColor("_Color", Color.blue);
     }
 
@@ -45,24 +47,11 @@ public class TowerPlace : MonoBehaviour
                 return;
             }
 
+            towerSprites.SetActive(true);
+
             if(Currency.money >= towerBuild.neededMoney)
             {
-                if (towerBuild.towOne || towerBuild.towTwo || towerBuild.towThree || towerBuild.towFour)
-                {
-                    buildTower = TowerBuild.instance.GetBuildTower();
-                    towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
-
-                    Currency.money -= towerBuild.neededMoney;
-
-                    towerBuild.towOne = false;
-                    towerBuild.towTwo = false;
-                    towerBuild.towThree = false;
-                    towerBuild.towFour = false;
-                }
-                else
-                {
-                    Debug.Log("No tower selected!!!");
-                }
+                
             }
             else
             {
@@ -74,7 +63,6 @@ public class TowerPlace : MonoBehaviour
     {
         if (gameUI.topDown)
         {
-            // ren.material.color = hoverColour;
             ren.material.SetColor("_Color", Color.blue);
         }
     }
@@ -84,6 +72,39 @@ public class TowerPlace : MonoBehaviour
         {
             ren.material.color = startColour;
         }
+    }
+
+    public void PlaceTower()
+    {
+        if (towerBuild.towOne || towerBuild.towTwo || towerBuild.towThree || towerBuild.towFour)
+        {
+            buildTower = TowerBuild.instance.GetBuildTower();
+
+            Debug.Log(towerBuild.towOne);
+            Debug.Log(towerBuild.towTwo);
+            Debug.Log(towerBuild.towThree);
+            Debug.Log(towerBuild.towFour);
+
+
+            towers = (GameObject)Instantiate(buildTower, posTowerPlace, transform.rotation);
+
+
+            Currency.money -= towerBuild.neededMoney;
+
+            towerSprites.SetActive(false);
+
+            towerBuild.towOne = false;
+            towerBuild.towTwo = false;
+            towerBuild.towThree = false;
+            towerBuild.towFour = false;
+        }
+    }
+
+    public void GetTransformTowerPlace()
+    {
+        posTowerPlace = transform.position;
+
+
     }
 
     /*public void DeleteTower()
