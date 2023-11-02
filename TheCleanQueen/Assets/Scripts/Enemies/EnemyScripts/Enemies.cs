@@ -85,7 +85,6 @@ public class Enemies : MonoBehaviour
         t = Mathf.Clamp01(t);
         transform.localScale = new Vector3(t, t, t);
 
-
         if (enemyHealth <= 0)
         {
             if (tower.CompareTag("Tower"))
@@ -96,10 +95,6 @@ public class Enemies : MonoBehaviour
             else if (tower.CompareTag("Swing"))
             {
                 tower.GetComponent<Swing>().PlaatsVuilnis();
-            }
-            else
-            {
-                return;
             }
             Die();   
         }

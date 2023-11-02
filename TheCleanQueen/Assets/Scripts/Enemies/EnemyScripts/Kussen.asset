@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Kussen
   m_EditorClassIdentifier: 
   speed: 2
-  damage: 20
-  health: 10
-  coins: 300
+  damage: 4
+  health: 20
+  coins: 10

@@ -91,7 +91,7 @@ public class TowerExample : MonoBehaviour
         {
             trash = Instantiate(vuilnis, spawnVuilnisZak);
             vuilnisHier = true;
-            trash.GetComponent<Trash>().trashMoney = 91;
+            trash.GetComponent<Trash>().trashMoney = enemiess.enemyMoney;
         }
         else
         {
@@ -99,6 +99,12 @@ public class TowerExample : MonoBehaviour
             return;
         }
     }
+
+    // todo zeep
+
+    // todo airfreshener
+
+
 
   /*  void ShootBullet()
     {

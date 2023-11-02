@@ -7,7 +7,7 @@ public class Swing : MonoBehaviour
     public int swingDamage = 5;
     Enemies enemies;
 
-    public Transform spawnVuilnisZak, vuilnis;
+    public Transform spawnVuilnisZak, vuilnis, trash;
     public bool hierVuilnis;
 
     private void OnTriggerEnter(Collider other)
@@ -28,11 +28,13 @@ public class Swing : MonoBehaviour
     {
         if (!hierVuilnis)
         {
-            Instantiate(vuilnis, spawnVuilnisZak);
+            trash = Instantiate(vuilnis, spawnVuilnisZak);
             hierVuilnis = true;
+            trash.GetComponent<Trash>().trashMoney = enemies.enemyMoney;
         }
         else
         {
+            trash.GetComponent<Trash>().trashMoney += enemies.enemyMoney;
             return;
         }
     }
