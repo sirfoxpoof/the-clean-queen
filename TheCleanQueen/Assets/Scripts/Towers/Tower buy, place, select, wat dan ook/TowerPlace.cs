@@ -46,17 +46,8 @@ public class TowerPlace : MonoBehaviour
                //deleteKnop.SetActive(true);
                 return;
             }
-
+            towerBuild.currentTowerPlace = this;
             towerSprites.SetActive(true);
-
-            if(Currency.money >= towerBuild.neededMoney)
-            {
-                
-            }
-            else
-            {
-                Debug.Log("Not enough money!!!!");
-            }
         }
     }
     void OnMouseEnter()
@@ -74,38 +65,14 @@ public class TowerPlace : MonoBehaviour
         }
     }
 
-    public void PlaceTower()
-    {
-        if (towerBuild.towOne || towerBuild.towTwo || towerBuild.towThree || towerBuild.towFour)
-        {
-            buildTower = TowerBuild.instance.GetBuildTower();
-
-            Debug.Log(towerBuild.towOne);
-            Debug.Log(towerBuild.towTwo);
-            Debug.Log(towerBuild.towThree);
-            Debug.Log(towerBuild.towFour);
-
-
-            towers = (GameObject)Instantiate(buildTower, posTowerPlace, transform.rotation);
-
-
-            Currency.money -= towerBuild.neededMoney;
-
-            towerSprites.SetActive(false);
-
-            towerBuild.towOne = false;
-            towerBuild.towTwo = false;
-            towerBuild.towThree = false;
-            towerBuild.towFour = false;
-        }
-    }
-
-    public void GetTransformTowerPlace()
-    {
-        posTowerPlace = transform.position;
-
-
-    }
+    //public void PlaceTower(int towerToBuild)
+    //{
+    //    Vector2 newTowerData = towerBuild.BuildThisTower(towerToBuild);
+    //    buildTower = TowerBuild.instance.towerPrefabs[(int)newTowerData.x];
+    //    towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
+    //    Currency.money -= (int)newTowerData.y;
+    //    towerSprites.SetActive(false);
+    //}
 
     /*public void DeleteTower()
     {
