@@ -40,7 +40,7 @@ public class TowerPlace : MonoBehaviour
     {
         if (gameUI.topDown)
         {
-            if (towers != null)
+            if (towerBuild.currentTowerPlace != null)
             {
                 Debug.Log("STAAT AL EEN TOWER AAAAAAAAAAAAAAAAH");
                //deleteKnop.SetActive(true);
