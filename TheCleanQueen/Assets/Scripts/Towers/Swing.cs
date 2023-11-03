@@ -31,6 +31,7 @@ public class Swing : MonoBehaviour
             trash = Instantiate(vuilnis, spawnVuilnisZak);
             hierVuilnis = true;
             trash.GetComponent<Trash>().trashMoney = enemies.enemyMoney;
+            trash.GetComponent<Trash>().swingTower = this;
         }
         else
         {

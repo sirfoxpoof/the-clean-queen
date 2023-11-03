@@ -6,7 +6,6 @@ public class TowerPlace : MonoBehaviour
 {
     private Color startColour;
     private Renderer ren;
-    private GameObject towers, buildTower;
 
     public GameObject deleteKnop;
 
@@ -14,6 +13,8 @@ public class TowerPlace : MonoBehaviour
     public Vector3 posTowerPlace;
     public IngameUI gameUI;
     public TowerBuild towerBuild;
+
+    bool towerPlaced;
     
     private void Start()
     {
@@ -40,14 +41,17 @@ public class TowerPlace : MonoBehaviour
     {
         if (gameUI.topDown)
         {
+
             if (towerBuild.currentTowerPlace != null)
             {
                 Debug.Log("STAAT AL EEN TOWER AAAAAAAAAAAAAAAAH");
-               //deleteKnop.SetActive(true);
+                //deleteKnop.SetActive(true);
                 return;
             }
+
             towerBuild.currentTowerPlace = this;
             towerSprites.SetActive(true);
+            Debug.Log(towerBuild.currentTowerPlace);
         }
     }
     void OnMouseEnter()

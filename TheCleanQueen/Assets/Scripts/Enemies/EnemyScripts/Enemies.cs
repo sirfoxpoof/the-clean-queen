@@ -8,6 +8,7 @@ public class Enemies : MonoBehaviour
 {
     public SpawnScribtableObject enemies;
     public int enemyHealth, enemyDamage, enemyMoney;
+    public float enemySpeed;
    
     private Transform target;
     private int waypoint = 0;
@@ -27,6 +28,7 @@ public class Enemies : MonoBehaviour
     {
         target = Waypoints.points[0];
         enemyHealth = enemies.health;
+        enemySpeed = enemies.speed;
         enemyDamage = enemies.damage;
         enemyMoney = enemies.coins;
 
@@ -84,6 +86,11 @@ public class Enemies : MonoBehaviour
         float t = (((enemyHealth - 0f) * (1f - enemyMinSize)) / (startHealth - 0f)) + enemyMinSize;
         t = Mathf.Clamp01(t);
         transform.localScale = new Vector3(t, t, t);
+
+       /* if (tower.gameObject.CompareTag("Zeep"))
+        {
+            enemySpeed *= 0.1f;
+        }*/
 
         if (enemyHealth <= 0)
         {

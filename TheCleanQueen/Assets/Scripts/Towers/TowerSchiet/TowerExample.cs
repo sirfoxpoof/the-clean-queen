@@ -60,6 +60,7 @@ public class TowerExample : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     { 
+        //valt enemies aan als ze in range zijn
         if (other.transform.tag == "Enemy")
         {
             Attack();
@@ -81,7 +82,13 @@ public class TowerExample : MonoBehaviour
         if (enemies.Count > 0)
         {
             enemies[0].DoDamage(damage, transform);
-           //ShootBullet();
+
+            //zeep
+            if (gameObject.CompareTag("Zeep"))
+            {
+                enemiess.enemySpeed *= 0.1f * Time.deltaTime;
+            }
+            //ShootBullet();
         }
     }
 
@@ -92,6 +99,7 @@ public class TowerExample : MonoBehaviour
             trash = Instantiate(vuilnis, spawnVuilnisZak);
             vuilnisHier = true;
             trash.GetComponent<Trash>().trashMoney = enemiess.enemyMoney;
+            trash.GetComponent<Trash>().towerExample = this;
         }
         else
         {

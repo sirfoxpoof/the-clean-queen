@@ -25,7 +25,11 @@ public class TowerBuild : MonoBehaviour
 
     public void BuildThisTower(int towerIndex)
     {
-        Instantiate(towerPrefabs[towerIndex], currentTowerPlace.transform.position, currentTowerPlace.transform.rotation);
-        Currency.money -= needMoney[towerIndex];
+        if(Currency.money >= needMoney[towerIndex])
+        {
+            Instantiate(towerPrefabs[towerIndex], currentTowerPlace.transform.position, currentTowerPlace.transform.rotation);
+            Currency.money -= needMoney[towerIndex];
+            //currentTowerPlace = null;
+        }
     }
 }

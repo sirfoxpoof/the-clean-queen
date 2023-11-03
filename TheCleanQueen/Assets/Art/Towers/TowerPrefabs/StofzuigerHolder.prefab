@@ -116,7 +116,7 @@ MonoBehaviour:
   damage: 20
   fireRate: 1.5
   enemiess: {fileID: 0}
-  trash: {fileID: 1906438528701835861, guid: 722d5b46166e7584bbe565d67839f379, type: 3}
+  trash: {fileID: 0}
   spawnVuilnisZak: {fileID: 2029116458008868664}
   vuilnis: {fileID: 2130151629573364971, guid: 722d5b46166e7584bbe565d67839f379, type: 3}
   vuilnisHier: 0
@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 3260467616023239588}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.208, y: 0.05005189, z: -0.141}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1046739107975213500}

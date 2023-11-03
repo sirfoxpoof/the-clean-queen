@@ -11,10 +11,7 @@ public class TrashPickup : MonoBehaviour
 
     public bool pickedUp;
 
-    private TowerExample towerExample;
-    private Swing swing;
-
-
+    
     public void PickUpTrash(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -27,54 +24,38 @@ public class TrashPickup : MonoBehaviour
                     {
                         trash = hit.transform;
 
-                        pickedUp = true;
+                        GrabTrashBag();
                     }
                 }
             }
             else if (pickedUp)
             {
-                pickedUp = false;
+                LetGoOfTrashBag();
             }
         }
     }
 
-    private void Update()
+    void GrabTrashBag()
     {
-        if (towerExample == null || swing == null)
-        {
-            return;
-        }
-
+        pickedUp = true;
+        trash.transform.SetParent(pickupPoint, false);
+        trash.transform.position = Vector3.zero;
+        trash.GetComponent<Rigidbody>().useGravity = false;
+        trash.GetComponent<Trash>().RemoveFromTower();
     }
 
-    private void FixedUpdate()
+    void LetGoOfTrashBag()
     {
+        pickedUp = false;
+        trash.GetComponent<Rigidbody>().useGravity = true;
+    }
 
-        if(trash != null)
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Trashcan")
         {
-            if (pickedUp)
-            {
-                trash.position = pickupPoint.position;
-                trash.GetComponent<Rigidbody>().useGravity = false;
-
-                if (trash.CompareTag("Swing"))
-                {
-                    trash.GetComponentInChildren<Swing>().hierVuilnis = false;
-                }
-                else
-                {
-                    trash.GetComponentInParent<TowerExample>().vuilnisHier = false;
-                }
-                towerExample = null;
-            }
-            else
-            {
-                trash.GetComponent<Rigidbody>().useGravity = true;
-            }
-        }
-        else
-        {
-            return;
+            Currency.money += trash.GetComponent<Trash>().trashMoney;
+            Destroy(gameObject);
         }
     }
 }

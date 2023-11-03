@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 
 public class TrashCan : MonoBehaviour
 {
-    public TrashPickup trashPickup;
+    /*public TrashPickup trashPickup;
     private Trash trashh;
 
     private void OnTriggerStay(Collider other)
@@ -16,5 +16,5 @@ public class TrashCan : MonoBehaviour
             Destroy(trashPickup.trash.gameObject);
             Currency.money += trashh.trashMoney;
         }
-    }
+    }*/
 }
