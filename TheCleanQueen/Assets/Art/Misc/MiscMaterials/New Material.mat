@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material
-  m_Shader: {fileID: -6465566751694194690, guid: 312615b36b39f1744b4a19406b3b4bbb,
+  m_Shader: {fileID: -6465566751694194690, guid: c23cd5d7846e25e4797df110b9168264,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -136,7 +136,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _FresnelPower: 0
+    - _FresnelPower: 0.65
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -151,7 +151,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _ScrollSpede: 2
-    - _Smoothness: 0
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -166,10 +166,12 @@ Material:
     - _Color2: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 0.6226415, g: 0.043467402, b: 0.1933712, a: 0}
-    - _FresnelshineColor: {r: 22.363522, g: 22.363522, b: 22.363522, a: 0.09411765}
+    - _FresnelshineColor: {r: 39.861515, g: 0, b: 30.3105, a: 0.62352943}
     - _GlitterColor: {r: 1, g: 1, b: 1, a: 0}
     - _NoiseScale: {r: 5, g: 5, b: 0, a: 0}
-    - _NoiseSpeed: {r: 0, g: 0.1, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _RemapIn: {r: 1, g: 1, b: 0, a: 0}
+    - _RemapOut: {r: 1, g: 1, b: 0, a: 0}
     - _ShimmerColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
