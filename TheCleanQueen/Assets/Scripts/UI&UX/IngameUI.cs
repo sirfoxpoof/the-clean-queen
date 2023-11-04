@@ -7,7 +7,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class IngameUI : MonoBehaviour
 {
-    public GameObject towerMenu, towerButton, settingsPanel, winPanel, plafond, tutorial, moneyPanel, timePanel;
+    public GameObject towerMenu, towerButton, settingsPanel, winPanel, plafond, tutorial, moneyPanel, timePanel, quitMenu;
     public Camera mainCam, towerCam;
     public string sceneName;
     public bool towermenuOn = false, settingsAan = false, topDown = false, playTimer = false, tutorialDone = false;
@@ -180,7 +180,8 @@ public class IngameUI : MonoBehaviour
             Time.timeScale = 0;
 
             settingsPanel.gameObject.SetActive(true);
-            
+            quitMenu.gameObject.SetActive(false);
+
             moveScript.enabled = false;
             
         }

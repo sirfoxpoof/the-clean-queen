@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3306015611435711995}
   - component: {fileID: 1895602284374159966}
   - component: {fileID: 4443504110252754580}
+  - component: {fileID: 534980911476542723}
   m_Layer: 0
   m_Name: Woonkamer 4
   m_TagString: Untagged
@@ -84,6 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &534980911476542723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2786183364753041217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.000003, y: 3, z: 0.14011933}
+  m_Center: {x: 0, y: 1.5, z: -0.012932436}
 --- !u!1001 &7878183210419187754
 PrefabInstance:
   m_ObjectHideFlags: 0
