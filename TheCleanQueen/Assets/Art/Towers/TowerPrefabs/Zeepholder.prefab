@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5059569776625129182}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrashHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1564506206475354218}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Zeepholder
   m_TagString: Zeep
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 3245616041843768243}
   - component: {fileID: 3340767126707739386}
   - component: {fileID: 1166739111304102684}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sphere (2)
   m_TagString: Zeep
   m_Icon: {fileID: 0}
@@ -250,6 +250,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: zeep
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240053829510536120, guid: 497cd900bf56f534bab629a96230d88f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556117584858366463, guid: 497cd900bf56f534bab629a96230d88f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355847103435114542, guid: 497cd900bf56f534bab629a96230d88f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345477738276046810, guid: 497cd900bf56f534bab629a96230d88f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 497cd900bf56f534bab629a96230d88f, type: 3}

@@ -29,7 +29,8 @@ public class TowerBuild : MonoBehaviour
         {
             Instantiate(towerPrefabs[towerIndex], currentTowerPlace.transform.position, currentTowerPlace.transform.rotation);
             Currency.money -= needMoney[towerIndex];
-            //currentTowerPlace = null;
+            currentTowerPlace.towerPlaced = true;   
+            currentTowerPlace = null;
         }
     }
 }

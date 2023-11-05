@@ -13630,7 +13630,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -13681,6 +13681,8 @@ MonoBehaviour:
   pickupPoint: {fileID: 587392204}
   trash: {fileID: 0}
   camCam: {fileID: 844814632}
+  storedMoney: 0
+  trashBags: 0
   pickedUp: 0
 --- !u!1 &847065522
 GameObject:

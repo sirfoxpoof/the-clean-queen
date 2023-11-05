@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2641209697009909324}
   m_Layer: 0
   m_Name: kliko
-  m_TagString: Untagged
+  m_TagString: Trashcan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

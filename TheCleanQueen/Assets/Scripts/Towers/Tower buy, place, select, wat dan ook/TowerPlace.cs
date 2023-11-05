@@ -14,14 +14,14 @@ public class TowerPlace : MonoBehaviour
     public IngameUI gameUI;
     public TowerBuild towerBuild;
 
-    bool towerPlaced;
+    public bool towerPlaced;
     
     private void Start()
     {
         gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
         //hoverColour = Color.white;
         ren = GetComponentInChildren<MeshRenderer>();
-        //startColour = ren.material.GetColor("_ShimmerColor");
+        startColour = ren.material.GetColor("_ShimmerColor");
         //ren.material.SetColor("_Color", Color.blue);
     }
 
@@ -42,7 +42,7 @@ public class TowerPlace : MonoBehaviour
         if (gameUI.topDown)
         {
 
-            if (towerBuild.currentTowerPlace != null)
+            if (towerPlaced)
             {
                 Debug.Log("STAAT AL EEN TOWER AAAAAAAAAAAAAAAAH");
                 //deleteKnop.SetActive(true);
@@ -78,10 +78,11 @@ public class TowerPlace : MonoBehaviour
     //    towerSprites.SetActive(false);
     //}
 
-    /*public void DeleteTower()
+    public void DeleteTower()
     {
-        Destroy(buildTower.gameObject);
+        //Destroy(transform.GetChild(0));
+        
         deleteKnop.SetActive(false);
-    }*/
+    }
 
 }

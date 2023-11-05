@@ -9,6 +9,8 @@ public class TrashPickup : MonoBehaviour
     public Camera camCam;
     private RaycastHit hit;
 
+    public int storedMoney, trashBags;
+
     public bool pickedUp;
 
     
@@ -23,39 +25,48 @@ public class TrashPickup : MonoBehaviour
                     if (hit.transform.tag == "Trash")
                     {
                         trash = hit.transform;
-
+                        Debug.Log("TRASHHHH");
                         GrabTrashBag();
+                    }
+                    else if (hit.transform.tag == "Trashcan")
+                    {
+                        Debug.Log("TRASHHHHHCANNNNNN");
+                        Currency.money += storedMoney;
                     }
                 }
             }
             else if (pickedUp)
             {
-                LetGoOfTrashBag();
+                //LetGoOfTrashBag();
             }
         }
     }
 
     void GrabTrashBag()
     {
+       storedMoney += trash.gameObject.GetComponent<Trash>().trashMoney;
+       Destroy(trash);
+
+        /*
         pickedUp = true;
         trash.transform.SetParent(pickupPoint, false);
         trash.transform.position = Vector3.zero;
         trash.GetComponent<Rigidbody>().useGravity = false;
-        trash.GetComponent<Trash>().RemoveFromTower();
+        trash.GetComponent<Trash>().RemoveFromTower();*/
     }
 
-    void LetGoOfTrashBag()
+   /* void LetGoOfTrashBag()
     {
         pickedUp = false;
         trash.GetComponent<Rigidbody>().useGravity = true;
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Trashcan")
         {
             Currency.money += trash.GetComponent<Trash>().trashMoney;
-            Destroy(gameObject);
+            Destroy(trash.gameObject);
         }
     }
 }

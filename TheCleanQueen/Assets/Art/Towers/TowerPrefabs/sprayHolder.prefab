@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6654461922952351439}
   - component: {fileID: 5360901058647774069}
   - component: {fileID: 2006248880469005177}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sphere (1)
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1217801146819921359}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TrashHolder
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4956478418095535021}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: sprayHolder
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -195,6 +195,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2518089690683859213, guid: b8be7cfef3615d14eada724f53768180,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4309609722594380710, guid: b8be7cfef3615d14eada724f53768180,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6107461115991951332, guid: b8be7cfef3615d14eada724f53768180,
         type: 3}
