@@ -23,25 +23,6 @@ public class MainMenuButtonFunction : MonoBehaviour
     {
         Application.Quit();
     }
-
-   /* public void LoadLevelButton(string levelToLoad)
-    {
-        Debug.Log("buttonknop");
-        menu.SetActive(false);
-        loadingScreen.SetActive(true);
-
-        StartCoroutine(LoadLevelASync(levelToLoad));
-    }
-
-    IEnumerator LoadLevelASync(string levelToLoad)
-    {
-        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
-        Time.timeScale = 1;
-        loadOperation.allowSceneActivation = false;
-        yield return new WaitForSeconds(2f);
-
-        loadOperation.allowSceneActivation = true;
-    }*/
 }
 
 
