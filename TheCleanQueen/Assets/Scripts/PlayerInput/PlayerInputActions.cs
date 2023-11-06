@@ -181,6 +181,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SkipTime"",
+                    ""type"": ""Button"",
+                    ""id"": ""70844995-8772-445e-80d1-4d8c119f7719"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -260,6 +269,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""KillEnemies"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""19ce1d98-1e7c-4f72-808e-84afd98837d6"",
+                    ""path"": ""<Keyboard>/f4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SkipTime"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -279,6 +299,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_PlayerActionMap_GetMoney = m_PlayerActionMap.FindAction("GetMoney", throwIfNotFound: true);
         m_PlayerActionMap_SkipWave = m_PlayerActionMap.FindAction("SkipWave", throwIfNotFound: true);
         m_PlayerActionMap_KillEnemies = m_PlayerActionMap.FindAction("KillEnemies", throwIfNotFound: true);
+        m_PlayerActionMap_SkipTime = m_PlayerActionMap.FindAction("SkipTime", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -401,6 +422,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerActionMap_GetMoney;
     private readonly InputAction m_PlayerActionMap_SkipWave;
     private readonly InputAction m_PlayerActionMap_KillEnemies;
+    private readonly InputAction m_PlayerActionMap_SkipTime;
     public struct PlayerActionMapActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -412,6 +434,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @GetMoney => m_Wrapper.m_PlayerActionMap_GetMoney;
         public InputAction @SkipWave => m_Wrapper.m_PlayerActionMap_SkipWave;
         public InputAction @KillEnemies => m_Wrapper.m_PlayerActionMap_KillEnemies;
+        public InputAction @SkipTime => m_Wrapper.m_PlayerActionMap_SkipTime;
         public InputActionMap Get() { return m_Wrapper.m_PlayerActionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -442,6 +465,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @KillEnemies.started += instance.OnKillEnemies;
             @KillEnemies.performed += instance.OnKillEnemies;
             @KillEnemies.canceled += instance.OnKillEnemies;
+            @SkipTime.started += instance.OnSkipTime;
+            @SkipTime.performed += instance.OnSkipTime;
+            @SkipTime.canceled += instance.OnSkipTime;
         }
 
         private void UnregisterCallbacks(IPlayerActionMapActions instance)
@@ -467,6 +493,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @KillEnemies.started -= instance.OnKillEnemies;
             @KillEnemies.performed -= instance.OnKillEnemies;
             @KillEnemies.canceled -= instance.OnKillEnemies;
+            @SkipTime.started -= instance.OnSkipTime;
+            @SkipTime.performed -= instance.OnSkipTime;
+            @SkipTime.canceled -= instance.OnSkipTime;
         }
 
         public void RemoveCallbacks(IPlayerActionMapActions instance)
@@ -498,5 +527,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnGetMoney(InputAction.CallbackContext context);
         void OnSkipWave(InputAction.CallbackContext context);
         void OnKillEnemies(InputAction.CallbackContext context);
+        void OnSkipTime(InputAction.CallbackContext context);
     }
 }

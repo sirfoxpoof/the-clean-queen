@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,11 +10,12 @@ public class TrashPickup : MonoBehaviour
     public Camera camCam;
     private RaycastHit hit;
 
-    public int storedMoney, trashBags;
+    public int storedMoney, trashBags, maxTrash = 5;
 
     public bool pickedUp;
 
-    
+    public TMP_Text trashPanel;
+
     public void PickUpTrash(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -30,22 +32,32 @@ public class TrashPickup : MonoBehaviour
                     }
                     else if (hit.transform.tag == "Trashcan")
                     {
-                        Debug.Log("TRASHHHHHCANNNNNN");
                         Currency.money += storedMoney;
+                        storedMoney = 0;
+                        trashBags = 0;
+                        trashPanel.text = trashBags.ToString();
                     }
                 }
-            }
-            else if (pickedUp)
-            {
-                //LetGoOfTrashBag();
             }
         }
     }
 
     void GrabTrashBag()
     {
-       storedMoney += trash.gameObject.GetComponent<Trash>().trashMoney;
-       Destroy(trash);
+        if (trashBags > 5)
+        {
+            Debug.Log("Too many trashbags!!!");
+            return;
+        }
+        else if (trashBags <= 5)
+        {
+            storedMoney += trash.gameObject.GetComponent<Trash>().trashMoney;
+            Destroy(trash.gameObject);
+            trashBags++;
+            trashPanel.text = trashBags.ToString();
+            trash.GetComponent<Trash>().RemoveFromTower();
+        }
+
 
         /*
         pickedUp = true;
@@ -61,12 +73,12 @@ public class TrashPickup : MonoBehaviour
         trash.GetComponent<Rigidbody>().useGravity = true;
     }*/
 
-    private void OnTriggerEnter(Collider other)
+   /* private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Trashcan")
         {
             Currency.money += trash.GetComponent<Trash>().trashMoney;
             Destroy(trash.gameObject);
         }
-    }
+    }*/
 }

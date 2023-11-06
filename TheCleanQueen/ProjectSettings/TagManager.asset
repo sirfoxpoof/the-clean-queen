@@ -11,6 +11,9 @@ TagManager:
   - Swing
   - Zeep
   - Trashcan
+  - NearDeath
+  - Obstacle
+  - Spray
   layers:
   - Default
   - TransparentFX

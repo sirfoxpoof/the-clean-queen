@@ -4876,6 +4876,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 146f7ad2-4260-4515-b4ae-a846a09f3468
     m_ActionName: PlayerActionMap/KillEnemies[/Keyboard/f3]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1244827110}
+        m_TargetAssemblyTypeName: DevTools, Assembly-CSharp
+        m_MethodName: SkipTime
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 70844995-8772-445e-80d1-4d8c119f7719
+    m_ActionName: PlayerActionMap/SkipTime[/Keyboard/f4]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerActionMap
@@ -13803,7 +13819,9 @@ MonoBehaviour:
   camCam: {fileID: 844814632}
   storedMoney: 0
   trashBags: 0
+  maxTrash: 0
   pickedUp: 0
+  trashPanel: {fileID: 172055188}
 --- !u!1 &847065522
 GameObject:
   m_ObjectHideFlags: 0
@@ -22797,6 +22815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b325f556605456b46ac61fb00a3b497f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnEnemy: {fileID: 1244827102}
 --- !u!1001 &1244928788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36654,7 +36673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.036000002, y: 0.27744445}
   m_AnchorMax: {x: 0.35037497, y: 0.3558148}
-  m_AnchoredPosition: {x: -5.61969, y: 0}
+  m_AnchoredPosition: {x: -5.619629, y: 0}
   m_SizeDelta: {x: 0.75, y: -7.991089}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036806058

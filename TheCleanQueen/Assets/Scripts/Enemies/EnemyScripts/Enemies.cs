@@ -42,7 +42,7 @@ public class Enemies : MonoBehaviour
     private void Update()
     {
         dir = target.position - transform.position;
-        transform.Translate(dir.normalized * enemies.speed * Time.deltaTime, Space.World);
+        transform.Translate(dir.normalized * enemySpeed * Time.deltaTime, Space.World);
         transform.LookAt(target.position, dir.normalized);
 
         if (Vector3.Distance(transform.position, target.position) <= 0.1f)
@@ -87,16 +87,10 @@ public class Enemies : MonoBehaviour
         t = Mathf.Clamp01(t);
         transform.localScale = new Vector3(t, t, t);
 
-       /* if (tower.gameObject.CompareTag("Zeep"))
-        {
-            enemySpeed *= 0.1f;
-        }*/
-
         if (enemyHealth <= 0)
         {
-            if (tower.CompareTag("Tower"))
+            if (tower.CompareTag("Tower") || tower.CompareTag("Zeep") || tower.CompareTag("Spray"))
             {
-                print("aaaaaaaaah");
                 tower.GetComponent<TowerExample>().PlaatsVuilnis();
             }
             else if (tower.CompareTag("Swing"))
