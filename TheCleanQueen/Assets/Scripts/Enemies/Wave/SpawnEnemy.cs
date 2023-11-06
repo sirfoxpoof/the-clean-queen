@@ -78,6 +78,7 @@ public class SpawnEnemy : MonoBehaviour
         if (enemiesAlive <= 0 && waveIndex == wavess.waves.Length)
         {
             wavesClear = true;
+            PlayerPrefs.SetInt("levelCleared", 1);
             this.enabled = false;
             Time.timeScale = 0;
 
