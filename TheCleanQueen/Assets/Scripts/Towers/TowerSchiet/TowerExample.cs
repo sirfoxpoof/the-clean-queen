@@ -66,13 +66,6 @@ public class TowerExample : MonoBehaviour
             Attack();
             enemiess = other.transform.GetComponent<Enemies>();
             enemies.Add(enemiess);
-
-
-            //Soap tower, the enemy will slow itself down 
-            if (gameObject.CompareTag("Zeep"))
-            {
-                enemiess.enemySpeed *= 0.5f;
-            }
         }
     }
 
@@ -81,11 +74,6 @@ public class TowerExample : MonoBehaviour
         if (other.transform.tag == "Enemy")
         {
             RemoveEnemyFromList(other.transform.GetComponent<Enemies>());
-
-            if (gameObject.CompareTag("Zeep"))
-            {
-                enemiess.enemySpeed = enemiess.enemies.speed;
-            }
         }
     }
 
@@ -95,6 +83,11 @@ public class TowerExample : MonoBehaviour
         {
             enemies[0].DoDamage(damage, transform);
 
+            //zeep
+            if (gameObject.CompareTag("Zeep"))
+            {
+                enemiess.enemySpeed *= 0.1f * Time.deltaTime;
+            }
             //ShootBullet();
         }
     }
@@ -118,23 +111,16 @@ public class TowerExample : MonoBehaviour
     // todo zeep
 
     // todo airfreshener
-    void ExplosionDamage(Vector3 center, float radius)
+
+
+
+  /*  void ShootBullet()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(center, radius);
-        foreach (var hitCollider in hitColliders)
-        {
-           
-        }
-    }
+        GameObject kog = Instantiate(bullet, spawnBullet.position, bullet.transform.rotation);
+        Rigidbody rb = kog.GetComponent<Rigidbody>();
 
+        rb.AddForce(spawnBullet.forward, ForceMode.Impulse);
+        enemies[0].DoDamage(damage);
 
-    /*  void ShootBullet()
-      {
-          GameObject kog = Instantiate(bullet, spawnBullet.position, bullet.transform.rotation);
-          Rigidbody rb = kog.GetComponent<Rigidbody>();
-
-          rb.AddForce(spawnBullet.forward, ForceMode.Impulse);
-          enemies[0].DoDamage(damage);
-
-      }*/
+    }*/
 }

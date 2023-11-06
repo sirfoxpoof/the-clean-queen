@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class DevTools : MonoBehaviour
+public class DefTools : MonoBehaviour
 {
     int cheatMoney = 100;
 
