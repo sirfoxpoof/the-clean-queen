@@ -4855,8 +4855,8 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1244827110}
-        m_TargetAssemblyTypeName: cheat, Assembly-CSharp
-        m_MethodName: ExtraMOney
+        m_TargetAssemblyTypeName: DevTools, Assembly-CSharp
+        m_MethodName: ExtraMoney
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

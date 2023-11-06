@@ -93,17 +93,6 @@ public class TowerExample : MonoBehaviour
         {
             enemies[0].DoDamage(damage, transform);
 
-
-            // todo airfreshener
-           /* void ExplosionDamage(Vector3 center, float radius)
-            {
-                Collider[] hitColliders = Physics.OverlapSphere(center, radius);
-                foreach (var hitCollider in hitColliders)
-                {
-
-                }
-            }*/
-
             //ShootBullet();
         }
     }
