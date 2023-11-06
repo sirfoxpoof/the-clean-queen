@@ -7,6 +7,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class IngameUI : MonoBehaviour
 {
+    public GameObject[] miniSprites;
     public GameObject towerMenu, towerButton, settingsPanel, winPanel, plafond, tutorial, moneyPanel, timePanel, quitMenu;
     public Camera mainCam, towerCam;
     public string sceneName;
@@ -84,7 +85,14 @@ public class IngameUI : MonoBehaviour
         {
             if (towermenuOn == true)
             {
+                foreach(GameObject sprite in miniSprites)
+                {
+                    sprite.SetActive(false);
+                }
+
                 CloseTower();
+                
+
             }
         }    
     }
