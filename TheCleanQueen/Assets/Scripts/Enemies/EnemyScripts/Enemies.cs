@@ -17,7 +17,7 @@ public class Enemies : MonoBehaviour
     MainBase basis;
 
     public bool isDead = false;
-
+   
     public Vector3 startSize;
     private Vector3 endSize;
     public float shrinkFactor = 0.1f;
@@ -42,7 +42,7 @@ public class Enemies : MonoBehaviour
     private void Update()
     {
         dir = target.position - transform.position;
-        transform.Translate(dir.normalized * enemies.speed * Time.deltaTime, Space.World);
+        transform.Translate(dir.normalized * enemySpeed * Time.deltaTime, Space.World);
         transform.LookAt(target.position, dir.normalized);
 
         if (Vector3.Distance(transform.position, target.position) <= 0.1f)
@@ -73,8 +73,6 @@ public class Enemies : MonoBehaviour
         }
         isDead = true;
         
-        //Currency.money += enemyMoney;
-
         SpawnEnemy.enemiesAlive--;
         Destroy(gameObject);
     }
@@ -83,20 +81,21 @@ public class Enemies : MonoBehaviour
     {
         enemyHealth -= damage;
 
+        //Scale enemy with health
         float t = (((enemyHealth - 0f) * (1f - enemyMinSize)) / (startHealth - 0f)) + enemyMinSize;
         t = Mathf.Clamp01(t);
         transform.localScale = new Vector3(t, t, t);
-
-       /* if (tower.gameObject.CompareTag("Zeep"))
+/*
+        //Soap tower, the enemy will slow itself down 
+        if (tower.gameObject.CompareTag("Zeep"))
         {
-            enemySpeed *= 0.1f;
+            enemySpeed *= 0.5f;
         }*/
 
         if (enemyHealth <= 0)
         {
-            if (tower.CompareTag("Tower"))
+            if (tower.CompareTag("Tower") || tower.CompareTag("Zeep") || tower.CompareTag("Spray"))
             {
-                print("aaaaaaaaah");
                 tower.GetComponent<TowerExample>().PlaatsVuilnis();
             }
             else if (tower.CompareTag("Swing"))

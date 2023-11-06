@@ -21,7 +21,7 @@ public class TowerPlace : MonoBehaviour
         gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
         //hoverColour = Color.white;
         ren = GetComponentInChildren<MeshRenderer>();
-        startColour = ren.material.GetColor("_ShimmerColor");
+        //startColour = ren.material.GetColor("_ShimmerColor");
         //ren.material.SetColor("_Color", Color.blue);
     }
 

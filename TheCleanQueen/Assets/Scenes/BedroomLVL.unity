@@ -13897,12 +13897,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4229c924bb79317429820edfd65bf2a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupPoint: {fileID: 587392204}
   trash: {fileID: 0}
-  camCam: {fileID: 844814632}
   storedMoney: 0
   trashBags: 0
+  maxTrash: 0
   pickedUp: 0
+  trashPanel: {fileID: 172055188}
 --- !u!1 &847065522
 GameObject:
   m_ObjectHideFlags: 0
