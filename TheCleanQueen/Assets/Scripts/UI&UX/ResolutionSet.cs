@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class ResolutionSet : MonoBehaviour
 {
-    public TMP_Dropdown resolutionDropdown;
+    /*public TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
 
     private void Start()
@@ -38,7 +38,7 @@ public class ResolutionSet : MonoBehaviour
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-    }
+    }*/
 }
 
  

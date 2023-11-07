@@ -58,9 +58,4 @@ public class VolumeSet : MonoBehaviour
         PlayerPrefs.SetFloat("SFXVolume", sfxVol.value);
     }
 
-
-    public void SetFullscreen(bool isFullscreen)
-    {
-        Screen.fullScreen = isFullscreen;
-    }
 }
