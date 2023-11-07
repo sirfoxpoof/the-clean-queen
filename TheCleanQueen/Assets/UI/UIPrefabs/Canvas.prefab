@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 4368285125027409915}
   - component: {fileID: 4043005418022013770}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20167,7 +20167,7 @@ GameObject:
   - component: {fileID: 1457426284577201237}
   - component: {fileID: 7304516521198100758}
   m_Layer: 5
-  m_Name: Text (4)
+  m_Name: Text3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20985,7 +20985,7 @@ GameObject:
   - component: {fileID: 5474134896328178338}
   - component: {fileID: 3845479445462826344}
   m_Layer: 5
-  m_Name: Text (3)
+  m_Name: Text2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21008,8 +21008,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.307, y: 0.12819591}
   m_AnchorMax: {x: 0.6502502, y: 0.23517466}
-  m_AnchoredPosition: {x: -6, y: -31}
-  m_SizeDelta: {x: -5.2113037, y: -0.2354126}
+  m_AnchoredPosition: {x: -52, y: -31}
+  m_SizeDelta: {x: 192.31, y: -0.2354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5474134896328178338
 CanvasRenderer:
@@ -21039,7 +21039,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This the money count, it displays the amount of coins you have
+  m_text: 'This is where you can place the towers
+
+    Click on one to choose the
+    tower you want to place there
 
 '
   m_isRightToLeft: 0
