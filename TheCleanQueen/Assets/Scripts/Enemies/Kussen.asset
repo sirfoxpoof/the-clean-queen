@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2837032bcee90cd40b25e9b0b81d4d44, type: 3}
   m_Name: Kussen
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   damage: 4
   health: 20
   coins: 10
