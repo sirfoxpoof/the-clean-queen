@@ -114,9 +114,10 @@ MonoBehaviour:
   enemies: []
   rotateKut: {fileID: 4753000148738607469}
   damage: 1
-  fireRate: 1.1
+  fireRate: 3
   enemiess: {fileID: 0}
   trash: {fileID: 0}
+  spray: {fileID: 0}
   spawnVuilnisZak: {fileID: 1217801146819921359}
   vuilnis: {fileID: 2130151629573364971, guid: 722d5b46166e7584bbe565d67839f379, type: 3}
   vuilnisHier: 0

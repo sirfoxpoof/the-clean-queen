@@ -9,13 +9,11 @@ public class TowerExample : MonoBehaviour
     public Transform rotateKut;
     private float rotationSpeed = 10f;
 
-   
-
     public int damage = 10;
     public float fireRate = 1.1f;
 
     public Enemies enemiess;
-    public Transform trash;
+    public Transform trash, spray;
 
     public Transform spawnVuilnisZak, vuilnis;
     public bool vuilnisHier;
@@ -25,7 +23,6 @@ public class TowerExample : MonoBehaviour
     private float speed = 2;
 */
 
-    //boobies (geen concentratie) ga werken!!!
     private void Start()
     {
         InvokeRepeating("Attack", 0, fireRate);
@@ -71,6 +68,7 @@ public class TowerExample : MonoBehaviour
             {
                 enemiess.enemySpeed *= 0.5f;
             }
+           
         }
     }
 
@@ -93,7 +91,22 @@ public class TowerExample : MonoBehaviour
         {
             enemies[0].DoDamage(damage, transform);
 
+            if (transform.CompareTag("Spray"))
+            {
+                AirFreshener();
+            }
             //ShootBullet();
+        }
+    }
+
+
+    //Airfreshener
+
+    void AirFreshener()
+    {
+        for(int i = 0; i < enemies.Count; i++)
+        {
+            enemies[i].DoDamage(damage, transform);
         }
     }
 

@@ -23,7 +23,7 @@ public class Enemies : MonoBehaviour
     private float startHealth;
     private float enemyMinSize = 0.25f;
 
-    private void Awake()
+    private void Start()
     {
         target = Waypoints.points[0];
         enemyHealth = enemies.health;
