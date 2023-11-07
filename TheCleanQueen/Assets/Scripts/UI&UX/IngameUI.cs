@@ -8,7 +8,7 @@ using static UnityEngine.Rendering.DebugUI;
 public class IngameUI : MonoBehaviour
 {
     public GameObject[] miniSprites;
-    public GameObject towerMenu, towerButton, settingsPanel, winPanel, plafond, tutorial, moneyPanel, timePanel, quitMenu;
+    public GameObject towerMenu, towerButton, settingsPanel, winPanel, tutorial, moneyPanel, timePanel, quitMenu;
     public Camera mainCam, towerCam;
     public string sceneName;
     public bool towermenuOn = false, settingsAan = false, topDown = false, playTimer = false, tutorialDone = false;
@@ -20,25 +20,30 @@ public class IngameUI : MonoBehaviour
 
     private void Start()
     {
-        towerMenu.SetActive(false);
-        towerButton.SetActive(false);
-        winPanel.SetActive(false);
-        tutorial.SetActive(true);
-
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-
-        moveScript.enabled = false;
-
-        Time.timeScale = 0;
-
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
 
         if (sceneName == "BedroomLVL")
         {
             PlayerPrefs.SetInt("ShowTutorial", 1);
+            towerMenu.SetActive(false);
+            towerButton.SetActive(false);
+            winPanel.SetActive(false);
+            tutorial.SetActive(true);
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            moveScript.enabled = false;
+
+            Time.timeScale = 0;
         }
+        else
+        {
+            Tutorial();
+            settingsPanel.SetActive(false);
+        }
+        
     }
 
     private void Update()
@@ -101,7 +106,6 @@ public class IngameUI : MonoBehaviour
     {
         moveScript.enabled = true;
 
-        plafond.SetActive(true);
         towerMenu.SetActive(false);
 
         towermenuOn = false;
@@ -220,8 +224,11 @@ public class IngameUI : MonoBehaviour
             moveScript.enabled = true;
 
         }
-        
-        
+
+    }
+    public void SetFullscreen(bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
     }
 }
 

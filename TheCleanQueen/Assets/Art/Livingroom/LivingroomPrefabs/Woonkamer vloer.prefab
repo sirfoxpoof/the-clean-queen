@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7581642352127578576}
   - component: {fileID: 6816404853910150773}
   - component: {fileID: 8753954584289929919}
+  - component: {fileID: 5184639517816503416}
   m_Layer: 0
   m_Name: Woonkamer vloer
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5184639517816503416
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7096748462341835626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.0045, y: 0.20000084, z: 16.977737}
+  m_Center: {x: 0.6686821, y: -0.100000046, z: -0.48908734}
