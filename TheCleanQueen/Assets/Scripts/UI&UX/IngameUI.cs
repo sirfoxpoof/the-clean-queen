@@ -98,6 +98,11 @@ public class IngameUI : MonoBehaviour
 
     public void CloseTower()
     {
+        foreach (GameObject sprite in miniSprites)
+        {
+            sprite.SetActive(false);
+        }
+
         moveScript.enabled = true;
 
         towerMenu.SetActive(false);

@@ -8,6 +8,7 @@ public class TowerBuild : MonoBehaviour
     public static TowerBuild instance;
     public int[] needMoney;
     public GameObject[] towerPrefabs;
+    public GameObject notEnoughMoney;
     public IngameUI gameUI;
 
     public TowerPlace currentTowerPlace;
@@ -31,6 +32,10 @@ public class TowerBuild : MonoBehaviour
             Currency.money -= needMoney[towerIndex];
             currentTowerPlace.towerPlaced = true;   
             currentTowerPlace = null;
+        }
+        else
+        {
+            notEnoughMoney.SetActive(true);
         }
     }
 }
