@@ -30,6 +30,7 @@ public class TowerBuild : MonoBehaviour
         {
             Instantiate(towerPrefabs[towerIndex], currentTowerPlace.placeHere);
             Currency.money -= needMoney[towerIndex];
+            currentTowerPlace.usedMoney = needMoney[towerIndex];
             currentTowerPlace.towerPlaced = true;   
             currentTowerPlace = null;
         }

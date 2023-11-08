@@ -10,7 +10,7 @@ public class Currency : MonoBehaviour
 
     private void Awake()
     {
-        money = 100;
+        money = 75;
     }
     private void Update()
     {

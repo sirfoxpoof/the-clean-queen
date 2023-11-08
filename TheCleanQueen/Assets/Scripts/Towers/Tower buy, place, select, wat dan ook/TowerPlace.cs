@@ -9,14 +9,16 @@ public class TowerPlace : MonoBehaviour
     private Renderer ren;
 
     public GameObject deleteKnop;
-
     public GameObject towerSprites;
     public Transform placeHere;
-    //public Vector3 posTowerPlace;
+
+    public int usedMoney = 0;
+    private int moneyBack = 2;
+    public bool towerPlaced;
+
     public IngameUI gameUI;
     public TowerBuild towerBuild;
 
-    public bool towerPlaced;
     
     private void Start()
     {
@@ -43,6 +45,7 @@ public class TowerPlace : MonoBehaviour
     {
         if (gameUI.topDown)
         {
+            deleteKnop.SetActive(false);
 
             if (towerPlaced)
             {
@@ -81,8 +84,9 @@ public class TowerPlace : MonoBehaviour
 
     public void DeleteTower()
     {
-        
+        Currency.money += usedMoney / moneyBack;
         Destroy(GameObject.FindWithTag("Tower"));
+        usedMoney = 0;
         towerPlaced = false;
         deleteKnop.SetActive(false);
        
