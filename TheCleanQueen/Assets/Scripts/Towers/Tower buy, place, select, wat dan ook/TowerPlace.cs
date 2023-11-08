@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TowerPlace : MonoBehaviour
@@ -46,13 +47,12 @@ public class TowerPlace : MonoBehaviour
             if (towerPlaced)
             {
                 Debug.Log("STAAT AL EEN TOWER AAAAAAAAAAAAAAAAH");
-                //deleteKnop.SetActive(true);
+                deleteKnop.SetActive(true);
                 return;
             }
 
             towerBuild.currentTowerPlace = this;
             towerSprites.SetActive(true);
-            Debug.Log(towerBuild.currentTowerPlace);
         }
     }
     void OnMouseEnter()
@@ -81,9 +81,11 @@ public class TowerPlace : MonoBehaviour
 
     public void DeleteTower()
     {
-        //Destroy(transform.GetChild(0));
         
+        Destroy(GameObject.FindWithTag("Tower"));
+        towerPlaced = false;
         deleteKnop.SetActive(false);
+       
     }
 
 }

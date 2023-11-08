@@ -1153,6 +1153,11 @@ PrefabInstance:
       objectReference: {fileID: 1244827101}
     - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
         type: 3}
+      propertyPath: placeHere
+      value: 
+      objectReference: {fileID: 1278965728}
+    - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
+        type: 3}
       propertyPath: deleteKnop
       value: 
       objectReference: {fileID: 1574000876}
@@ -2865,6 +2870,11 @@ PrefabInstance:
       objectReference: {fileID: 1244827101}
     - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
         type: 3}
+      propertyPath: placeHere
+      value: 
+      objectReference: {fileID: 433273796}
+    - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
+        type: 3}
       propertyPath: deleteKnop
       value: 
       objectReference: {fileID: 1574000876}
@@ -3601,6 +3611,11 @@ PrefabInstance:
       propertyPath: gameUI
       value: 
       objectReference: {fileID: 1244827101}
+    - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
+        type: 3}
+      propertyPath: placeHere
+      value: 
+      objectReference: {fileID: 649415648}
     - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
         type: 3}
       propertyPath: deleteKnop
@@ -4795,6 +4810,11 @@ PrefabInstance:
       objectReference: {fileID: 1244827101}
     - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
         type: 3}
+      propertyPath: placeHere
+      value: 
+      objectReference: {fileID: 2093633710}
+    - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
+        type: 3}
       propertyPath: deleteKnop
       value: 
       objectReference: {fileID: 1574000876}
@@ -5038,6 +5058,11 @@ PrefabInstance:
       propertyPath: gameUI
       value: 
       objectReference: {fileID: 1244827101}
+    - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
+        type: 3}
+      propertyPath: placeHere
+      value: 
+      objectReference: {fileID: 637785365}
     - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
         type: 3}
       propertyPath: deleteKnop
@@ -6887,6 +6912,11 @@ PrefabInstance:
       propertyPath: gameUI
       value: 
       objectReference: {fileID: 1244827101}
+    - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
+        type: 3}
+      propertyPath: placeHere
+      value: 
+      objectReference: {fileID: 1543595939}
     - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
         type: 3}
       propertyPath: deleteKnop
@@ -9375,6 +9405,7 @@ MonoBehaviour:
   - {fileID: 8265486624793619590, guid: cf407b9b103f6114c8e0f780172b1de9, type: 3}
   - {fileID: 6693734723484084688, guid: 74005e7fd33f14e45b90f442d9113358, type: 3}
   - {fileID: 3544886483783010871, guid: 8016598047b6b3849820a310a3f2d428, type: 3}
+  notEnoughMoney: {fileID: 0}
   gameUI: {fileID: 1244827101}
   currentTowerPlace: {fileID: 0}
 --- !u!114 &1244827106
@@ -12486,6 +12517,11 @@ PrefabInstance:
       objectReference: {fileID: 1244827101}
     - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
         type: 3}
+      propertyPath: placeHere
+      value: 
+      objectReference: {fileID: 1088045079}
+    - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
+        type: 3}
       propertyPath: deleteKnop
       value: 
       objectReference: {fileID: 1574000876}
@@ -13148,6 +13184,11 @@ PrefabInstance:
       objectReference: {fileID: 1244827101}
     - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
         type: 3}
+      propertyPath: placeHere
+      value: 
+      objectReference: {fileID: 2016804913}
+    - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
+        type: 3}
       propertyPath: deleteKnop
       value: 
       objectReference: {fileID: 1574000876}
@@ -13648,6 +13689,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
+        type: 3}
+      propertyPath: placeHere
+      value: 
+      objectReference: {fileID: 1761193856}
     - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
         type: 3}
       propertyPath: deleteKnop
@@ -14422,6 +14468,11 @@ PrefabInstance:
       propertyPath: gameUI
       value: 
       objectReference: {fileID: 1244827101}
+    - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
+        type: 3}
+      propertyPath: placeHere
+      value: 
+      objectReference: {fileID: 1965382714}
     - target: {fileID: 8066739901430985131, guid: 79fe35ee4d3c741499ce3e6671fc0fb8,
         type: 3}
       propertyPath: deleteKnop

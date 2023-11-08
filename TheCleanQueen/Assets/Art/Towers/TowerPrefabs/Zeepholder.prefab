@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1564506206475354218}
   m_Layer: 2
   m_Name: Zeepholder
-  m_TagString: Zeep
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -181,6 +181,7 @@ MonoBehaviour:
   fireRate: 1
   enemiess: {fileID: 0}
   trash: {fileID: 0}
+  spray: {fileID: 0}
   spawnVuilnisZak: {fileID: 5059569776625129182}
   vuilnis: {fileID: 2130151629573364971, guid: 722d5b46166e7584bbe565d67839f379, type: 3}
   vuilnisHier: 0
