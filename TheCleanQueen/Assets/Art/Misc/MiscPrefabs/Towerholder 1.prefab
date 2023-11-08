@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4819754354820684163}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.40536308, y: 0.845, z: -4.122}
-  m_LocalScale: {x: 0.40398, y: 0.15998416, z: 0.40398}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2487063181675377772}
@@ -60,8 +60,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deleteKnop: {fileID: 0}
+  towerSprites: {fileID: 0}
+  posTowerPlace: {x: 0, y: 0, z: 0}
   gameUI: {fileID: 0}
   towerBuild: {fileID: 0}
+  towerPlaced: 0
 --- !u!1001 &5730215459827292476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78,6 +81,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855969145513553232, guid: 8cf1cf39d6fd69144acf24476ce71a1a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7855969145513553232, guid: 8cf1cf39d6fd69144acf24476ce71a1a,
         type: 3}

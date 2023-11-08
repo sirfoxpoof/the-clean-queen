@@ -88,17 +88,11 @@ public class IngameUI : MonoBehaviour
     {
         if (context.performed)
         {
-            if (towermenuOn == true)
+            foreach (GameObject sprite in miniSprites)
             {
-                foreach(GameObject sprite in miniSprites)
-                {
-                    sprite.SetActive(false);
-                }
-
-                CloseTower();
-                
-
+                sprite.SetActive(false);
             }
+            CloseTower();   
         }    
     }
 

@@ -27,7 +27,7 @@ public class TowerBuild : MonoBehaviour
     {
         if(Currency.money >= needMoney[towerIndex])
         {
-            Instantiate(towerPrefabs[towerIndex], currentTowerPlace.transform.position, currentTowerPlace.transform.rotation);
+            Instantiate(towerPrefabs[towerIndex], currentTowerPlace.placeHere);
             Currency.money -= needMoney[towerIndex];
             currentTowerPlace.towerPlaced = true;   
             currentTowerPlace = null;

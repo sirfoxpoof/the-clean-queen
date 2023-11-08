@@ -8,6 +8,7 @@ public class TrashPickup : MonoBehaviour
 {
     public Transform pickupPoint, trash;
     public Camera camCam;
+    public AudioSource coinAudio;
     private RaycastHit hit;
 
     public int storedMoney, trashBags, maxTrash = 5;
@@ -36,6 +37,8 @@ public class TrashPickup : MonoBehaviour
                         storedMoney = 0;
                         trashBags = 0;
                         trashPanel.text = trashBags.ToString();
+                        coinAudio.Play();
+
                     }
                 }
             }
