@@ -10,7 +10,8 @@ public class TowerPlace : MonoBehaviour
     public GameObject deleteKnop;
 
     public GameObject towerSprites;
-    public Vector3 posTowerPlace;
+    public Transform placeHere;
+    //public Vector3 posTowerPlace;
     public IngameUI gameUI;
     public TowerBuild towerBuild;
 

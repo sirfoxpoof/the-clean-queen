@@ -8,7 +8,7 @@ public class Enemies : MonoBehaviour
     public SpawnScribtableObject enemies;
     public int enemyHealth, enemyDamage, enemyMoney;
     public float enemySpeed;
-   
+
     private Transform target;
     private int waypoint = 0;
 
@@ -22,6 +22,7 @@ public class Enemies : MonoBehaviour
     public float shrinkFactor = 0.1f;
     private float startHealth;
     private float enemyMinSize = 0.25f;
+    public bool inSprayRange = false;
 
     private void Start()
     {
@@ -52,16 +53,16 @@ public class Enemies : MonoBehaviour
 
     void NextWaypoint()
     {
-        if(waypoint >= Waypoints.points.Length - 1)
+        if (waypoint >= Waypoints.points.Length - 1)
         {
             basis.TakeDamage(enemyDamage);
             SpawnEnemy.enemiesAlive--;
             Destroy(gameObject);
             return;
-        
+
         }
         waypoint++;
-        target = Waypoints.points[waypoint];   
+        target = Waypoints.points[waypoint];
     }
 
     void Die()
@@ -71,7 +72,7 @@ public class Enemies : MonoBehaviour
             return;
         }
         isDead = true;
-        
+
         //Currency.money += enemyMoney;
 
         SpawnEnemy.enemiesAlive--;
@@ -96,9 +97,24 @@ public class Enemies : MonoBehaviour
             {
                 tower.GetComponent<Swing>().PlaatsVuilnis();
             }
-            Die();   
+            Die();
         }
     }
-   
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("SpraySpray"))
+        {
+            inSprayRange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform.CompareTag("SpraySpray"))
+        {
+            inSprayRange = false;
+        }
+    }
 }
 

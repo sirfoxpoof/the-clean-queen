@@ -104,9 +104,9 @@ public class TowerExample : MonoBehaviour
 
     void AirFreshener()
     {
-        for(int i = 0; i < enemies.Count; i++)
+        if (enemiess.inSprayRange)
         {
-            enemies[i].DoDamage(damage, transform);
+            enemiess.DoDamage(damage, transform);   
         }
     }
 
