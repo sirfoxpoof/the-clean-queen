@@ -8,6 +8,7 @@ public class SaveLoadSystem : MonoBehaviour
     private GameObject unavailableLevel1, availableLevel1;
     public void Start()
     {
+        PlayerPrefs.SetInt("levelsDone", 1);
         if (PlayerPrefs.GetInt("levelsDone") >= 1)
         {
             unavailableLevel1.SetActive(false);

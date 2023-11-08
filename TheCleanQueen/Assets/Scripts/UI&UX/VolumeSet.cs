@@ -9,7 +9,6 @@ public class VolumeSet : MonoBehaviour
 {
     public AudioMixer mixer;
     public Slider masterVol, musicVol, sfxVol;
-    /*public Mask*/
 
     public void Start()
     {

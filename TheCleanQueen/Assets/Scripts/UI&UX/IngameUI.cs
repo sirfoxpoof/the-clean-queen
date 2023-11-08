@@ -41,13 +41,13 @@ public class IngameUI : MonoBehaviour
         else
         {
             Tutorial();
-            settingsPanel.SetActive(false);
         }
         
     }
 
     private void Update()
     {
+        
         if (topDown)
         {
             Cursor.lockState = CursorLockMode.None;
@@ -58,6 +58,7 @@ public class IngameUI : MonoBehaviour
         if(spawnEnemy.wavesClear)
         {
             winPanel.SetActive(true);
+            PlayerPrefs.SetInt("levelsDone", 1);
 
             moveScript.enabled = false;
             spawnEnemy.countdown = 0;
@@ -82,17 +83,18 @@ public class IngameUI : MonoBehaviour
         tutorial.SetActive(false);
         moneyPanel.SetActive(true);
         timePanel.SetActive(true);
+        print("Tutorial");
     }
 
     public void CloseTowerMenu(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            foreach (GameObject sprite in miniSprites)
+            if(towermenuOn == true)
             {
-                sprite.SetActive(false);
+                CloseTower();
             }
-            CloseTower();   
+
         }    
     }
 
@@ -116,6 +118,7 @@ public class IngameUI : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Time.timeScale = 1;
+        
     }
 
     public void ShowTowerMenu(InputAction.CallbackContext context)
@@ -194,7 +197,7 @@ public class IngameUI : MonoBehaviour
             quitMenu.gameObject.SetActive(false);
 
             moveScript.enabled = false;
-            
+
         }
         
     }
@@ -221,7 +224,6 @@ public class IngameUI : MonoBehaviour
             settingsPanel.gameObject.SetActive(false);
 
             moveScript.enabled = true;
-
         }
 
     }

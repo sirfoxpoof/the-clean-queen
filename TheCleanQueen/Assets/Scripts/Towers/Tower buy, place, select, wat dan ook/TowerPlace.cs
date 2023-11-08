@@ -11,6 +11,7 @@ public class TowerPlace : MonoBehaviour
     public GameObject deleteKnop;
     public GameObject towerSprites;
     public Transform placeHere;
+    public TowerSetManager towerSetManager;
 
     public int usedMoney = 0;
     private int moneyBack = 2;
@@ -45,6 +46,7 @@ public class TowerPlace : MonoBehaviour
     {
         if (gameUI.topDown)
         {
+            towerSetManager.CloseAllTowerSets();
             deleteKnop.SetActive(false);
 
             if (towerPlaced)

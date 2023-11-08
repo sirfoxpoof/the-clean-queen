@@ -8,7 +8,7 @@ public class Currency : MonoBehaviour
     public static int money;
     public TMP_Text moneyText, moneyTowerText;
 
-    private void Awake()
+    private void Start()
     {
         money = 75;
     }
