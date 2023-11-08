@@ -9,6 +9,8 @@ public class TrashPickup : MonoBehaviour
     public Transform pickupPoint, trash;
     public Camera camCam;
     public AudioSource coinAudio;
+    public GameObject tooMuchTrash;
+    public bool panelActive;
     private RaycastHit hit;
 
     public int storedMoney, trashBags, maxTrash = 5;
@@ -47,12 +49,18 @@ public class TrashPickup : MonoBehaviour
 
     void GrabTrashBag()
     {
-        if (trashBags > 5)
+        if (trashBags > maxTrash)
         {
-            Debug.Log("Too many trashbags!!!");
-            return;
+            if(panelActive == true)
+            {
+                tooMuchTrash.SetActive(true);
+                panelActive = true;
+                StartCoroutine(TooMuchTrashNotif());
+                return;
+            }
+            
         }
-        else if (trashBags <= 5)
+        else if (trashBags <= maxTrash)
         {
             storedMoney += trash.gameObject.GetComponent<Trash>().trashMoney;
             Destroy(trash.gameObject);
@@ -61,6 +69,12 @@ public class TrashPickup : MonoBehaviour
             trash.GetComponent<Trash>().RemoveFromTower();
         }
 
+        IEnumerator TooMuchTrashNotif()
+        {
+            yield return new WaitForSeconds(3);
+            tooMuchTrash.SetActive(false);
+            panelActive = false;
+        }
 
         /*
         pickedUp = true;

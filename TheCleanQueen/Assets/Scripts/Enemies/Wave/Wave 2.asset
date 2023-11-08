@@ -13,32 +13,11 @@ MonoBehaviour:
   m_Name: Wave 2
   m_EditorClassIdentifier: 
   waves:
-  - rate: 0.5
+  - rate: 1
     enemies:
     - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
         type: 3}
-      count: 0
-    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
-        type: 3}
-      count: 0
-    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
-        type: 3}
-      count: 0
-    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
-        type: 3}
-      count: 0
-    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
-        type: 3}
-      count: 0
-    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
-        type: 3}
-      count: 0
-    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
-        type: 3}
-      count: 0
-    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
-        type: 3}
-      count: 0
+      count: 8
   - rate: 1
     enemies:
     - enemy: {fileID: 7968456530525181611, guid: aba04d80ac018884b9f26ae5d1830945,
@@ -73,14 +52,72 @@ MonoBehaviour:
     - enemy: {fileID: 7919577083107093741, guid: 0c327bff102bb3a42848916ab7b5eb85,
         type: 3}
       count: 1
-  - rate: 0.5
+  - rate: 1
     enemies:
+    - enemy: {fileID: 7968456530525181611, guid: aba04d80ac018884b9f26ae5d1830945,
+        type: 3}
+      count: 2
     - enemy: {fileID: 6320759255521503528, guid: f573bf5e03ca2f94fb581fd01695c58b,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 2948778027561749266, guid: 451356f861c3ca74dbb9b90e08598cf8,
         type: 3}
       count: 1
     - enemy: {fileID: 7919577083107093741, guid: 0c327bff102bb3a42848916ab7b5eb85,
         type: 3}
       count: 1
+    - enemy: {fileID: 7919577083107093741, guid: 0c327bff102bb3a42848916ab7b5eb85,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 7968456530525181611, guid: aba04d80ac018884b9f26ae5d1830945,
+        type: 3}
+      count: 2
+    - enemy: {fileID: 7919577083107093741, guid: 0c327bff102bb3a42848916ab7b5eb85,
+        type: 3}
+      count: 2
+    - enemy: {fileID: 7801606371101866788, guid: d7b3c36af5319b74ca38e13026dd6a76,
+        type: 3}
+      count: 1
+  - rate: 1
+    enemies:
+    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 7968456530525181611, guid: aba04d80ac018884b9f26ae5d1830945,
+        type: 3}
+      count: 2
+    - enemy: {fileID: 7801606371101866788, guid: d7b3c36af5319b74ca38e13026dd6a76,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 7919577083107093741, guid: 0c327bff102bb3a42848916ab7b5eb85,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 7919577083107093741, guid: 0c327bff102bb3a42848916ab7b5eb85,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 2948778027561749266, guid: 451356f861c3ca74dbb9b90e08598cf8,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 7968456530525181611, guid: aba04d80ac018884b9f26ae5d1830945,
+        type: 3}
+      count: 2
+    - enemy: {fileID: 3171612820617892916, guid: 3c53be3c946b3554ba4d0155746fa978,
+        type: 3}
+      count: 2
+    - enemy: {fileID: 8239819451626879207, guid: 8ec424f7802ea5e4f8684d62bd3079ad,
+        type: 3}
+      count: 1
+  - rate: 1
+    enemies:
+    - enemy: {fileID: 8239819451626879207, guid: 8ec424f7802ea5e4f8684d62bd3079ad,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 6320759255521503528, guid: f573bf5e03ca2f94fb581fd01695c58b,
+        type: 3}
+      count: 1
+    - enemy: {fileID: 7919577083107093741, guid: 0c327bff102bb3a42848916ab7b5eb85,
+        type: 3}
+      count: 2
     - enemy: {fileID: 7968456530525181611, guid: aba04d80ac018884b9f26ae5d1830945,
         type: 3}
       count: 2
@@ -94,9 +131,6 @@ MonoBehaviour:
         type: 3}
       count: 1
     - enemy: {fileID: 7919577083107093741, guid: 0c327bff102bb3a42848916ab7b5eb85,
-        type: 3}
-      count: 2
-    - enemy: {fileID: 7968456530525181611, guid: aba04d80ac018884b9f26ae5d1830945,
         type: 3}
       count: 2
     - enemy: {fileID: 8239819451626879207, guid: 8ec424f7802ea5e4f8684d62bd3079ad,
