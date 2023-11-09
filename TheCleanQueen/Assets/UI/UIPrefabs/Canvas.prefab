@@ -835,14 +835,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This is the trash counter, it displays the amount of trash you are holding
+  m_text: 'Look for pink trashbags and throw them in the trashcan to earn coins !
 
-    Look
-    for pink trashbags and throw them in the trashcan to earn coins!
-
-    If  it
-    reaches 5, you won''t be able to pick up more, so remember to keep depositing
-    trash !'
+    If 
+    this counter reaches 5, you won''t be able to pick up more, so remember to keep
+    depositing trash !'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf1544069d6feb54eb3d28d4419b5837, type: 2}
   m_sharedMaterial: {fileID: 2092666628275262566, guid: bf1544069d6feb54eb3d28d4419b5837,
@@ -2058,14 +2055,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This is the trash counter, it displays the amount of trash you are holding
+  m_text: 'Look for pink trashbags and throw them in the trashcan to earn coins !
 
-    Look
-    for pink trashbags and throw them in the trashcan to earn coins!
-
-    If  it
-    reaches 5, you won''t be able to pick up more, so remember to keep depositing
-    trash !'
+    If 
+    this counter reaches 5, you won''t be able to pick up more, so remember to keep
+    depositing trash !'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf1544069d6feb54eb3d28d4419b5837, type: 2}
   m_sharedMaterial: {fileID: 2092666628275262566, guid: bf1544069d6feb54eb3d28d4419b5837,
@@ -7053,7 +7047,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 0.3556144, b: 0, a: 1}
     m_HighlightedColor: {r: 1, g: 0.5716463, b: 0.3339622, a: 1}
     m_PressedColor: {r: 1, g: 0.3556144, b: 0, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 0.35686275, b: 0, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -14156,7 +14150,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.83137256, g: 0, b: 0.37254903, a: 1}
     m_HighlightedColor: {r: 0.8113208, g: 0.3015664, b: 0.52999395, a: 1}
     m_PressedColor: {r: 0.83137256, g: 0, b: 0.37254903, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.83137256, g: 0, b: 0.37254903, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
