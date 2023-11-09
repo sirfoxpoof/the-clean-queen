@@ -19299,6 +19299,9 @@ MonoBehaviour:
   trashBags: 0
   pickedUp: 0
   trashPanel: {fileID: 0}
+  pickupslayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &1241572188
 MonoBehaviour:
   m_ObjectHideFlags: 0

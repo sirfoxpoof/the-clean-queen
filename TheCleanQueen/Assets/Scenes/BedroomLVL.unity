@@ -6749,6 +6749,9 @@ MonoBehaviour:
   trashBags: 0
   pickedUp: 0
   trashPanel: {fileID: 172055188}
+  pickupslayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!4 &866873517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6814816821573571240, guid: f5e99cdd73d3833429e364cebbed5c7d,

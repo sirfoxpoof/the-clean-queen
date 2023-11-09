@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5870605859857377405}
   - component: {fileID: 8546815753552190647}
   - component: {fileID: 2641209697009909324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kliko
   m_TagString: Trashcan
   m_Icon: {fileID: 0}

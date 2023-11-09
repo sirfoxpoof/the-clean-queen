@@ -20,13 +20,15 @@ public class TrashPickup : MonoBehaviour
 
     public TMP_Text trashPanel;
 
+    public LayerMask pickupslayer;
+
     public void PickUpTrash(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             if(!pickedUp)
             {
-                if (Physics.Raycast(transform.position, transform.forward, out hit, 5f))
+                if (Physics.Raycast(transform.position, transform.forward, out hit, 5f, pickupslayer))
                 {
                     if (hit.transform.tag == "Trash")
                     {

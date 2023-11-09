@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1922291163748844144}
   - component: {fileID: 1906438528701835861}
   - component: {fileID: 1606695583113008531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: vuilniszak
   m_TagString: Trash
   m_Icon: {fileID: 0}

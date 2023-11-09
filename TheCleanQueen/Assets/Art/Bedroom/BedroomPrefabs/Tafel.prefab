@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6471469501786438438}
   - component: {fileID: 8991708528292549716}
   - component: {fileID: -1679336771247063568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tafel
   m_TagString: TowerMenu
   m_Icon: {fileID: 0}
