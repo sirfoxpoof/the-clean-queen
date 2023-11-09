@@ -20,4 +20,9 @@ public class SaveLoadSystem : MonoBehaviour
             availableLevel1.SetActive(false);
         }
     }
+
+    public void ResetProgress()
+    {
+        PlayerPrefs.SetInt("levelsDone", 0);
+    }
 }
