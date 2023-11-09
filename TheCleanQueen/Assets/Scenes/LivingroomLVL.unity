@@ -6244,6 +6244,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5262083853913482975, guid: a1db7d13a9ae4094c9afbc30010e467b,
+        type: 3}
+      propertyPath: m_text
+      value: "the couch is \nwaaay too dirty :("
+      objectReference: {fileID: 0}
     - target: {fileID: 5262083853972513810, guid: a1db7d13a9ae4094c9afbc30010e467b,
         type: 3}
       propertyPath: m_IsActive
@@ -22948,7 +22953,7 @@ MonoBehaviour:
   bed: {fileID: 1124305069}
   viesMaterial: {fileID: 2100000, guid: 0705fbc1a78683a45ab196b5d18a7df7, type: 2}
   finish: {fileID: 1538104294}
-  health: 0
+  health: 50
   halfHealth: 0
   move: {fileID: 1411411578}
   spawnEnemy: {fileID: 1114633689}
