@@ -9,6 +9,7 @@ public class MainBase : MonoBehaviour
     public Material viesMaterial; 
     public Transform finish;
 
+    [SerializeField]
     private int health, halfHealth;
 
     public Movement move;

@@ -12084,6 +12084,8 @@ MonoBehaviour:
   bed: {fileID: 936132394}
   viesMaterial: {fileID: 2100000, guid: 938a89fdddfefe74aa88e8ed21cf0248, type: 2}
   finish: {fileID: 1538104294}
+  health: 40
+  halfHealth: 0
   move: {fileID: 491839445}
   spawnEnemy: {fileID: 1244827102}
 --- !u!65 &1538104296
@@ -18141,7 +18143,7 @@ PrefabInstance:
     - target: {fileID: 5262083854781724332, guid: a1db7d13a9ae4094c9afbc30010e467b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5262083854881062391, guid: a1db7d13a9ae4094c9afbc30010e467b,
         type: 3}
