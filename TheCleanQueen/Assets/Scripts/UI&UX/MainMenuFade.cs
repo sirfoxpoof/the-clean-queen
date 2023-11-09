@@ -19,6 +19,8 @@ public class MainMenuFade : MonoBehaviour
     {
         animator2.GetComponent<Animator>().enabled = true;
         animator.Play("Flashbang");
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         fadeoutPNG.SetActive(true);
         StartCoroutine(Wait());
         
@@ -30,6 +32,9 @@ public class MainMenuFade : MonoBehaviour
         
         mainMenu.SetActive(false);
         levelSelect.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
 
     }
 
