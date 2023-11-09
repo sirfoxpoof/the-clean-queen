@@ -145,7 +145,7 @@ PrefabInstance:
     - target: {fileID: 910721041334442467, guid: 09ae8486a594d1345b5c52b26ce81d80,
         type: 3}
       propertyPath: swingDamage
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 910721041334442467, guid: 09ae8486a594d1345b5c52b26ce81d80,
         type: 3}

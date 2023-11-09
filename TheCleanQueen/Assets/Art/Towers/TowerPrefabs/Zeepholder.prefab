@@ -178,7 +178,7 @@ MonoBehaviour:
   enemies: []
   rotateKut: {fileID: 2697478890186827932}
   damage: 0
-  fireRate: 1
+  fireRate: 1.5
   enemiess: {fileID: 0}
   trash: {fileID: 0}
   spray: {fileID: 0}
