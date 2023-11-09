@@ -14,15 +14,10 @@ public class SaveLoadSystem : MonoBehaviour
             availableLevel1.SetActive(true);
         }
 
-        if (PlayerPrefs.GetInt("levelsDone") < 1)
+        if (PlayerPrefs.GetInt("levelsDone") <= 1)
         {
             unavailableLevel1.SetActive(true);
             availableLevel1.SetActive(false);
         }
-    }
-
-    public void ResetProgress()
-    {
-        PlayerPrefs.SetInt("levelsDone", 0);
     }
 }
