@@ -83,7 +83,6 @@ public class IngameUI : MonoBehaviour
         tutorial.SetActive(false);
         moneyPanel.SetActive(true);
         timePanel.SetActive(true);
-        print("Tutorial");
     }
 
     public void CloseTowerMenu(InputAction.CallbackContext context)

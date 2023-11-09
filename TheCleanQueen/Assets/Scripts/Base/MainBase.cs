@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainBase : MonoBehaviour
 {
-    public GameObject gameOverPanel;
+    public GameObject gameOverPanel, bed;
+    public Material viesMaterial; 
     public Transform finish;
 
-    public int health;
-    public bool gameOver;
+    private int health, halfHealth;
 
     public Movement move;
     public SpawnEnemy spawnEnemy;
@@ -18,6 +18,7 @@ public class MainBase : MonoBehaviour
     private void Start()
     {
         gameOverPanel.SetActive(false);
+        halfHealth = health / 3;
     }
 
     public void TakeDamage(int damage)
@@ -32,6 +33,10 @@ public class MainBase : MonoBehaviour
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+        }
+        if (health <= halfHealth)
+        {
+            bed.GetComponent<MeshRenderer>().material = viesMaterial;
         }
     }
 
