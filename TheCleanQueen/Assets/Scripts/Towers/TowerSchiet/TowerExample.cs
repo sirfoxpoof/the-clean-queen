@@ -17,11 +17,6 @@ public class TowerExample : MonoBehaviour
 
     public Transform spawnVuilnisZak, vuilnis;
     public bool vuilnisHier;
-/*
-    public Transform spawnBullet;
-    public GameObject bullet;
-    private float speed = 2;
-*/
 
     private void Start()
     {
@@ -95,12 +90,8 @@ public class TowerExample : MonoBehaviour
             {
                 AirFreshener();
             }
-            //ShootBullet();
         }
     }
-
-
-    //Airfreshener
 
     void AirFreshener()
     {
@@ -126,13 +117,5 @@ public class TowerExample : MonoBehaviour
         }
     }
 
-  /*  void ShootBullet()
-    {
-        GameObject kog = Instantiate(bullet, spawnBullet.position, bullet.transform.rotation);
-        Rigidbody rb = kog.GetComponent<Rigidbody>();
 
-        rb.AddForce(spawnBullet.forward, ForceMode.Impulse);
-        enemies[0].DoDamage(damage);
-
-    }*/
 }

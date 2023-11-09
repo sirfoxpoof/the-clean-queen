@@ -73,8 +73,6 @@ public class Enemies : MonoBehaviour
         }
         isDead = true;
 
-        //Currency.money += enemyMoney;
-
         SpawnEnemy.enemiesAlive--;
         Destroy(gameObject);
     }

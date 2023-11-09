@@ -13,10 +13,7 @@ public class Movement : MonoBehaviour
     public GameObject camHold;
     public float speed, sprint, sens, jumpHight;
   
-    //private RaycastHit hit;
-
     private Vector2 move, look;
-   // private Vector3 jump;
 
     private InputAction movew, rotate;
     private float x, y;
@@ -78,26 +75,5 @@ public class Movement : MonoBehaviour
         camHold.transform.localRotation = Quaternion.Euler(y, 0, 0 * Time.deltaTime);
     }
 
-   /* public void Sprint(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            speed += sprint;
-        }
-        if (context.canceled)
-        {
-            speed -= sprint;
-        }
-    }
-
-    public void Jump(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            if (Physics.Raycast(transform.position, -transform.up, out hit, 1.3f))
-            {
-                rb.AddForce(Vector3.up * jumpHight, ForceMode.Impulse);
-            }
-        }
-    }*/
+  
 }

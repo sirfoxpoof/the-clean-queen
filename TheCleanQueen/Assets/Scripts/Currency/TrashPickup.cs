@@ -78,26 +78,7 @@ public class TrashPickup : MonoBehaviour
             panelActive = false;
         }
 
-        /*
-        pickedUp = true;
-        trash.transform.SetParent(pickupPoint, false);
-        trash.transform.position = Vector3.zero;
-        trash.GetComponent<Rigidbody>().useGravity = false;
-        trash.GetComponent<Trash>().RemoveFromTower();*/
+       
     }
 
-   /* void LetGoOfTrashBag()
-    {
-        pickedUp = false;
-        trash.GetComponent<Rigidbody>().useGravity = true;
-    }*/
-
-   /* private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Trashcan")
-        {
-            Currency.money += trash.GetComponent<Trash>().trashMoney;
-            Destroy(trash.gameObject);
-        }
-    }*/
 }

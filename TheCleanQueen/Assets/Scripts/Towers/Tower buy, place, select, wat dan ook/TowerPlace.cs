@@ -25,10 +25,8 @@ public class TowerPlace : MonoBehaviour
     private void Start()
     {
         gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
-        //hoverColour = Color.white;
         ren = GetComponentInChildren<MeshRenderer>();
         startColour = ren.material.GetColor("_FresnelshineColor");
-        //ren.material.SetColor("_Color", Color.blue);
     }
 
     private void Update()
@@ -77,19 +75,9 @@ public class TowerPlace : MonoBehaviour
         }
     }
 
-    //public void PlaceTower(int towerToBuild)
-    //{
-    //    Vector2 newTowerData = towerBuild.BuildThisTower(towerToBuild);
-    //    buildTower = TowerBuild.instance.towerPrefabs[(int)newTowerData.x];
-    //    towers = (GameObject)Instantiate(buildTower, transform.position, transform.rotation);
-    //    Currency.money -= (int)newTowerData.y;
-    //    towerSprites.SetActive(false);
-    //}
-
     public void DeleteTower()
     {
         towerPlaced = false;
-        //Destroy(GameObject.FindWithTag("Tower"));
         Destroy(myTower);
         Currency.money += usedMoney / moneyBack;
         usedMoney = 0;
