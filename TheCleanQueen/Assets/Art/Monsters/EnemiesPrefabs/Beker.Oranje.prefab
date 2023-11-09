@@ -4393,9 +4393,11 @@ MonoBehaviour:
   enemyHealth: 0
   enemyDamage: 0
   enemyMoney: 0
+  enemySpeed: 0
   isDead: 0
   startSize: {x: 0, y: 0, z: 0}
   shrinkFactor: 0.1
+  inSprayRange: 0
 --- !u!65 &2621026046915019587
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4404,7 +4406,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7801606371101866788}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
