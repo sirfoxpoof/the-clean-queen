@@ -64,11 +64,11 @@ public class TrashPickup : MonoBehaviour
         }
         else if (trashBags <= maxTrash)
         {
+            trash.GetComponent<Trash>().RemoveFromTower();
             storedMoney += trash.gameObject.GetComponent<Trash>().trashMoney;
             Destroy(trash.gameObject);
             trashBags++;
             trashPanel.text = trashBags.ToString();
-            trash.GetComponent<Trash>().RemoveFromTower();
         }
 
         IEnumerator TooMuchTrashNotif()

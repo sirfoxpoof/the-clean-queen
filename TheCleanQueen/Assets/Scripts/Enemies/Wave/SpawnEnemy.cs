@@ -50,13 +50,8 @@ public class SpawnEnemy : MonoBehaviour
         if (IngameUI.playTimer)
         {
             waveCountDown.text = Mathf.Round(countdown).ToString();
-            //waveCountDown.text = string.Format("{0:00.00}", countdown);  
-
             countdown -= Time.deltaTime;
-
         }
-          
-          
     }
 
     private IEnumerator SpawnWave()
@@ -81,12 +76,9 @@ public class SpawnEnemy : MonoBehaviour
             
             this.enabled = false;
             Time.timeScale = 0;
-
-           // Currency.money = 10;
         }
        
         waveIndex++;
-        Debug.Log(waveIndex);
     }
 
     private void EnemySpawn(GameObject enemy)
