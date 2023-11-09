@@ -126,12 +126,6 @@ public class TowerExample : MonoBehaviour
         }
     }
 
-    // todo zeep
-
-    // todo airfreshener
-
-
-
   /*  void ShootBullet()
     {
         GameObject kog = Instantiate(bullet, spawnBullet.position, bullet.transform.rotation);

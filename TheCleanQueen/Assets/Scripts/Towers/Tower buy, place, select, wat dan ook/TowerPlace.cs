@@ -7,6 +7,7 @@ public class TowerPlace : MonoBehaviour
 {
     private Color startColour;
     private Renderer ren;
+    public GameObject myTower;
 
     public GameObject deleteKnop;
     public GameObject towerSprites;
@@ -53,6 +54,7 @@ public class TowerPlace : MonoBehaviour
             {
                 Debug.Log("STAAT AL EEN TOWER AAAAAAAAAAAAAAAAH");
                 deleteKnop.SetActive(true);
+                towerSetManager.selectedTower = this.transform;
                 return;
             }
 
@@ -86,10 +88,11 @@ public class TowerPlace : MonoBehaviour
 
     public void DeleteTower()
     {
-        Currency.money += usedMoney / moneyBack;
-        Destroy(GameObject.FindWithTag("Tower"));
-        usedMoney = 0;
         towerPlaced = false;
+        //Destroy(GameObject.FindWithTag("Tower"));
+        Destroy(myTower);
+        Currency.money += usedMoney / moneyBack;
+        usedMoney = 0;
         deleteKnop.SetActive(false);
        
     }

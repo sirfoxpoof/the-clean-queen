@@ -11,7 +11,6 @@ public class Trash : MonoBehaviour
     private void Start()
     {
         towerExample = GetComponentInParent<TowerExample>();
-        trashMoney = 0;
     }
 
     public void RemoveFromTower()

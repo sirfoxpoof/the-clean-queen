@@ -13,7 +13,8 @@ public class TrashPickup : MonoBehaviour
     public bool panelActive;
     private RaycastHit hit;
 
-    public int storedMoney, trashBags, maxTrash = 5;
+    public int storedMoney, trashBags;
+    private int maxTrash = 4;
 
     public bool pickedUp;
 
@@ -30,7 +31,6 @@ public class TrashPickup : MonoBehaviour
                     if (hit.transform.tag == "Trash")
                     {
                         trash = hit.transform;
-                        Debug.Log("TRASHHHH");
                         GrabTrashBag();
                     }
                     else if (hit.transform.tag == "Trashcan")
@@ -51,7 +51,7 @@ public class TrashPickup : MonoBehaviour
     {
         if (trashBags > maxTrash)
         {
-            if(panelActive == true)
+            if(panelActive == false)
             {
                 tooMuchTrash.SetActive(true);
                 panelActive = true;
