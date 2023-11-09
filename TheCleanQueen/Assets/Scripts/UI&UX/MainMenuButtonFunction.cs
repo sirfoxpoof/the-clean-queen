@@ -46,6 +46,7 @@ public class MainMenuButtonFunction : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+        print("quit");
     }
 }
 
