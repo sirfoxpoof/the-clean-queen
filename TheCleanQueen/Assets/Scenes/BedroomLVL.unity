@@ -12086,6 +12086,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 1836323110}
   bed: {fileID: 936132394}
   viesMaterial: {fileID: 2100000, guid: 938a89fdddfefe74aa88e8ed21cf0248, type: 2}
+  luchtalarm: {fileID: 1538104297}
   finish: {fileID: 1538104294}
   health: 40
   halfHealth: 0

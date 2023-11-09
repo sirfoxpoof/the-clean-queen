@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainBase : MonoBehaviour
 {
     public GameObject gameOverPanel, bed;
-    public Material viesMaterial; 
+    public Material viesMaterial;
+    public AudioSource luchtalarm;
     public Transform finish;
 
     [SerializeField]
@@ -38,6 +39,8 @@ public class MainBase : MonoBehaviour
         if (health <= halfHealth)
         {
             bed.GetComponent<MeshRenderer>().material = viesMaterial;
+            luchtalarm.Play();
+
         }
     }
 

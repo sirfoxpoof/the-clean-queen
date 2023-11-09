@@ -837,11 +837,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'This is the trash counter, it displays the amount of trash you are holding
 
-    When
-    you collect a trashbag, throw it in the trashcan to earn coins
+    Look
+    for pink trashbags and throw them in the trashcan to earn coins!
 
-    If  it reaches
-    5, you won''t be able to pick up more, so remember to keep depositing trash !'
+    If  it
+    reaches 5, you won''t be able to pick up more, so remember to keep depositing
+    trash !'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf1544069d6feb54eb3d28d4419b5837, type: 2}
   m_sharedMaterial: {fileID: 2092666628275262566, guid: bf1544069d6feb54eb3d28d4419b5837,
@@ -2059,11 +2060,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'This is the trash counter, it displays the amount of trash you are holding
 
-    When
-    you collect a trashbag, throw it in the trashcan to earn coins
+    Look
+    for pink trashbags and throw them in the trashcan to earn coins!
 
-    If  it reaches
-    5, you won''t be able to pick up more, so remember to keep depositing trash !'
+    If  it
+    reaches 5, you won''t be able to pick up more, so remember to keep depositing
+    trash !'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf1544069d6feb54eb3d28d4419b5837, type: 2}
   m_sharedMaterial: {fileID: 2092666628275262566, guid: bf1544069d6feb54eb3d28d4419b5837,
@@ -12451,6 +12453,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7723538704151647071}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4882930691841535650}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5262083854183918222
 GameObject:
