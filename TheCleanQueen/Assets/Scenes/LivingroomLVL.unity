@@ -18711,6 +18711,7 @@ MonoBehaviour:
   moneyPanel: {fileID: 336479538}
   timePanel: {fileID: 336479539}
   quitMenu: {fileID: 336479533}
+  deleteKnop: {fileID: 764709555}
   mainCam: {fileID: 1241572190}
   towerCam: {fileID: 428469395}
   sceneName: 

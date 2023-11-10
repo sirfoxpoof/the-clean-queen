@@ -8,7 +8,7 @@ using static UnityEngine.Rendering.DebugUI;
 public class IngameUI : MonoBehaviour
 {
     public GameObject[] miniSprites;
-    public GameObject towerMenu, towerButton, settingsPanel, winPanel, tutorial, moneyPanel, timePanel, quitMenu;
+    public GameObject towerMenu, towerButton, settingsPanel, winPanel, tutorial, moneyPanel, timePanel, quitMenu, deleteKnop;
     public Camera mainCam, towerCam;
     public string sceneName;
     public bool towermenuOn = false, settingsAan = false, topDown = false, playTimer = false, tutorialDone = false;
@@ -107,6 +107,7 @@ public class IngameUI : MonoBehaviour
         moveScript.enabled = true;
 
         towerMenu.SetActive(false);
+        deleteKnop.SetActive(false);
 
         towermenuOn = false;
 

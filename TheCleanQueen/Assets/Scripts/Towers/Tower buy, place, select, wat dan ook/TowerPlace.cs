@@ -58,6 +58,7 @@ public class TowerPlace : MonoBehaviour
 
             towerBuild.currentTowerPlace = this;
             towerSprites.SetActive(true);
+            
         }
     }
     void OnMouseEnter()

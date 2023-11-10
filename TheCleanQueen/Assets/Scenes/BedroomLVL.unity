@@ -9443,6 +9443,7 @@ MonoBehaviour:
   moneyPanel: {fileID: 223688174}
   timePanel: {fileID: 2124048391}
   quitMenu: {fileID: 392973360}
+  deleteKnop: {fileID: 1574000876}
   mainCam: {fileID: 844814632}
   towerCam: {fileID: 428469395}
   sceneName: 
@@ -17089,6 +17090,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276850651336612029, guid: a1db7d13a9ae4094c9afbc30010e467b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.310669
       objectReference: {fileID: 0}
     - target: {fileID: 3309583141389322167, guid: a1db7d13a9ae4094c9afbc30010e467b,
         type: 3}
